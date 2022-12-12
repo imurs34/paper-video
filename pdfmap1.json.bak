@@ -1,0 +1,1064 @@
+[
+    {
+        "x1":56.54899978637695,
+        "y1":77.49718475341797,
+        "x2":559.169921875,
+        "y2":100.4625244140625,
+        "text":"VisiFit: Structuring Iterative Improvement for Novice Designers \n",
+        "index":1,
+        "page":1
+    },
+    {
+        "x1":129.5734405517578,
+        "y1":108.73838806152344,
+        "x2":240.02874755859375,
+        "y2":160.85276794433594,
+        "text":"Lydia B. Chilton \nchilton@cs.columbia.edu \nColumbia University \nNew York, New York, USA \n",
+        "index":2,
+        "page":1
+    },
+    {
+        "x1":129.07530212402344,
+        "y1":165.73143005371094,
+        "x2":239.53060913085938,
+        "y2":217.8457489013672,
+        "text":"Sam Ross \nshr@barnard.edu \nBarnard College \nNew York, New York, USA \n",
+        "index":3,
+        "page":1
+    },
+    {
+        "x1":375.8016662597656,
+        "y1":108.73838806152344,
+        "x2":486.257080078125,
+        "y2":160.85276794433594,
+        "text":"Ecenaz Jen Ozmen \neo2419@columbia.edu \nColumbia University \nNew York, New York, USA \n",
+        "index":4,
+        "page":1
+    },
+    {
+        "x1":375.3040771484375,
+        "y1":165.73143005371094,
+        "x2":485.759521484375,
+        "y2":217.8457489013672,
+        "text":"Vivian Liu \nvivian@cs.columbia.edu \nColumbia University \nNew York, New York, USA \n",
+        "index":5,
+        "page":1
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":232.71298217773438,
+        "x2":558.208984375,
+        "y2":394.72198486328125,
+        "text":"<image: DeviceRGB, width: 1756, height: 564, bpc: 8>",
+        "index":6,
+        "page":1
+    },
+    {
+        "x1":53.797943115234375,
+        "y1":404.9073791503906,
+        "x2":560.4443969726562,
+        "y2":428.2469177246094,
+        "text":"Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image \nblends New York City and autumn. The right image blends navel orange and winter. \n",
+        "index":7,
+        "page":1
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":430.9057312011719,
+        "x2":114.67076873779297,
+        "y2":445.97119140625,
+        "text":"ABSTRACT \n",
+        "index":8,
+        "page":1
+    },
+    {
+        "x1":52.8120002746582,
+        "y1":446.00482177734375,
+        "x2":296.52685546875,
+        "y2":590.1185302734375,
+        "text":"Visual blends are an advanced graphic design technique to seam-\nlessly integrate two objects into one. Existing tools help novices cre-\nate prototypes of blends, but it is unclear how they would improve \nthem to be higher fdelity. To help novices, we aim to add structure \nto the iterative improvement process. We introduce a method for im-\nproving prototypes that uses secondary design dimensions to explore \na structured design space. This method is grounded in the cognitive \nprinciples of human visual object recognition. We present VisiFit \n\u2013 a computational design system that uses this method to enable \nnovice graphic designers to improve blends with computationally \ngenerated options they can select, adjust, and chain together. Our \nevaluation shows novices can substantially improve 76% of blends \nin under 4 minutes. We discuss how the method can be generalized \n",
+        "index":9,
+        "page":1
+    },
+    {
+        "x1":53.31680679321289,
+        "y1":618.2064819335938,
+        "x2":296.5181579589844,
+        "y2":709.306884765625,
+        "text":"Permission to make digital or hard copies of all or part of this work for personal or \nclassroom use is granted without fee provided that copies are not made or distributed \nfor proft or commercial advantage and that copies bear this notice and the full citation \non the frst page. Copyrights for components of this work owned by others than ACM \nmust be honored. Abstracting with credit is permitted. To copy otherwise, or republish, \nto post on servers or to redistribute to lists, requires prior specifc permission and/or a \nfee. Request permissions from permissions@acm.org. \nCHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n\u00a9 2021 Association for Computing Machinery. \nACM ISBN 978-1-4503-8096-6/21/05...$15.00 \nhttps://doi.org/10.1145/3411764.3445089 \n",
+        "index":10,
+        "page":1
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":432.3058166503906,
+        "x2":560.3997802734375,
+        "y2":466.83056640625,
+        "text":"to other blending problems, and how computational tools can sup-\nport novices by enabling them to explore a structured design space \nquickly and efciently. \n",
+        "index":11,
+        "page":1
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":476.6407165527344,
+        "x2":401.7041015625,
+        "y2":491.7061767578125,
+        "text":"CCS CONCEPTS \n",
+        "index":12,
+        "page":1
+    },
+    {
+        "x1":317.9549560546875,
+        "y1":491.7388000488281,
+        "x2":560.4422607421875,
+        "y2":515.7239379882812,
+        "text":"\u2022 Human-centered computing \u2192 Interactive systems and \ntools. \n",
+        "index":13,
+        "page":1
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":525.1137084960938,
+        "x2":382.54779052734375,
+        "y2":540.17919921875,
+        "text":"KEYWORDS \n",
+        "index":14,
+        "page":1
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":540.2127685546875,
+        "x2":511.7818908691406,
+        "y2":552.8195190429688,
+        "text":"Computational design, Design tools, Iterative design \n",
+        "index":15,
+        "page":1
+    },
+    {
+        "x1":317.6600036621094,
+        "y1":560.7984619140625,
+        "x2":561.383056640625,
+        "y2":621.24462890625,
+        "text":"ACM Reference Format: \nLydia B. Chilton, Ecenaz Jen Ozmen, Sam Ross, and Vivian Liu. 2021. VisiFit: \nStructuring Iterative Improvement for Novice Designers. In CHI Conference \non Human Factors in Computing Systems (CHI \u201921), May 8\u201313, 2021, Yokohama, \nJapan. ACM, New York, NY, USA, 14 pages. https://doi.org/10.1145/3411764. \n3445089 \n",
+        "index":16,
+        "page":1
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":638.32568359375,
+        "x2":423.4132385253906,
+        "y2":653.3911743164062,
+        "text":"1 INTRODUCTION \n",
+        "index":17,
+        "page":1
+    },
+    {
+        "x1":317.9549560546875,
+        "y1":653.4247436523438,
+        "x2":561.7793579101562,
+        "y2":709.8665161132812,
+        "text":"Iterative improvement is the essence of the iterative design process. \nNo design is perfect at inception, thus iteration through prototypes \nis necessary to improve it. If a prototype passes an evaluation, it \nshould become a new, higher fdelity prototype that can be tested \nand potentially iterated upon again. In case studies of improved \n",
+        "index":18,
+        "page":1
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":60.00357437133789,
+        "x2":559.9423828125,
+        "y2":69.30662536621094,
+        "text":"CHI \u201921, May 8\u201313, 2021, Yokohama, Japan \nChilton, et al. \n",
+        "index":19,
+        "page":2
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":83.56178283691406,
+        "x2":297.7138671875,
+        "y2":698.9085083007812,
+        "text":"software usability by the Nielsen Norman Group [40], median im-\nprovement per stage of iteration was 38%, leading to overall usability \nimprovements of 165%. Iteration is not just an aspect of usability \nengineering, it is a fundamental part of the design process that \ngeneralizes across many domains. In web design, designers start \nwith a wireframe prototype and move to a minimum viable prod-\nuct. In mechanical design, designers improve upon initial proofs \nof concept by iterating upon features and prototype reliability. In \ngraphic design, designers sketch prototypes and then move onto \nhigher-fdelity mockups. In each domain, iteration looks diferent, \nbut the objective is the same \u2013 to extend the prototype to move \ncloser to the goal. To help novice designers in a meaningful and \npractical way, we need tools to support iteration. \nAlthough there are many existing tools that support other phases \nof the design process such as brainstorming, prototyping, evalua-\ntion, and fnal design execution, there is a lack of tools focusing on \niteration [17]. Only 6% of 148 creativity support tools from 1999-\n2018 focus on iteration. Iteration tools are similar to brainstorming \nand prototyping tools in that they help people explore a design \nspace. However, they are more difcult to build because they have \nmore constraints. Unlike general prototyping tools, iterating on \nprototypes must be constrained further to build on ideas that were \nvalidated in the previous prototypes. Iteration still involves search-\ning the design space, but the tools that were previously used to \nexplore an expansive design space are not the right tools to explore \na more constrained one. \nLike all prototyping tools, iteration tools must be domain-specifc \nso they can efectively operate on the materials of that domain. We \nfocus on the difcult design challenge of making visual blends [3]. \nVisual blends are an advanced graphic design technique used to \nconvey a message visually in journalism, advertising, and public \nservice announcements. They combine two visual symbols into \none object to convey a new meaning. For example, in Figure 1 \nthe Guggenheim Museum is blended with an acorn to convey the \nmessage \u201cVisit New York City this autumn\u201d. Visual blends are a \ncanonical example of a creative design challenge [25, 43] because \nthey are open-ended enough to encapsulate all aspects of the design \nprocess, but well-defned enough to test in a short time frame. \nMoreover, cognitive scientists consider blending to be an important \naspect of general creativity for its ability to \u201ccreate new meaning out \nof old.\u201d [15] Currently, tools already exist to help people brainstorm \nand create initial prototypes [9] by fnding the right images and \narrangements to use for the blend. However, visual blends generally \nrequire an expert with Photoshop skills to execute the design and \nit would be faster, easier, and more empowering for novices to \nimprove blends by themselves, without relying on an expert. \nWe perform several formative studies to learn how experts ap-\nproach the iterative improvement of visual blends. From an analysis \nof blends created by experts and a participatory design process with \ngraphic designers, we learned that blends do not simply blend the \nsurface-level style of two objects, they combine the secondary visual \ndimensions of both objects such as silhouette, color and internal \ndetails. Based on this observation, we present a method for structur-\ning the iterative improvement process of blends based on secondary \ndesign dimensions. In this method, the improvement process is frst \nbroken into stages that blend each of the dimensions separately. \n",
+        "index":20,
+        "page":2
+    },
+    {
+        "x1":317.65899658203125,
+        "y1":83.56178283691406,
+        "x2":561.7948608398438,
+        "y2":249.59152221679688,
+        "text":"Then the results of each stage are combined into a single blended \noutput. \nWe present VisiFit \u2013 a computational design tool that allows \nnovice graphic designers to improve a prototype of a visual blend. A \nprior system called VisiBlends [9] helps novices create rough initial \nprototypes of blends by overlaying two objects with the same shape. \nVisiFit helps users refne those rough prototypes into seamless and \naesthetic blends. VisiFit structures the process of creating second \niterations by introducing a pipeline of computational tools that \nallow users to quickly and easily edit secondary design dimensions. \nFigure 1 shows two examples of the VisiBlends output and the \nresult of novices using VisiFit to improve them in under 4 minutes. \nOur evaluation shows that novices can quickly and easily iterate \non prototypes to create seamless and aesthetic blends. \nThis paper makes the following contributions: \n",
+        "index":21,
+        "page":2
+    },
+    {
+        "x1":333.91766357421875,
+        "y1":253.5998077392578,
+        "x2":561.4767456054688,
+        "y2":419.6315612792969,
+        "text":"\u2022 Three preliminary investigations into the process of improv-\ning prototypes of visual blends: a demonstration of how \nfully automatic systems fail, an analysis of patterns used by \nprofessionals, and a co-design process with graphic artists. \n\u2022 Three design principles for a computational approach to \nimproving visual blends. \n\u2022 A method of using secondary design dimensions to structure \nthe improvement process. This method is grounded in the \nneuroscience of human visual object recognition. \n\u2022 VisiFit, a system that applies the method and design princi-\nples in a pipeline of computational tools. \n\u2022 An evaluation of VisiFit showing that in under 4 minutes, \nnovices can substantially improve blends in 76% of cases and \ncreate blends suitable to publish on social media in 70% of \ncases. \n",
+        "index":22,
+        "page":2
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":423.6388244628906,
+        "x2":560.4130249023438,
+        "y2":469.12255859375,
+        "text":"We conclude with a discussion of how secondary design dimen-\nsions can help structure iteration in other felds and how pipelines \nof computational design tools can support the iterative design pro-\ncess. \n",
+        "index":23,
+        "page":2
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":480.1687316894531,
+        "x2":424.471435546875,
+        "y2":510.9214782714844,
+        "text":"2 RELATED WORK \n2.1 Design Tools \n",
+        "index":24,
+        "page":2
+    },
+    {
+        "x1":317.7489929199219,
+        "y1":510.9588317871094,
+        "x2":561.7794799804688,
+        "y2":709.8665161132812,
+        "text":"Design tools and creativity support tools (CSTs) have a rich tradi-\ntion of accelerating innovation and discovery [49] by supporting \nthe design process. A survey of 143 papers from 1999-2018 on cre-\nativity support tools (CSTs) found that there are papers supporting \nall phases of the design process: ideation, exploration, prototyp-\ning, implementation, evaluation, and process/pipeline, and iteration. \n[17]. Many of these tools support more than one phase of the design \nprocess. However, not all phases of the design process are equally \nrepresented in the literature. In fact, a majority of these tools fo-\ncused on either very early or very late phases of the design process. \nOf the systems in the survey, 45% support ideation [30, 50, 59], \n41% support implementation, including high-fdelity tools [57] or \nlow-fdelity tools for prototyping or sketching [10, 21, 31, 32], and \n18% supported evaluation through feedback [36, 63] or expert an-\nnotation [51]. However, only 6% of the systems surveyed supported \niteration, and only 4% supported the related task of design man-\nagement or pipelines. More research is needed on how to support \niteration more efectively \u2014 that is, how to help designers improve \n",
+        "index":25,
+        "page":2
+    },
+    {
+        "x1":53.57500076293945,
+        "y1":60.00357437133789,
+        "x2":559.9425659179688,
+        "y2":69.30662536621094,
+        "text":"VisiFit: Structuring Iterative Improvement for Novice Designers \nCHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n",
+        "index":26,
+        "page":3
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":83.56178283691406,
+        "x2":296.4639892578125,
+        "y2":107.12753295898438,
+        "text":"on an initial prototype to get closer to their fnal design goal. Our \nwork in this paper focuses on this problem. \n",
+        "index":27,
+        "page":3
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":117.7777328491211,
+        "x2":166.9799041748047,
+        "y2":132.84320068359375,
+        "text":"2.2 Iteration Support \n",
+        "index":28,
+        "page":3
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":132.8767852783203,
+        "x2":297.70758056640625,
+        "y2":485.2095642089844,
+        "text":"Existing systems that explicitly aid iteration use a number of ap-\nproaches. One class of iteration applications uses crowds to iterate \ntowards better solutions [33]. This can be by mixing features of \nprevious designs [66], responding to community feedback [27], hir-\ning experts [45], or identifying weak points and fxing them [28]. \nAll of these use the strength of multiple people\u2019s viewpoints to \niterate. However, crowds can introduce errors and may be difcult \nto steer toward your particular vision. Therefore, it is often useful \nto provide designers with single user tools for iteration. \nAnother class of iteration tools has the user produce a prototype, \nand then computationally generate the rest of the design. If the \nuser is unhappy with the outcome, they can regenerate, alter their \ninput, or adjust parameters. Several applications apply this method \nto generate multi-tracked music from a simple input melody. This \ncan be done using rules and constraints [14, 61] or implicit patterns \nlearned by deep learning [35]. Having the computer generate out-\ncomes is especially usable for novices; it allows them to recognize \ngood outcomes, even if they cannot produce them. This seems to \nwork well in music, which has many mathematical rules, but it is \nunclear if it works as well in other domains. \nA third way to support iteration is to provide rich undo history \nto allow users control and freedom while exploring the design space. \nThis is often done in the drawing domain both for single users [39] \nand for multiple users who want to draw collaboratively [67]. In \nthe creative design process, exploration is clearly important [8], \nand supporting that is essential. In VisiFit, we use aspects of all \nthree of these approaches. We target key properties of the prototype \nthat need improving and focus iteration on these properties. We \nprovide computational tools to generate outcomes that novices \ncould not produce themselves. We allow users to explore design \nalternatives and to adjust parameters so they can achieve results \nthey are satisfed with. \n",
+        "index":29,
+        "page":3
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":495.8597106933594,
+        "x2":296.4490661621094,
+        "y2":510.9251708984375,
+        "text":"2.3 Computational Approaches to Design Tools \n",
+        "index":30,
+        "page":3
+    },
+    {
+        "x1":53.79742431640625,
+        "y1":510.9588317871094,
+        "x2":297.2725524902344,
+        "y2":709.8665161132812,
+        "text":"Computational tools have long been a promising approach to aid \ndesign because they can search a design space and help meet a \nconstraint. The power of computational or computer-aided design \nhas been shown in many felds such as: education [34], medicine \n[22], games [52], urban planning [5], and accessibility [18]. The \nsystem designer must defne the space and the search parameters, \nas well as provide design patterns for solutions that can be adapted \nto diferent inputs. [2, 64, 65] \nComputational design tools have had particularly strong adop-\ntion in graphic design problems like optimizing layout [7, 11, 41, 56], \nmaking icons [4, 6], and providing inspiration through mood \nboards [29, 60] and relevant examples [12, 30]. This is also true \nin the 3D domain, where computational tools can be used to search \na design space and create multiple mesh and texture variations of \nobjects (i.e. trees or airplanes) that can make computer generated \nscenes more diverse [37, 54]. Deep learning has also been applied \nto generate new designs that ft user specifcations [38, 62]. In this \npaper, we address a specifc kind of graphic design problem of that \n",
+        "index":31,
+        "page":3
+    },
+    {
+        "x1":317.65899658203125,
+        "y1":83.56178283691406,
+        "x2":561.4028930664062,
+        "y2":293.4285583496094,
+        "text":"requires blending two objects into one in order to convey a new \nmeaning. To our knowledge, none of the existing computational \ndesign tools have addressed this problem. \nAlthough these tools can be fully automatic, some of the most \nuseful tools are interactive and allow users to explore and guide \nthe process. We take much inspiration from Side Views [55], an \napplication that allows users to preview the efect of various im-\nage editing menu options, like those in Photoshop. By providing \npreviews, users are able to recognize rather than recall the right \ntool to use. This also helps users adjust parameters of key proper-\nties and chain tools together to explore an even wider section of \nthe search space. In VisiFit, we also take the interactive approach \nto computational design. Like Side Views, VisiFit allows users to \npreview and adjust tools, as well as chain them together. However, \nVisiFit is not just a tool for exploration - it is targeted at achieving a \nspecifc goal; multiple tools are chained together in a pipeline that \nexplores each of the three key visual properties needed to complete \na blend. This allows the user to explore the design space and iterate \nin a structured fashion towards their goal. \n",
+        "index":32,
+        "page":3
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":309.5587158203125,
+        "x2":504.0751647949219,
+        "y2":324.6241760253906,
+        "text":"3 BACKGROUND: VISUAL BLENDS \n",
+        "index":33,
+        "page":3
+    },
+    {
+        "x1":316.9419860839844,
+        "y1":324.6578063964844,
+        "x2":561.7794189453125,
+        "y2":709.8665161132812,
+        "text":"Visual blends are an advanced graphic design technique where \ntwo objects are blended into one to convey a message symbolically. \nThey represent a canonical and very challenging design problem \n[3] because the two objects must be blended into one object, yet \nstill remain individually identifable so the viewer can tell what \nobjects were blended. When asked to defne design, Charles Eames \nonce said, \u201cDesign is a plan for arranging elements to accomplish a \nparticular purpose\u201d. [42] In a visual blend, the objects to blend are \nthe elements, the way they overlap is their arrangement, and the \nparticular purpose is the seamless blend of the objects to convey \na message. Because they are a difcult design challenge, visual \nblends are studied by several diverse felds. In cognitive science, \nresearchers study how creativity emerges from conceptual blending \n[43]. In visual communication, researcher study how visual blends \nconvey meaning through through context and implicature rather \nthan through explicit language [15, 16, 44, 58]. Creativity and cog-\nnition researchers study how computers might achieve creativity \nby creating visual blends [26]. \nAn existing system called VisiBlends [9] helps novices with the \nfrst step of the design process: creating a prototype. Figure 2 shows \nan illustration of the VisiBlends workfow to create a visual blend \nfor the message \u201cVisit New York this autumn\u201d. The user must frst \nidentify two abstract concepts to visually blend, for example, New \nYork City and autumn. Next, the users must brainstorm simple, \niconic objects associated with the concepts. From their list of asso-\nciated objects, they must fnd images of those objects that can serve \nas symbols of the concept. For each image, users annotate the main \nshape of the object (i.e. whether it is a sphere, cylinder, box, circle, \nor rectangle) and whether the shape covers \u201call of the object\u201d or \n\u201cpart of the object\u201d. With the images and annotations, VisiBlends \nautomatically searches over all pairs of objects to fnd two that have \nthe same basic shape, but for one object the shape covers only \u201cpart \nof the object\u201d. It then automatically synthesizes a prototype of the \nblend by cropping, scaling, positioning and rotating the objects to \nft together. For example, in Figure 2 the acorn is a cylinder and \n",
+        "index":34,
+        "page":3
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":60.00357437133789,
+        "x2":559.9423828125,
+        "y2":69.30662536621094,
+        "text":"CHI \u201921, May 8\u201313, 2021, Yokohama, Japan \nChilton, et al. \n",
+        "index":35,
+        "page":4
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":83.6822509765625,
+        "x2":558.2109375,
+        "y2":478.8340148925781,
+        "text":"<image: DeviceRGB, width: 1782, height: 1396, bpc: 8>",
+        "index":36,
+        "page":4
+    },
+    {
+        "x1":53.7979736328125,
+        "y1":489.0193786621094,
+        "x2":560.4444580078125,
+        "y2":523.3158569335938,
+        "text":"Figure 2: An illustration of VisiBlends workfow that helps people create prototypes for a blend representing \u201cVisit New York \nthis autumn.\u201d. The VisiBlends prototypes convey the idea, but are often very rough. The goal of VisiFit is to improve these \ninitial prototypes into seamless and aesthetic blends. \n",
+        "index":37,
+        "page":4
+    },
+    {
+        "x1":53.57400131225586,
+        "y1":546.1567993164062,
+        "x2":297.71234130859375,
+        "y2":701.2295532226562,
+        "text":"the \u201cpart of\u201d the Guggenheim is also a cylinder. Thus, the acorn is \npositioned onto the cylindrical part of the Guggenheim to produce \na blend prototype where both the acorn and the Guggenheim are \nvisible. Lastly, the user selects the best prototype based on the shape \nft and the meaning implied by the blend. Once the user selects a \nprototype, they must complete the fnished design either on their \nown or by hiring a graphic artist. \nThe reason VisiBlends matches objects on shape is based on the \nneuroscience of human visual object recognition. The human visual \nobject recognition system is hierarchical in what features it uses to \nrecognize an object [53]. 3D shape is the primary feature used by the \nbrain to determine what an object is; after that, it uses secondary \nfeatures like color, distinct edges and surface information [46]. \nBy combining two objects that have the same shape but diferent \n",
+        "index":38,
+        "page":4
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":546.1567993164062,
+        "x2":560.4425048828125,
+        "y2":580.679443359375,
+        "text":"secondary details, the objects will appear blended into one, yet still \nindividually identifable \u2013 which is one of the major challenges of \ncreating a visual blend. \n",
+        "index":39,
+        "page":4
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":589.1756591796875,
+        "x2":525.2279663085938,
+        "y2":617.1902465820312,
+        "text":"4 FORMATIVE STUDIES OF BLENDING \nITERATION \n",
+        "index":40,
+        "page":4
+    },
+    {
+        "x1":317.6860046386719,
+        "y1":617.2257690429688,
+        "x2":560.6317749023438,
+        "y2":662.70849609375,
+        "text":"To explore approaches to iteration we conducted three preliminary \ninvestigations that informed the three design principles we propose \nfor improving blends. We tie it all together into a general technique \nfor structuring the iterative improvement of blends. \n",
+        "index":41,
+        "page":4
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":671.2026977539062,
+        "x2":529.842529296875,
+        "y2":686.2681884765625,
+        "text":"4.1 \nShortcomings of Deep Style Transfer \n",
+        "index":42,
+        "page":4
+    },
+    {
+        "x1":317.6409912109375,
+        "y1":686.3017578125,
+        "x2":560.5692138671875,
+        "y2":709.865478515625,
+        "text":"Advances in deep learning have shown impressive results in manip-\nulating images. An early and prominent result is deep style transfer \n",
+        "index":43,
+        "page":4
+    },
+    {
+        "x1":53.57500076293945,
+        "y1":60.00357437133789,
+        "x2":559.9425659179688,
+        "y2":69.30662536621094,
+        "text":"VisiFit: Structuring Iterative Improvement for Novice Designers \nCHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n",
+        "index":44,
+        "page":5
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":83.56178283691406,
+        "x2":296.5586242675781,
+        "y2":150.96255493164062,
+        "text":"[19] which trains a model on a visual style, such as Van Gogh\u2019s \nStarry Night, and applies that style on any image to make it look \nlike Van Gogh painted it in the Starry Night style. This technique \nhas the potential to automatically improve prototypes of visual \nblends by training on the style of one object and applying it to \nanother. \n",
+        "index":45,
+        "page":5
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":166.55487060546875,
+        "x2":305.99591064453125,
+        "y2":319.1319885253906,
+        "text":"<image: DeviceRGB, width: 962, height: 582, bpc: 8>",
+        "index":46,
+        "page":5
+    },
+    {
+        "x1":53.797943115234375,
+        "y1":329.3163757324219,
+        "x2":296.58123779296875,
+        "y2":407.44061279296875,
+        "text":"Figure 3: Blends created by Fast Style Transfer (top) com-\npared to blends produced by an artist (bottom). The FST \nblends fail because this problem cannot be solved with an \nindiscriminate, global application of one object\u2019s style onto \nanother. Experts take apart and blend objects in a more nu-\nanced way, preserving relevant characteristics of each object \nto keep each one identifable in the fnal blend. \n",
+        "index":47,
+        "page":5
+    },
+    {
+        "x1":53.52899932861328,
+        "y1":434.246826171875,
+        "x2":297.71923828125,
+        "y2":709.8665161132812,
+        "text":"To explore the potential of deep style transfer, we took four \nblend prototypes from the VisiBlends test set, and applied deep \nstyle transfer to them. For each pair of images in the blend, we \nselected which object to learn the style of and which object to apply \nthe style to. We used an implementation of style transfer from the \npopular Fast Style Transfer (FST) paper [19] which only requires \na single image to learn style from and has impressive results on \ntransferring artistic style. We tried multiple combinations of hyper-\nparameters (epochs, batch size, and iterations) until we saw no \nnoticeable improvements in the results. We also tried input images \nof the same object and diferent ways of cropping it, in case the \nalgorithm was sensitive to any particular image. \nAlthough the algorithm was able to extract styles and apply \nthem, the results fell far short of the bar for creating convincing \nblends. Figure 3 shows Deep Style Transfer results (top) and blends \nmade by artists we commissioned to produce high fdelity blends. \nTo blend orange and baseball, FST frst learned the orange style. \nHowever, when it applied that learned style to the baseball, while it \npreserved the baseball\u2019s characteristic red seams, it simply turned \nits white texture into a blotchy orange color that is not reminiscent \nof the fruit. In contrast, the artist who blended it used the texture \nand stem of the orange, in addition to the red seams of the baseball. \nThis made both objects highly identifable. The computer used \nthe overall look of the orange, but didn\u2019t separately consider its \nelements as it mixed and matched the parts. \n",
+        "index":48,
+        "page":5
+    },
+    {
+        "x1":317.62298583984375,
+        "y1":83.56178283691406,
+        "x2":560.7249145507812,
+        "y2":348.22357177734375,
+        "text":"Similarly, for the apple and burger blend, the burger style applied \nto the apple just turned the apple brown, because the predominant \ncolor of a burger is brown. We also explored what would happen if \nwe isolated part of the image by hand and applied the style only \nwithin that area. To mimic the artist, we isolated the burger bun \nand applied the apple style to it. The results are better, but still \ndisappointing. Although the burger has the color and texture of \nan apple, it does not appear as blended as the artist\u2019s version. The \nartist chose to mix the apple color and the bun color to give a sense \nof both objects in that element. \nWe conclude that these existing style transfer results do not \neasily apply to visual blends. Blends are not just about applying \nhigh-level \u201cstyle\u201d, they require designers to consider the individual \nelements and how they might be ft together. If we trained a model \non thousands of visual blends, we might be able to make progress on \nthis problem, but we would need to create those thousands of visual \nblends, and even so, results would not be guaranteed. Instead we \nwant to explore semi-automatic approaches that augment people\u2019s \nability to create blends. \nDesign Principle 1. To help users achieve better results \nthan fully automatic systems, structure the problem into \nsubtasks and provide interactive tools specifc to each sub-\ntask. Fully automatic tools do not always achieve desired results \nand give you little control in how to fx them. \n",
+        "index":49,
+        "page":5
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":364.5627136230469,
+        "x2":500.1478576660156,
+        "y2":379.628173828125,
+        "text":"4.2 Analysis of professional blends \n",
+        "index":50,
+        "page":5
+    },
+    {
+        "x1":317.6860046386719,
+        "y1":379.66180419921875,
+        "x2":561.870849609375,
+        "y2":644.322509765625,
+        "text":"To investigate potential structures for improving blends we ana-\nlyzed how professional artists improved prototypes. We paid three \nprofessional artists to make visual blends based on 13 prototypes \nmade by novices using VisiBlends. Of those 13 images, the artists \ntold us that two did not need editing because the output from Vis-\niBlends was a perfectly acceptable blend. However, the other 11 \nblends needed signifcant iteration. \nIn our analysis of professionally improved blends, we looked \nfor secondary visual dimensions experts used to improve visual \nblends. As discussed in the Background section, VisiBlends creates \nprototypes by matching two objects with the same basic shape. \nThis is because neuroscience has discovered that the human visual \nobject recognition system is hierarchical in what features it uses \nto recognize an object: the primary feature it uses to recognize \nand object is its basic 3D shape, and the secondary features it uses \nto recognize an object are color, distinct edges, and surface infor-\nmation. If prototypes of blends are made by blending the primary \nfeature used to recognize and object, then it is logical to improve \nprototypes by blending the secondary features used to recognize \nan object. \nWe performed this visual dimension-based analysis on the 11 \nimproved blends and found that three visual properties were suf-\nfcient to explain almost all of the improvements the artists made. \nFigure 4 shows examples of these dimensions: \n",
+        "index":51,
+        "page":5
+    },
+    {
+        "x1":333.92413330078125,
+        "y1":653.4247436523438,
+        "x2":560.4515380859375,
+        "y2":709.8665161132812,
+        "text":"\u2022 Color: The frst row shows the result of blending a red Lego \nbrick and a diamond ring. The initial blend has good shape \nft, but the artist improved the blend by adding the color of \nthe diamond back into the Lego. This creates the illusion of \ndiamond-like facets into the Lego. \n",
+        "index":52,
+        "page":5
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":60.00357437133789,
+        "x2":559.9423828125,
+        "y2":69.30662536621094,
+        "text":"CHI \u201921, May 8\u201313, 2021, Yokohama, Japan \nChilton, et al. \n",
+        "index":53,
+        "page":6
+    },
+    {
+        "x1":69.76065063476562,
+        "y1":83.56178283691406,
+        "x2":297.6209411621094,
+        "y2":227.67556762695312,
+        "text":"\u2022 Silhouette: The second row shows the result of blending an \noblong Lego brick and a popsicle. The initial blend is decent, \nbut the artist improved it by applying the silhouette of the \npopsicle back into the Lego. (Additionally, they blended the \ncolor of the popsicle back into the Lego. This lends a textured, \npopsicle-like red color to the Lego, rather than a smooth \nplastic-like red.) \n\u2022 Internal Details: The third row shows the result of blending \nan orange with the head of a snowman. The initial blend is \nclearly a low-fdelity prototype \u2014 the idea is clear, but the \ndetails are unrefned. In addition to applying the color and \nsilhouette of the snowman head, they extracted the facial \ndetails of the snowman head and placed them on the orange. \n",
+        "index":54,
+        "page":6
+    },
+    {
+        "x1":53.79667663574219,
+        "y1":231.4018096923828,
+        "x2":296.45703125,
+        "y2":342.6385498046875,
+        "text":"Throughout all the examples, we found that artists used one or \nmore of these three secondary visual dimensions to improve the \nprototypes. Note that these dimensions are largely independent of \none another. Thus, we believe that the three visual dimensions can \nbe used together to guide the process of improving prototypes. \nDesign Principle 2. Identify secondary dimensions of the \ndesign space to structure the iteration process. For visual \nblends, the key secondary dimension are: color, silhouette and \ninternal details. We refer to this method as using secondary design \ndimensions. \n",
+        "index":55,
+        "page":6
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":353.39471435546875,
+        "x2":236.80906677246094,
+        "y2":368.4601745605469,
+        "text":"4.3 Co-Design with Graphic Artists \n",
+        "index":56,
+        "page":6
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":368.4927978515625,
+        "x2":296.80230712890625,
+        "y2":709.8665161132812,
+        "text":"The three visual dimensions provide high-level structure for im-\nproving blends, but we wanted to know if there were actionable \nactivities associated with this structure that are useful when im-\nproving blends. To investigate this, we worked with two graphic \nartists in multiple one-hour sessions over a period of three weeks \nto observe and probe their process. Both designers worked in Pho-\ntoshop and had created numerous print ads although neither had \nmade visual blends before. The goal of these sessions was to in-\ntroduce them to the secondary visual dimensions and to see a) if \nthey found them useful to structure their process, b) what actions \nthey took to improve the blends based on these dimensions, and c) \nwhether novices would be able to replicate their success. \nTo familiarize the artists with the concept of visual blends, we \nshowed them examples of professionally made blends and asked \nthem to recreate two of them in Photoshop. They found the task \nchallenging, but through trial and error they were ultimately satis-\nfed with their results. Next, we introduced them to the principles \nof blending based on color, silhouette and details. We discussed \nwith them how we thought those principles could have been used \nto create the blends. Then we gave the artists prototypes of blends \nand asked them to improve them, referencing the visual dimensions \nwhen applicable. \nThe concepts of color, silhouette, and internal details were in-\ntuitive to the artists, and they readily used them to improve the \nblends. Blending color was a familiar idea to them, and it was very \neasy for them to do in Photoshop. An efective tool one artist used \nfor blending was the \"Multiply\" feature, which preserved both the \ncolor and the texture of each object, as seen in the top row of Figure \n4. Both artists were surprised at how efectively silhouettes could \nbe used in blends. They tried using the concept of silhouette blend-\ning in blends such as the middle row of Figure 4 and were pleased \n",
+        "index":57,
+        "page":6
+    },
+    {
+        "x1":317.62298583984375,
+        "y1":83.56178283691406,
+        "x2":561.8682250976562,
+        "y2":545.4835205078125,
+        "text":"with the results. The idea of extracting and reapplying details was \nnatural to them, as they had employed analogous features in Photo-\nshop (i.e. magic wand) to manipulate details before. However, even \nwith industry tools, extraction was often tedious. In general, both \ndesigners thought that if they worked on the basis of these visual \ndimensions, they could recreate any visual blend. \nThe artists both note that there were additional techniques they \nwould use to produce and even higher fdelity blends. One artist \nmentioned the addition or removal of shadows. The other men-\ntioned making a background that would complement the blend. \nHowever, when restricted to these three visual dimensions, they \ncould produce a second iteration with substantially reduced seams \nand enhanced aesthetic quality. If they were producing a pixel-\nperfect print ad, they would want to do a third iteration. \nAs we observed the artists using Photoshop to execute their \nimprovements, we noticed two parts of their process that novice \ndesigners would struggle to replicate. First, almost all of the tools the \nartists used in Photoshop are not available in the typical applications \nnovices use to quickly edit images. The simple flters, cropping, \nand movement aforded by Instagram, presentation software, and \nMac Preview aren\u2019t enough to improve blends. Even simple color \nchanging operations like \"Multiply\" are not available in most end-\nuser tools. This is probably because most end-user tools focus on \noperations that can be applied to one image at a time. For blending, \noperations have to apply to two objects. Second, these tools often \nrequire multiple steps and tedious low-level manipulation. Applying \nthe silhouette from one object to another is a process with multiple \nsteps including positioning, object extraction, appropriate layer \ncomposition, and edge cleanup. Extracting details like the snowman \nface are tedious, even with the magic wand tool, which largely \noperates based on pixel color similarity. Instead of making users \nthink in pixels, we want to provide higher-level abstractions, such \nas the separation of foreground from background or the separation \nof details from a base. To create operations that novices can use, we \nneed to provide tools at a higher-level of abstraction than pixels. \nDesign Principle 3. Provide novices with high-level tools \nrelated to the secondary visual dimensions that can preview \nresults without requiring expert knowledge or tedious, low-\nlevel manipulation. In VisiFit, these tools include (1) extracting \nand applying silhouettes, (2) blending colors between two objects, \nand (3) extracting and replacing internal details from one object to \nanother. \n",
+        "index":58,
+        "page":6
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":561.6137084960938,
+        "x2":419.9005432128906,
+        "y2":576.67919921875,
+        "text":"5 VISIFIT SYSTEM \n",
+        "index":59,
+        "page":6
+    },
+    {
+        "x1":317.6860046386719,
+        "y1":576.7127685546875,
+        "x2":561.4736938476562,
+        "y2":709.8665161132812,
+        "text":"To help novices iteratively improve visual blends, we created a \nsystem called VisiFit that leverages computational tools to help \nusers easily extract and combine visual properties of each image \ninto a blend. First the user improves the cropping of each image, \nthen improves the three secondary visual dimensions one at a \ntime. At each step, they are presented with blend options that are \nautomatically created by the system. However, they are free to \ninteractively edit them. VisiFit is implemented as a Flask-based web \napplication. It uses Numpy, OpenCV, and Tensorfow [1]. It builds \non the Fabric.js canvas element to implement interactive image \nmanipulation. Figure 5 shows the fve steps of the interface in the \norder that users see them. \n",
+        "index":60,
+        "page":6
+    },
+    {
+        "x1":53.57500076293945,
+        "y1":60.00357437133789,
+        "x2":559.9425659179688,
+        "y2":69.30662536621094,
+        "text":"VisiFit: Structuring Iterative Improvement for Novice Designers \nCHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n",
+        "index":61,
+        "page":7
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":83.6839599609375,
+        "x2":558.2051391601562,
+        "y2":358.9360046386719,
+        "text":"<image: DeviceRGB, width: 2276, height: 1242, bpc: 8>",
+        "index":62,
+        "page":7
+    },
+    {
+        "x1":53.79791259765625,
+        "y1":369.1203918457031,
+        "x2":560.6954345703125,
+        "y2":403.4168701171875,
+        "text":"Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially \nblended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting \nimproved blend. \n",
+        "index":63,
+        "page":7
+    },
+    {
+        "x1":53.50199890136719,
+        "y1":426.2588195800781,
+        "x2":296.3319091796875,
+        "y2":449.82354736328125,
+        "text":"Inputs. VisiFit takes in two inputs that are both outputs from \nVisiBlends: \n",
+        "index":64,
+        "page":7
+    },
+    {
+        "x1":64.70359802246094,
+        "y1":457.6498107910156,
+        "x2":297.3135070800781,
+        "y2":579.8455200195312,
+        "text":"(1) An ordered pair of images that have a shape match. We refer \nto them as Object A and Object B. In Object A, the shape \ncovers the entire object. In Object B, the shape covers only \nthe main body of the object, leaving out parts of the object \noutside the shape. When blending the images, Object A will \nbe mapped onto Object B. \n(2) The positioning parameters to align Object A to the shape \nin Object B: x-scale factor, y-scale factor, angle of rotation, \nand center position. In the prototype of the blend, Object \nA is cropped, scaled, and positioned to ft into the shape of \nObject B. \n",
+        "index":65,
+        "page":7
+    },
+    {
+        "x1":53.52899932861328,
+        "y1":587.6707763671875,
+        "x2":297.6219482421875,
+        "y2":709.8665161132812,
+        "text":"Step 1. Extract main shapes When the page loads, the system \nshows Object A and the results of automatic cropping. Object A is an \nimage of a single object that we want removed from its background. \nThis is a classic computer vision problem: segmenting the salient \nobject in an image. Deep learning approaches have been reported \nto be a fast and accurate approach to automatic object extraction, \nso we use the Tensorfow implementation of a pre-trained model \nfor deeply supervised salient object detection [24] and use the mask \nit provides to crop the images. \nThe user sees the output for Object A and decides if it is accept-\nable. If it is, they select it and move to the next step. If not, they \n",
+        "index":66,
+        "page":7
+    },
+    {
+        "x1":317.6860046386719,
+        "y1":426.2588195800781,
+        "x2":561.38232421875,
+        "y2":701.87646484375,
+        "text":"can decide to improve the object using Interactive Grabcut [47], a \ntraditional computer vision algorithm for foreground extraction. \nFor Object B, users must use Interactive Grabcut to extract the \nmain shape from the image. Our provided interface for Interactive \nGrabcut has users frst draw a rectangle that encloses the entire \nobject to extract. Then it produces a foreground extraction shown \nto users, who can mark extraneous pieces for removal by drawing \non the image and running Grabcut again. \nWe used a classic interactive approach rather than a fully au-\ntomatic approach because identifying parts or shapes within an \nimage is very difcult. Traditional automatic approaches like Hough \nTransforms [13] do not work well on most images. Deep learning \napproaches are fairly good at segmenting objects within images \n[20] but are not yet capable enough at identifying the internal parts \nof objects. \nStep 2. Automatically align objects and adjust position. Af-\nter both objects have had their main shape cropped, the system \nautomatically produces a new prototype using simple afne trans-\nformations that move, scale, position, and rotate the objects. Users \nare free to adjust the alignment with direct manipulation on the \nFabric.js HTML5 canvas, just as they would in any image editing \napplication. \nStep 3 Select a silhouette option. When blending two objects, \nthe blend can use the silhouette of either Object A or B, because \nthey are very close in shape and size. The system automatically \n",
+        "index":67,
+        "page":7
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":60.00357437133789,
+        "x2":559.9423828125,
+        "y2":69.30662536621094,
+        "text":"CHI \u201921, May 8\u201313, 2021, Yokohama, Japan \nChilton, et al. \n",
+        "index":68,
+        "page":8
+    },
+    {
+        "x1":60.43199920654297,
+        "y1":83.68695068359375,
+        "x2":287.4183044433594,
+        "y2":507.7309875488281,
+        "text":"<image: DeviceRGB, width: 675, height: 1261, bpc: 8>",
+        "index":69,
+        "page":8
+    },
+    {
+        "x1":53.7979736328125,
+        "y1":517.9164428710938,
+        "x2":297.8185729980469,
+        "y2":628.9114379882812,
+        "text":"Figure 5: The fve steps of the VisiFit pipeline for improving \nblends. In steps 1 and 2, the user extracts the main shape \nof both objects and adjusts their overlap. In steps 3-5, the \nuser blends the images. There are two options for selecting \na silhouette, fve options for color blending (only four are \nshown), and a tool to select and re-apply internal details. \nEach step builds on the selected output from the previous \nstep (indicated by a blue border.) Once the user is happy with \nthe blend, they select it as the fnal output (indicated in a \ngreen border.) \n",
+        "index":70,
+        "page":8
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":653.4247436523438,
+        "x2":296.329833984375,
+        "y2":709.8665161132812,
+        "text":"creates two versions of the blend - one with the silhouette of Object \nA and one with the silhouette of Object B. The user must select \nwhich silhouette looks better. \nTo create the two silhouetted prototypes, the system uses the \ninverses of the cropped images from Step 1, layers one inverse on \n",
+        "index":71,
+        "page":8
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":83.56178283691406,
+        "x2":560.588623046875,
+        "y2":161.92153930664062,
+        "text":"top of the other original image, and positions them according to \nthe coordinates in Step 2. This efectively creates a mask to produce \nthe silhouette of the object. \nStep 4. Select and adjust color blending options. Color is \nthe next dimension to include in the blend. There are 5 options for \ncolor blending. The user can keep the original colors, or use one of \nfour adjustable tools to blend on the colors of objects: \n",
+        "index":72,
+        "page":8
+    },
+    {
+        "x1":333.91766357421875,
+        "y1":163.87977600097656,
+        "x2":561.8699340820312,
+        "y2":439.50054931640625,
+        "text":"\u2022 Transparency. We layer Object A onto Object B with 50% \ntransparency to allow the colors of both objects to come \nthrough, although somewhat weakly. The user can adjust \nthe transparency level with a slider. \n\u2022 Color Blend. We use K-means clustering to determine the \nmost common color in the main shape of Object B. We then \ndo an additive color blend with the color of Object A. This \nonly works well when one object is very light - otherwise \nthe color turns very dark. \n\u2022 Multiply colors. Multiplying two images is a way to combine \ncolors in a way that preserves characteristics from both. \nWhereas transparency will always balance between the two, \nmultiplication blends both of the colors (and their shadings) \nsimultaneously. All three examples in Figure 4 use multiply \nto blend colors. For example, in the Lego and ring example, \nmultiplying colors allowed the Lego to take on the red color \nand keep the shading of both objects so that the facets of the \ndiamond and the bumps on the Lego can both be seen. \n\u2022 Replace color. We use K-means clustering to determine the \nmost common colors in the main shapes of Object A and B. \nWe replace Object A\u2019s most common color with Object B\u2019s \nmost common color and provide users with an adjustable \nthreshold controlling the degree of color replacement. They \ncan also choose to blend the image with colors they select \nfrom an eye dropper tool (not shown in Figure 5). \n",
+        "index":73,
+        "page":8
+    },
+    {
+        "x1":317.52447509765625,
+        "y1":441.45880126953125,
+        "x2":561.7794799804688,
+        "y2":662.2845458984375,
+        "text":"Step 5. Select and re-apply internal details to blend. The \nlast visual dimension to include is internal details - these are smaller \nobjects or salient features that help identify the object. In the snow-\nman and orange blend, the snowman is not as iconic without his \nfacial details. Thus, we want to extract them from the original Ob-\nject B and place them back on Object A. Again, we use Interactive \nGrabcut to allow the user to select and refne what details to extract. \nWhile we could have used other tools such as context-aware select, \nGrabcut worked well on our test set and was a method users had \nalready become familiar with in earlier stages of the pipeline. \nVisiFit encourages users to follow a linear workfow through \neach of the tools. They can see efects previewed on their iteration \nand choose whether or not to include them. But users are not \nconstrained to one path through the pipeline; they can take multiple \npaths and add an unrestricted number of edits to the secondary \nvisual dimensions if they so choose. The linear workfow is the \ndefault because it allows users to start on a simple path through \ntheir structured iteration. At the end, the user selects the blend they \nare most satisfed with and the system fnishes by showing them \nthe initial blend and the improved blend side by side. \n",
+        "index":74,
+        "page":8
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":671.2026977539062,
+        "x2":406.5041198730469,
+        "y2":686.2681884765625,
+        "text":"6 EVALUATION \n",
+        "index":75,
+        "page":8
+    },
+    {
+        "x1":317.6860046386719,
+        "y1":686.3017578125,
+        "x2":560.723876953125,
+        "y2":709.865478515625,
+        "text":"To evaluate whether VisiFit helps novice designers substantially \nimprove prototypes of visual blends, we conducted a user study \n",
+        "index":76,
+        "page":8
+    },
+    {
+        "x1":53.57500076293945,
+        "y1":60.00357437133789,
+        "x2":559.9425659179688,
+        "y2":69.30662536621094,
+        "text":"VisiFit: Structuring Iterative Improvement for Novice Designers \nCHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n",
+        "index":77,
+        "page":9
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":83.56178283691406,
+        "x2":297.6254577636719,
+        "y2":381.09954833984375,
+        "text":"where participants used VisiFit to improve 11 VisiBlends prototypes. \nTwo experts then rated those blends to judge whether they were \nsubstantially improved over the initial prototype. \nTo choose the prototypes to improve, we frst listed all the blends \nmentioned in VisiBlends and found 15 candidates. Of these, 2 were \nalready good blends and did not need improvement. Two others had \nsignifcant similarities to blends used in the analysis and formative \nstudies, having blended upon the same or similar objects. Hence, \nthey would not have been fair to use in the evaluation and were \nthus excluded. This left an evaluation set of 11 diverse blends for \ndiferent objects. \nWe recruited 11 novice designers (7 female, average age = 21.5) \nfor a 1-hour long study who were paid $20 for their time. First, \nthey were introduced to the concept of visual blends and shown \nexamples of initial prototypes with their improved versions. Then, \nthey had two blends to practice using the tools on. During this prac-\ntice session, the experimenter answered questions, demonstrated \nfeatures, and gave suggestions on how to use the tool. \nIn the next 44 minutes, participants used the segmentation tools \nto extract the main objects from all 22 images (System Steps 1 and \n2) and blend the pairs into 11 improved blends (System Steps 3, 4, \nand 5). They had two minutes for Steps 1 and 2 and another two \nminutes for Steps 3, 4 and 5, for a total of 4 minutes to create each \nblend. All results were saved by the system. \nAfter the data was collected, we paid two expert graphic design-\ners $60 per hour to look at every iterated blend and answer two \nquestions for each of them: \n",
+        "index":78,
+        "page":9
+    },
+    {
+        "x1":69.76065063476562,
+        "y1":383.05780029296875,
+        "x2":296.3320007324219,
+        "y2":428.54156494140625,
+        "text":"\u2022 Does the iterated blend present substantial improvement \nover the prototype? \n\u2022 Is the iterated blend of sufcient quality to post on social \nmedia? \n",
+        "index":79,
+        "page":9
+    },
+    {
+        "x1":53.7979736328125,
+        "y1":430.49981689453125,
+        "x2":297.7138977050781,
+        "y2":629.4075317382812,
+        "text":"The most important question to answer was the frst one: does \nthe tool help with substantial improvements? Small faws in the \nexecution were allowed, but the objects had to be seamlessly and \naesthetically blended to count as an improvement. Our second \nquestion was how often these iterated blends were good enough for \nsocial media publication (i.e. a student club announcement post). \nPublication would mean that both objects were clearly identifable \nand blended with no pronounced faws. \nSocial media is much more forgiving than print publication. Print \npublications must be pixel-perfect, well-lit, and high defnition. To \nmeet this bar, a graphic designer should still use a professional tool \nlike Photoshop. However, on social media, the images are often \nsmaller, lower resolution, published more frequently, and for a \nsmaller audience (such as student clubs, classes or majors) - so \nperfection is not as important. Additionally, the prevalence of low-\nfdelity user-generated content like memes and self-shot videos \nlowers the expectation of precision on social media, placing the \nemphasis on the message. \n",
+        "index":80,
+        "page":9
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":638.32568359375,
+        "x2":117.74713897705078,
+        "y2":653.3911743164062,
+        "text":"6.1 Results \n",
+        "index":81,
+        "page":9
+    },
+    {
+        "x1":53.59590148925781,
+        "y1":653.4247436523438,
+        "x2":296.2428894042969,
+        "y2":709.8592529296875,
+        "text":"During the study, the 11 participants attempted to improve a total of \n121 blends. Six data points were lost due to errors in the saving pro-\ncess, leaving 115 blends as data points. The judges were introduced \nto their task with examples of prototypes and their VisiFit-improved \ncounterparts, like the pairs seen in Figure 4 (which were done by the \n",
+        "index":82,
+        "page":9
+    },
+    {
+        "x1":317.62298583984375,
+        "y1":83.56178283691406,
+        "x2":561.8707275390625,
+        "y2":709.8665161132812,
+        "text":"authors with graphic design background). For calibration, judges \nwere shown blends of varying quality, to demonstrate what was \nconsidered \"substantial improvement\" and what was considered \n\"suitable for publication on social media\". \nAfter studying the blends resulting from each participant, the \njudges answered our two questions for all VisiFit-improved blends. \nBoth questions on \"improvement\" and \"suitability for publication\" \nwere highly subjective; however, the raters had \u201cfair agreement\u201d on \nboth questions. They agreed on \u201csubstantial improvement\u201d 71.3% of \nthe time (\u03ba = .23) and agreed on \u201csuitability for publication\u201d 73.9% \nof the time (\u03ba = .37). In particular, there was one blend which they \ndisagreed on every time. Both raters had well-reasoned answers \nfor their diferences and rather than forcing them to agree or in-\ntroducing another rater, we split the diference and looked at the \noverall average rates of \"substantial improvement\" and \"suitability \nfor publication\" to report the success of the tool. \nOverall, people using the tool made substantial improvements \nto the blend 76.1% of the time. Additionally, those blends were of \npublishable quality 70.4% of the time. These metrics demonstrate \nhow VisiFit enables novices to quickly and easily complete a difcult \niteration task. \nJudges reported that blends were substantially improved when \nthe parts of the objects looked correctly layered. This efect was \nachieved in a number of ways through VisiFit: when the silhouette \ntool was used to mask one object and produce clean borders, when \nthe internal detail extraction tool foregrounded important parts of \nthe bottom image, (i.e. the acorn hat detail in the Guggenheim-acorn \nblend of Figure 1), or when the colors were blended compositely \n(i.e. the corn and McDonald\u2019s blend in Figure 6.) \nFor 10 of the 11 images, it was possible for at least one of the 11 \nparticipants to create an improved and publishable blend. There are \nseveral possible reasons why there was variability in user perfor-\nmance. One was subjectivity; some novice users were able to create \nhigh quality blends but chose versions that the judges did not rate \nas improvements. Judging one\u2019s own work is hard, because creators \ngrow attached to their work and struggle to see it objectively. \nA second and more important reason is the limitation of some \nof the tools. Cropping entire objects, applying a silhouette, and all \nfour methods of blending colors worked as expected every time. \nHowever, the Interactive Grabcut tools for extracting parts of ob-\njects was sometimes problematic, since some details were too small \nto extract properly. While Grabcut is fast and easy, it does not \nhave pixel-level precision. It often helped to improve the blend, \nbut it sometimes weakened their suitability for publication. The \nVisiFit-improved blend could still be used as a guide when creating \na pixel-perfect version in a professional image editing tool. For \nexample, for the blend of the orange slice and the barbeque grill \nfeatured in Figure 1, the idea of the blend is clear and improved, \nbut the execution had enough faws for it to be not suitable for \npublication. \nThere was one prototype that no user was able to improve. The \nburger and light bulb blend (Figure 6) left a seam between the burger \nand the light bulb every time. This example points out a limitation \nof VisiFit that we could fx this by implementing a fll tool to reduce \nthe appearance of seams. \nOverall, given the speed of the tool, participants thought that \nthe results were well worth the efort they put into it [8]. During \n",
+        "index":83,
+        "page":9
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":60.00357437133789,
+        "x2":559.9423828125,
+        "y2":69.30662536621094,
+        "text":"CHI \u201921, May 8\u201313, 2021, Yokohama, Japan \nChilton, et al. \n",
+        "index":84,
+        "page":10
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":83.56178283691406,
+        "x2":296.2428894042969,
+        "y2":107.12753295898438,
+        "text":"the study, several participants mentioned that the tool was fast and \nproduced results they would not otherwise know how to achieve. \n",
+        "index":85,
+        "page":10
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":127.7407455444336,
+        "x2":137.27442932128906,
+        "y2":142.80621337890625,
+        "text":"7 DISCUSSION \n",
+        "index":86,
+        "page":10
+    },
+    {
+        "x1":53.46406555175781,
+        "y1":142.8397979736328,
+        "x2":296.32171630859375,
+        "y2":243.11758422851562,
+        "text":"The two main contributions of this paper are 1) the method of using \nsecondary design dimensions to structure the iterative improve-\nment process and 2) the VisiFit system that helps novices improve \nblends with a pipeline of computational tools. In this discussion we \nwant to explore how the computational tools could generalize to the \nneeds of expert designers and how secondary design dimensions \ncan be applied to domains beyond visual blends. Additionally, we \ndiscuss the intellectual and engineering challenges that come with \napplying these ideas to new domains. \n",
+        "index":87,
+        "page":10
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":263.7307434082031,
+        "x2":270.5945739746094,
+        "y2":291.74530029296875,
+        "text":"7.1 Professional designers\u2019 impressions of \nVisiFit \n",
+        "index":88,
+        "page":10
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":291.78082275390625,
+        "x2":296.5615234375,
+        "y2":709.8665161132812,
+        "text":"Although VisiFit is meant to help novices, we co-designed it with \n2 graphic artists who were eager to use it as a rapid prototyping \ntool despite their prior domain knowledge. Thus, we wanted to see \nwhat impressions experts would have on the system and showed \nthe tool to two professional designers (D1 and D2). D1 is a media \ncommunications director at a medium-sized organization with over \ntwenty years of experience. D2 is a freelance graphic designer with \nover 10 years of experience. Both expressed a need to efciently \ncreate novel and eye-catching visuals for social media that are \nbeyond the quality produced by tools such as Canva. Both designers \nhad used visual blends in their professional work before, but did \nnot know the name for the concept and did not have a strategy for \nproducing them. \nWe presented them with the same blend examples from the user \nstudy and asked them to perform the same task: use the tool to \niterate on the blend prototypes and create seamless and aesthetic \nblends. Both were impressed by how quickly and easily the blend-\ning tools helped them explore the design space. All of the basic \noperations were familiar to them from their experience with Photo-\nshop, but they expressed surprise and relief to see results generated \nso quickly. D2 said \u201cSometimes I spend hours pixel pushing just to \ntest an idea. I love being able to test an idea quickly.\u201d. D1 likened \nit to flter previews on Instagram which she loves to use to make \nphotos more interesting on social media. Even for professional de-\nsigners who are adept at using pixel-perfect tools, there is a need to \nprovide high-level tools that can preview results without low-level \nmanipulation (Design Principle 3). \nWhen using VisiFit, both made blend improvements in a manner \ndiferent from novice designers. D1 especially liked to push the \nboundaries, to try extracting and blending the less obvious options \nwithin the secondary design dimensions. D1 almost always started \nby looking at the inputs and formulating a plan. However, as D1 \nproceeded through the workfow, she found better and more sur-\nprising ideas from the fare and focus nature of VisiFit. The system \nhelped D1 explore the design space while keeping multiple threads \nopen at a time. From this interaction, we believe that structuring \nblend improvement around secondary dimensions has value even \nfor professional designers (Design Principle 2). \n",
+        "index":89,
+        "page":10
+    },
+    {
+        "x1":316.445556640625,
+        "y1":83.56178283691406,
+        "x2":560.4898071289062,
+        "y2":293.4285583496094,
+        "text":"D2 was impressed by the way the computational tools worked \nand particularly so for object extraction. He found Interactive Grab-\ncut impressive in how efective it was on shape extraction but \nunimpressive in how unsuccessful it could be when selecting inter-\nnal details. After multiple attempts with the tool, he noted that he \nwould have preferred either better precision during user interaction \nor a better automatic approach. This raised an important limitation \n- VisiFit only provided one tool to extract internal details. Having a \nback-up tool (such as shaped-based cropping) could have relieved \nuser frustration. This reinforces Design Principle 1 - that automatic \ntools don\u2019t always achieve desired results - and stresses that the \nsystem must provide multiple interactive tools specifc for each \nsubtask so that users have control over the creative process. \nOverall, we believe that computational design tools for structured \niteration can be as useful to professional designers as they are to \nnovices. Both groups need to explore design spaces quickly and \neasily. Although experts have the ability to do this with existing \ntools, a pipeline of computational design tools could make this more \nefcient and attainable for designers of all experience levels. \n",
+        "index":90,
+        "page":10
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":302.3357238769531,
+        "x2":555.9916381835938,
+        "y2":317.40118408203125,
+        "text":"7.2 Generalization to other blending problems \n",
+        "index":91,
+        "page":10
+    },
+    {
+        "x1":317.5249938964844,
+        "y1":317.434814453125,
+        "x2":561.4182739257812,
+        "y2":384.8355712890625,
+        "text":"While the VisiFit system is tailored to the domain of visual blends, \nwe believe the method of editing secondary design dimensions \ncan be used to help novices structure the improvement process for \nother blending domains. We discuss three domains that it could be \ngeneralized to: animated visual blends, fashion design, and furniture \ndesign. \n",
+        "index":92,
+        "page":10
+    },
+    {
+        "x1":317.95489501953125,
+        "y1":390.4107971191406,
+        "x2":561.4396362304688,
+        "y2":710.14453125,
+        "text":"7.2.1 Animated Visual Blends. One way to further enhance visual \nblends is to add motion to them. Although it would be easy to add \narbitrary motion, it would be ideal if the motion complemented the \nmessage. The top panel of Figure 7 shows a visual blend for condom \nand action that implies the message \u201ccondoms are for action.\u201d (The \nclapperboard is a symbol of action.) This blend is already efective \nat conveying the message, but to enhance it we could add motion \nfrom the clapperboard onto the condom wrapper. We call this type \nof motion graphic an animated blend. \nWe propose that animated blends can be created by using sec-\nondary dimensions of motion to iterate on static blends. To start, we \nneed a reference video that shows typical motion made by one of the \nobjects in the blend. To structure the iteration, we can extract and \ntransfer dimensions of motion from this reference video. The impor-\ntant secondary design dimensions of motion include: the pattern of \nmotion (circular motion, path segments, appearance/disappearance, \nexpansion/contraction, or gradient changes), the speed of motion, \nacceleration, and timing of the motion. All or some of these dimen-\nsions of motion can be applied to create a seamless and aesthetic \nanimated blend. \nFigure 7 shows three animated blends. For each one, it shows \nthe static visual blend, the reference video of one or both objects \nin motion, and how these secondary dimensions of motion can be \nadded to the visual blend. For the condom and action animation, the \npattern of motion of the clapperboard (up-and-down path segments) \ncan be added to the blend to reinforce the message of \u201caction\u201d. For \nthe astronaut and food animation, the speed and arc of motion that \nthe real astronaut travels with can be applied to the static egg-\nastronaut blend. For the tea and sunrise animation, two reference \n",
+        "index":93,
+        "page":10
+    },
+    {
+        "x1":53.57500076293945,
+        "y1":60.00357437133789,
+        "x2":559.9425659179688,
+        "y2":69.30662536621094,
+        "text":"VisiFit: Structuring Iterative Improvement for Novice Designers \nCHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n",
+        "index":94,
+        "page":11
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":83.68519592285156,
+        "x2":558.218994140625,
+        "y2":337.2590026855469,
+        "text":"<image: DeviceRGB, width: 1850, height: 930, bpc: 8>",
+        "index":95,
+        "page":11
+    },
+    {
+        "x1":53.4483642578125,
+        "y1":347.4433898925781,
+        "x2":560.4444580078125,
+        "y2":381.7398681640625,
+        "text":"Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that \nwere deemed \u201cimproved and publishable\u201d. The second column shows three blends that were deemed \u201cimproved but not pub-\nlishable\u201d. The third column shows two blends that were deemed \u201cnot improved and not publishable\u201d. \n",
+        "index":96,
+        "page":11
+    },
+    {
+        "x1":53.46699905395508,
+        "y1":404.580810546875,
+        "x2":297.6224365234375,
+        "y2":526.7764892578125,
+        "text":"videos can be applied to the blend. First, the pattern of motion of \nthe tea bag (up-and-down path segments) can be applied to the sun. \nSecond, the pattern of motion of the sunrise (gradient change) can \nbe applied to the sky. Although transferring one type of motion \nwould be sufcient, adding two types of motion further enhances \nthe visual appeal and meaning of the blend. \nComputational tools would be needed to extract and reapply \nthe aforementioned dimensions of motion. Parameters for each \ndimension would become points of interactions for users. These \ntools could then be chained together into a pipeline similar to VisiFit \nto structure the iterative improvement of animated blends. \n",
+        "index":97,
+        "page":11
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":533.8197631835938,
+        "x2":296.2837829589844,
+        "y2":601.2205200195312,
+        "text":"7.2.2 Fashion and Furniture Design. In furniture and fashion de-\nsign, one type of problem is to combine diferent styles to achieve \na new purpose. One way to do this is arguably a type of blending -\nto borrow from the functional and stylistic elements of both styles \nto create a new hybrid style. Two examples of hybrid styles include \nathleisure clothing and \u201cupdated classics\u201d in furniture design. \n",
+        "index":98,
+        "page":11
+    },
+    {
+        "x1":69.76065063476562,
+        "y1":604.5807495117188,
+        "x2":296.3320007324219,
+        "y2":682.9415283203125,
+        "text":"\u2022 Athleisure is a clothing style that takes the fabrics and styles \nof athletic clothing and adapts them to non-athletic environ-\nments such as work, school, or other social environments \n[23, 48]. \n\u2022 Updated classics is a style of furniture design that takes the \nrich feel of classic furniture and adapts it to modern and \nutility-driven needs of the 21st century. \n",
+        "index":99,
+        "page":11
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":404.580810546875,
+        "x2":561.4776611328125,
+        "y2":680.2015380859375,
+        "text":"identifed which two objects to blend, a tool would help users \ndetermine what secondary dimensions to extract and apply from \neach object. For example, a fashion designer could operate on the \ndimensions of material, silhouette (neckline, hemline, leg width, \netc.), color/pattern, fabrication (seam placement, grain direction, \netc.), and details (closures, stitching, etc.) When combining these \ndimensions to create a hybrid style such as athleisure, designers \noften use the stretchy material of athletic clothing, the details and \ncolors of street clothing, and a mix of silhouettes found in the gym, \nstreet, or workplace. This combination of traits helps designers \nachieve both comfort and socially appropriate styles. A similar set \nof dimensions could be used for furniture design to achieve a blend \nof classic sophistication with modern convenience. For example, \nan updated classic chair could use the classic shape of a Louis XIV \nchair, but fabricate it out of plastic (as is common in modern chairs) \nto make it easier to move and clean. It could also reduce some of \nthe ornamentation on the silhouette to take on aspects of a minimal \nmodern look. \nWe believe this blending process can also be structured by chain-\ning together computational tools for each of the secondary design \ndimensions. This process should be interactive, using human judg-\nment not only to guide the search, but also to constantly consider \naspects outside the dimensions such as the social acceptability of \nthe design, the appeal to the target market, and whether its con-\nstruction is feasible within desired price points. \n",
+        "index":100,
+        "page":11
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":686.3017578125,
+        "x2":296.4974670410156,
+        "y2":709.8665161132812,
+        "text":"We propose that creating items within these hybrid styles could \nbe structured using secondary design dimensions. Once the user \n",
+        "index":101,
+        "page":11
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":60.00357437133789,
+        "x2":559.9423828125,
+        "y2":69.30662536621094,
+        "text":"CHI \u201921, May 8\u201313, 2021, Yokohama, Japan \nChilton, et al. \n",
+        "index":102,
+        "page":12
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":83.67941284179688,
+        "x2":306.00799560546875,
+        "y2":445.9010009765625,
+        "text":"<image: DeviceRGB, width: 1050, height: 1508, bpc: 8>",
+        "index":103,
+        "page":12
+    },
+    {
+        "x1":53.56489562988281,
+        "y1":456.0863952636719,
+        "x2":297.3793029785156,
+        "y2":512.2967529296875,
+        "text":"Figure 7: Three examples of visual blends that could be \nturned into animated blends. Each row shows the original \nvisual blend on the left, the reference video in the middle, \nand the animated blend on the right. Motion is annotated in \nred. \n",
+        "index":104,
+        "page":12
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":531.6756591796875,
+        "x2":138.7362518310547,
+        "y2":546.7411499023438,
+        "text":"7.3 Limitations \n",
+        "index":105,
+        "page":12
+    },
+    {
+        "x1":53.52899932861328,
+        "y1":546.7737426757812,
+        "x2":297.2270202636719,
+        "y2":710.6873779296875,
+        "text":"The major intellectual challenge of applying these techniques to any \nnew domain is discovering what its secondary design dimensions \nare. For VisiFit, we were able to observe the dimensions from ex-\namples and from co-design sessions. Additionally, we were guided \nby what is known about the neuroscience of human visual object \nrecognition. If one or more of those approaches is not available in a \nnew domain, signifcant trial and error may be required to identify \nthose dimensions. An exciting challenge would be to use computa-\ntional tools to automatically (or semi-automatically) discover the \nsecondary design dimensions of a new domain. \nThe major engineering challenge of applying these design prin-\nciples to a new domain is to build computational tools that can help \nexplore each dimension with high-level tools rather than low-level \nmanipulation. Deep learning has provided new hope for such tools,\nbut there are still limitations to what deep learning systems can do, \n",
+        "index":106,
+        "page":12
+    },
+    {
+        "x1":317.5249938964844,
+        "y1":83.56178283691406,
+        "x2":561.7794799804688,
+        "y2":216.71658325195312,
+        "text":"especially with limited data. This is an open challenge: to quickly \ncreate new computational tools for the dimensions of new domains. \nFor any new blending domain, there is also the possibility that \nsome blends are too complex to be structured around secondary \ndimensions due to complex interactions between dimensions. For \nexample, when the DNA of two parents are combined to make a \nofspring, the ofspring certainly has a blend of the parents features, \nbut there are so many features that the combinations become too \ncomplex to choose from. There may be too many dependencies \nbetween dimensions that make designing at a high level impossible. \nWhen considering the dimensions of a new domain, one should \nlook out for such dependencies. \n",
+        "index":107,
+        "page":12
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":223.87973022460938,
+        "x2":408.4568786621094,
+        "y2":238.9451904296875,
+        "text":"8 CONCLUSION \n",
+        "index":108,
+        "page":12
+    },
+    {
+        "x1":317.6409912109375,
+        "y1":238.97877502441406,
+        "x2":561.7794189453125,
+        "y2":646.1065673828125,
+        "text":"Iterative improvement is the essence of the iterative design process. \nAlthough there are many existing tools that support other phases \nof the design process (brainstorming, prototyping, evaluation, and \nfnal design execution) there are a lack of tools focusing on iteration \n[17]. We present a tool that helps novices iteratively improve on \nprototypes of visual blends. Visual blends are an advanced graphic \ndesign technique to combine two visual symbols into one object to \nconvey a message symbolically. Tools already exist to help novices \ncreate initial prototypes of visual blends. However, novices do not \nhave tools or strategies to support them through the next iteration \nthat would take the blend from lower to higher fdelity. \nWe conducted three preliminary investigations on how to it-\neratively improve visual blends. This included an exploration of \nautomatic tools, analysis of expert examples, and a co-design pro-\ncess with graphic designers. From these studies we derived three \ndesign principles that can be employed in the creation of iteration \ntools. Additionally, we introduce a method of using secondary design \ndimension to structure the iterative improvement process. Based \non this method, we can create computational tools to help users \nexplore the design space during iteration. For visual blends, the sec-\nondary design dimensions are color, silhouette, and internal details. \nThe computational tools we implemented to explore each of these \ndimensions used a combination of deep learning, computer vision \ntechniques, and parametric control for fne-tuning. The principles \nare demonstrated in our system VisiFit \u2013 a pipeline of computa-\ntional design tools to iterate on prototypes of visual blends. Our \nevaluation shows that when using VisiFit, novices substantially \nimprove blends 76% of the time. Their blends were of sufcient \nquality for publication on social media 70% of the time. \nAlthough creating visual blends is a domain-specifc problem, it \nis emblematic of many design challenges which involve the blend-\ning or remixing of existing things to produce novel meaning or \npurpose. We discuss how these principles could be reapplied in \nthree other blending domains: animated blends, hybrid fashion \ndesign, and hybrid furniture design. These domains have their own \nsecondary dimensions which can be used to structure the iterative \nimprovement process. \n",
+        "index":109,
+        "page":12
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":653.2697143554688,
+        "x2":390.09686279296875,
+        "y2":668.335205078125,
+        "text":"REFERENCES \n",
+        "index":110,
+        "page":12
+    },
+    {
+        "x1":321.197998046875,
+        "y1":667.6214599609375,
+        "x2":560.746337890625,
+        "y2":709.306640625,
+        "text":"[1] Mart\u00edn Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen, \nCraig Citro, Greg S. Corrado, Andy Davis, Jefrey Dean, Matthieu Devin, San-\njay Ghemawat, Ian Goodfellow, Andrew Harp, Geofrey Irving, Michael Isard, \nYangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh Leven-\nberg, Dan Man\u00e9, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah, Mike \n",
+        "index":111,
+        "page":12
+    },
+    {
+        "x1":53.57500076293945,
+        "y1":60.00357437133789,
+        "x2":559.9425659179688,
+        "y2":69.30662536621094,
+        "text":"VisiFit: Structuring Iterative Improvement for Novice Designers \nCHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n",
+        "index":112,
+        "page":13
+    },
+    {
+        "x1":53.79400634765625,
+        "y1":85.80345916748047,
+        "x2":296.8951721191406,
+        "y2":717.1966552734375,
+        "text":"Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar, Paul \nTucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi\u00e9gas, Oriol Vinyals, \nPete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Xiaoqiang Zheng. \n2015. TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems. \nhttp://tensorfow.org/ Software available from tensorfow.org. \n[2] Maneesh Agrawala, Wilmot Li, and Floraine Berthouzoz. 2011. Design Principles \nfor Visual Communication. Commun. ACM 54, 4 (April 2011), 60\u201369. https: \n//doi.org/10.1145/1924421.1924439 \n[3] Pete Barry. 2016. The Advertising Concept Book: Think Now, Design Later (Third). \nThames & Hudson, London, UK. 296 pages. \n[4] Gilbert Louis Bernstein and Wilmot Li. 2015. Lillicon: Using Transient Widgets \nto Create Scale Variations of Icons. ACM Trans. Graph. 34, 4, Article 144 (July \n2015), 11 pages. https://doi.org/10.1145/2766980 \n[5] Dino Borri and Domenico Camarda. 2009. The Cooperative Conceptualization of \nUrban Spaces in AI-assisted Environmental Planning. In Proceedings of the 6th \nInternational Conference on Cooperative Design, Visualization, and Engineering \n(Luxembourg, Luxembourg) (CDVE\u201909). Springer-Verlag, Berlin, Heidelberg, 197\u2013 \n207. http://dl.acm.org/citation.cfm?id=1812983.1813012 \n[6] Zoya Bylinskii, Nam Wook Kim, Peter O\u2019Donovan, Sami Alsheikh, Spandan \nMadan, Hanspeter Pfster, Fredo Durand, Bryan Russell, and Aaron Hertzmann. \n2017. Learning Visual Importance for Graphic Designs and Data Visualizations. \nIn Proceedings of the 30th Annual ACM Symposium on User Interface Software and \nTechnology (Qu&#233;bec City, QC, Canada) (UIST \u201917). ACM, New York, NY, \nUSA, 57\u201369. https://doi.org/10.1145/3126594.3126653 \n[7] Zoya Bylinskii, Nam Wook Kim, Peter O\u2019Donovan, Sami Alsheikh, Spandan \nMadan, Hanspeter Pfster, Fredo Durand, Bryan Russell, and Aaron Hertzmann. \n2017. Learning Visual Importance for Graphic Designs and Data Visualizations. \nIn Proceedings of the 30th Annual ACM Symposium on User Interface Software and \nTechnology (Qu\u00e9bec City, QC, Canada) (UIST \u201917). Association for Computing \nMachinery, New York, NY, USA, 57\u201369. https://doi.org/10.1145/3126594.3126653 \n[8] Erin Cherry and Celine Latulipe. 2014. Quantifying the Creativity Support of \nDigital Tools through the Creativity Support Index. ACM Trans. Comput.-Hum. \nInteract. 21, 4, Article 21 (June 2014), 25 pages. https://doi.org/10.1145/2617588 \n[9] Lydia B. Chilton, Savvas Petridis, and Maneesh Agrawala. 2019. VisiBlends: A \nFlexible Workfow for Visual Blends. In Proceedings of the 2019 CHI Conference \non Human Factors in Computing Systems (Glasgow, Scotland Uk) (CHI \u201919). As-\nsociation for Computing Machinery, New York, NY, USA, Article 172, 14 pages. \nhttps://doi.org/10.1145/3290605.3300402 \n[10] Nicholas Davis, Chih-PIn Hsiao, Kunwar Yashraj Singh, Lisa Li, Sanat Moningi, \nand Brian Magerko. 2015. Drawing Apprentice: An Enactive Co-Creative Agent \nfor Artistic Collaboration. In Proceedings of the 2015 ACM SIGCHI Conference on \nCreativity and Cognition (Glasgow, United Kingdom) (C&C \u201915). Association for \nComputing Machinery, New York, NY, USA, 185\u2013186. https://doi.org/10.1145/ \n2757226.2764555 \n[11] Niraj Ramesh Dayama, Kashyap Todi, Taru Saarelainen, and Antti Oulasvirta. \n2020. GRIDS: Interactive Layout Design with Integer Programming. In Proceedings \nof the 2020 CHI Conference on Human Factors in Computing Systems (Honolulu, \nHI, USA) (CHI \u201920). Association for Computing Machinery, New York, NY, USA, \n1\u201313. https://doi.org/10.1145/3313831.3376553 \n[12] Biplab Deka, Zifeng Huang, Chad Franzen, Joshua Hibschman, Daniel Afergan, \nYang Li, Jefrey Nichols, and Ranjitha Kumar. 2017. Rico: A Mobile App Dataset \nfor Building Data-Driven Design Applications. In Proceedings of the 30th Annual \nACM Symposium on User Interface Software and Technology (Qu\u00e9bec City, QC, \nCanada) (UIST \u201917). Association for Computing Machinery, New York, NY, USA, \n845\u2013854. https://doi.org/10.1145/3126594.3126651 \n[13] Richard O. Duda and Peter E. Hart. 1972. Use of the Hough Transformation to \nDetect Lines and Curves in Pictures. Commun. ACM 15, 1 (Jan. 1972), 11\u201315. \nhttps://doi.org/10.1145/361237.361242 \n[14] Morwaread M. Farbood, Egon Pasztor, and Kevin Jennings. 2004. Hyperscore: \nA Graphical Sketchpad for Novice Composers. IEEE Comput. Graph. Appl. 24, 1 \n(Jan. 2004), 50\u201354. https://doi.org/10.1109/MCG.2004.1255809 \n[15] G. Fauconnier and M. Turner. 2002. The Way We Think: Conceptual Blending and \nthe Mind\u2019s Hidden Complexities. Basic Books, New York, NY, USA. \n[16] Charles Forceville. 1994. Pictorial Metaphor in Advertisements. Metaphor and \nSymbolic Activity 9, 1 (1994), 1\u201329. \n[17] Jonas Frich, Lindsay MacDonald Vermeulen, Christian Remy, Michael Mose \nBiskjaer, and Peter Dalsgaard. 2019. Mapping the Landscape of Creativity Support \nTools in HCI. In Proceedings of the 2019 CHI Conference on Human Factors in \nComputing Systems (Glasgow, Scotland Uk) (CHI \u201919). ACM, New York, NY, USA, \nArticle 389, 18 pages. https://doi.org/10.1145/3290605.3300619 \n[18] Krzysztof Z. Gajos, Daniel S. Weld, and Jacob O. Wobbrock. 2010. Automatically \nGenerating Personalized User Interfaces with Supple. Artif. Intell. 174, 12-13 \n(Aug. 2010), 910\u2013950. https://doi.org/10.1016/j.artint.2010.05.005 \n[19] Leon A. Gatys, Alexander S. Ecker, and Matthias Bethge. 2016. Image Style Trans-\nfer Using Convolutional Neural Networks. In Proceedings of the IEEE Conference \non Computer Vision and Pattern Recognition (CVPR). IEEE, New York, NY, USA, \n2414\u20132423. \n[20] Ross Girshick, Ilija Radosavovic, Georgia Gkioxari, Piotr Doll\u00e1r, and Kaiming He. \n2018. Detectron. https://github.com/facebookresearch/detectron. \n",
+        "index":113,
+        "page":13
+    },
+    {
+        "x1":317.95458984375,
+        "y1":85.80266571044922,
+        "x2":561.0592651367188,
+        "y2":701.5538940429688,
+        "text":"[21] Bj\u00f6rn Hartmann, Scott R. Klemmer, Michael Bernstein, Leith Abdulla, Bran-\ndon Burr, Avi Robinson-Mosher, and Jennifer Gee. 2006. Refective Physical \nPrototyping Through Integrated Design, Test, and Analysis. In Proceedings \nof the 19th Annual ACM Symposium on User Interface Software and Technol-\nogy (Montreux, Switzerland) (UIST \u201906). ACM, New York, NY, USA, 299\u2013308. \nhttps://doi.org/10.1145/1166253.1166300 \n[22] Narayan Hegde, Jason D Hipp, Yun Liu, Michael Emmert-Buck, Emily Reif, Daniel \nSmilkov, Michael Terry, Carrie J Cai, Mahul B Amin, Craig H Mermel, Phil Q \nNelson, Lily H Peng, Greg S Corrado, and Martin C Stumpe. 2019. Similar \nimage search for histopathology: SMILY. npj Digital Medicine 2, 1 (2019), 56. \nhttps://doi.org/10.1038/s41746-019-0131-z \n[23] Elizabeth Holmes. 2015. \nAthleisure: A Workout Look for Every Occa-\nsion. \nhttps://www.wsj.com/video/athleisure-a-workout-look-for-every-\noccasion/D0174829-3288-40F1-9E12-0F420E38AA9A.html \n[24] Q. Hou, M. Cheng, X. Hu, A. Borji, Z. Tu, and P. H. S. Torr. 2019. Deeply Supervised \nSalient Object Detection with Short Connections. IEEE Transactions on Pattern \nAnalysis and Machine Intelligence 41, 4 (2019), 815\u2013828. https://doi.org/10.1109/ \nTPAMI.2018.2815688 \n[25] P. Karimi, M. L. Maher, K. Grace, and N. Davis. 2019. A computational model for \nvisual conceptual blends. IBM Journal of Research and Development 63, 1 (2019), \n5:1\u20135:10. \n[26] P. Karimi, M. L. Maher, k. Grace, and N. Davis. 2019. A Computational Model for \nVisual Conceptual Blends. IBM J. Res. Dev. 63, 1, Article 1 (Jan. 2019), 10 pages. \nhttps://doi.org/10.1147/JRD.2018.2881736 \n[27] Joy Kim, Maneesh Agrawala, and Michael S. Bernstein. 2017. Mosaic: Designing \nonline creative communities for sharing works-in-progress. In Proceedings of the \nACM Conference on Computer Supported Cooperative Work, CSCW. Association \nfor Computing Machinery, New York, New York, USA, 246\u2013258. https://doi.org/ \n10.1145/2998181.2998195 arXiv:1611.02666 \n[28] Joy Kim, Sarah Sterman, Allegra Argent Beal Cohen, and Michael S. Bernstein. \n2017. Mechanical novel: Crowdsourcing complex work through refection and \nrevision. In Proceedings of the ACM Conference on Computer Supported Cooperative \nWork, CSCW. Association for Computing Machinery, New York, New York, USA, \n233\u2013245. https://doi.org/10.1145/2998181.2998196 arXiv:1611.02682 \n[29] Janin Koch, Andr\u00e9s Lucero, Lena Hegemann, and Antti Oulasvirta. 2019. May \nAI? Design ideation with cooperative contextual bandits. In Proceedings of the \n2019 CHI Conference on Human Factors in Computing Systems. Association for \nComputing Machinery, New York, New York, USA, 1\u201312. \n[30] Ranjitha Kumar, Arvind Satyanarayan, Cesar Torres, Maxine Lim, Salman Ahmad, \nScott R. Klemmer, and Jerry O. Talton. 2013. Webzeitgeist: Design Mining the \nWeb. In Proceedings of the SIGCHI Conference on Human Factors in Computing \nSystems (Paris, France) (CHI \u201913). ACM, New York, NY, USA, 3083\u20133092. https: \n//doi.org/10.1145/2470654.2466420 \n[31] James A. Landay. 1996. SILK: Sketching Interfaces Like Krazy. In Conference \nCompanion on Human Factors in Computing Systems (Vancouver, British Columbia, \nCanada) (CHI \u201996). ACM, New York, NY, USA, 398\u2013399. https://doi.org/10.1145/ \n257089.257396 \n[32] James Lin, Mark W. Newman, Jason I. Hong, and James A. Landay. 2000. DENIM: \nFinding a Tighter Fit Between Tools and Practice for Web Site Design. In Pro-\nceedings of the SIGCHI Conference on Human Factors in Computing Systems \n(The Hague, The Netherlands) (CHI \u201900). ACM, New York, NY, USA, 510\u2013517. \nhttps://doi.org/10.1145/332040.332486 \n[33] Greg Little, Lydia B. Chilton, Max Goldman, and Robert C. Miller. 2010. TurKit: \nHuman Computation Algorithms on Mechanical Turk. In Proceedings of the \n23Nd Annual ACM Symposium on User Interface Software and Technology (New \nYork, New York, USA) (UIST \u201910). ACM, New York, NY, USA, 57\u201366. https: \n//doi.org/10.1145/1866029.1866040 \n[34] J. Derek Lomas, Jodi Forlizzi, Nikhil Poonwala, Nirmal Patel, Sharan Shodhan, \nKishan Patel, Ken Koedinger, and Emma Brunskill. 2016. Interface Design Opti-\nmization As a Multi-Armed Bandit Problem. In Proceedings of the 2016 CHI Confer-\nence on Human Factors in Computing Systems (San Jose, California, USA) (CHI \u201916). \nACM, New York, NY, USA, 4142\u20134153. https://doi.org/10.1145/2858036.2858425 \n[35] Ryan Louie, Andy Coenen, Cheng Zhi Huang, Michael Terry, and Carrie J. Cai. \n2020. Novice-AI Music Co-Creation via AI-Steering Tools for Deep Generative \nModels. In Proceedings of the 2020 CHI Conference on Human Factors in Computing \nSystems (Honolulu, HI, USA) (CHI \u201920). Association for Computing Machinery, \nNew York, NY, USA, 1\u201313. https://doi.org/10.1145/3313831.3376739 \n[36] Kurt Luther, Amy Pavel, Wei Wu, Jari-lee Tolentino, Maneesh Agrawala, Bj\u00f6rn \nHartmann, and Steven P. Dow. 2014. CrowdCrit: Crowdsourcing and Aggregating \nVisual Design Critique. In Proceedings of the Companion Publication of the 17th \nACM Conference on Computer Supported Cooperative Work &#38; Social Computing\n(Baltimore, Maryland, USA) (CSCW Companion \u201914). ACM, New York, NY, USA, \n21\u201324. https://doi.org/10.1145/2556420.2556788 \n[37] J. Marks, B. Andalman, P. A. Beardsley, W. Freeman, S. Gibson, J. Hodgins, T. Kang, \nB. Mirtich, H. Pfster, W. Ruml, K. Ryall, J. Seims, and S. Shieber. 1997. Design \nGalleries: A General Approach to Setting Parameters for Computer Graphics and \nAnimation. In Proceedings of the 24th Annual Conference on Computer Graphics and \n",
+        "index":114,
+        "page":13
+    },
+    {
+        "x1":53.79800033569336,
+        "y1":60.00357437133789,
+        "x2":178.3710174560547,
+        "y2":69.30662536621094,
+        "text":"CHI \u201921, May 8\u201313, 2021, Yokohama, Japan \n",
+        "index":115,
+        "page":14
+    },
+    {
+        "x1":53.80097961425781,
+        "y1":85.80345916748047,
+        "x2":296.8951721191406,
+        "y2":582.0018310546875,
+        "text":"Interactive Techniques (SIGGRAPH \u201997). ACM Press/Addison-Wesley Publishing \nCo., New York, NY, USA, 389\u2013400. https://doi.org/10.1145/258734.258887 \n[38] Justin Matejka, Michael Glueck, Erin Bradner, Ali Hashemi, Tovi Grossman, and \nGeorge Fitzmaurice. 2018. Dream Lens: Exploration and Visualization of Large-\nScale Generative Design Datasets. In Proceedings of the 2018 CHI Conference on \nHuman Factors in Computing Systems (Montreal QC, Canada) (CHI \u201918). Asso-\nciation for Computing Machinery, New York, NY, USA, Article 369, 12 pages. \nhttps://doi.org/10.1145/3173574.3173943 \n[39] Brad A. Myers, Ashley Lai, Tam Minh Le, Young Seok Yoon, Andrew Faulring, \nand Joel Brandt. 2015. Selective undo support for painting applications. In \nConference on Human Factors in Computing Systems - Proceedings, Vol. 2015-April. \nAssociation for Computing Machinery, New York, New York, USA, 4227\u20134236. \nhttps://doi.org/10.1145/2702123.2702543 \n[40] J. Nielsen. 1993. Iterative user-interface design. Computer 26, 11 (1993), 32\u201341. \n[41] Peter O\u2019Donovan, Aseem Agarwala, and Aaron Hertzmann. 2014. Learning \nLayouts for Single-Page Graphic Designs. IEEE Transactions on Visualization and \nComputer Graphics 20, 8 (2014), 1200\u20131213. \n[42] The Editors of WHY Magazine. 1972. \nDesign Q & A: Charles and Ray \nEames. https://www.hermanmiller.com/stories/why-magazine/design-q-and-a-\ncharles-and-ray-eames/ \n[43] Francisco Pereira. 2007. Creativity and AI: A Conceptual Blending Approach. \nMouton de Gruyter, Berlin, Germany. \n[44] Savvas Petridis and Lydia B. Chilton. 2019. Human Errors in Interpreting Visual \nMetaphor. In Proceedings of the 2019 on Creativity and Cognition (San Diego, CA, \nUSA) (C&C \u201919). Association for Computing Machinery, New York, NY, USA, \n187\u2013197. https://doi.org/10.1145/3325480.3325503 \n[45] Daniela Retelny, S\u00e9bastien Robaszkiewicz, Alexandra To, Walter S. Lasecki, Jay \nPatel, Negar Rahmati, Tulsee Doshi, Melissa Valentine, and Michael S. Bernstein. \n2014. Expert Crowdsourcing with Flash Teams. In Proceedings of the 27th Annual \nACM Symposium on User Interface Software and Technology (Honolulu, Hawaii, \nUSA) (UIST \u201914). ACM, New York, NY, USA, 75\u201385. https://doi.org/10.1145/ \n2642918.2647409 \n[46] M. Riddoch and G. Humphreys. 2001. Object Recognition. In B. Rapp (Ed.), Hand-\nbook of Cognitive Neuropsychology. Psychology Press, Hove, England. \n[47] Carsten Rother, Vladimir Kolmogorov, and Andrew Blake. 2004. \"GrabCut\": \nInteractive Foreground Extraction Using Iterated Graph Cuts. In ACM SIGGRAPH \n2004 Papers (Los Angeles, California) (SIGGRAPH \u201904). ACM, New York, NY, USA, \n309\u2013314. https://doi.org/10.1145/1186562.1015720 \n[48] Sam Sanders. 2015. For The Modern Man, The Sweatpant Moves Out Of The \nGym. https://www.npr.org/2015/04/08/397138654/for-the-modern-man-the-\nsweatpant-moves-out-of-the-gym \n[49] Ben Shneiderman. 2007. Creativity Support Tools: Accelerating Discovery and \nInnovation. Commun. ACM 50, 12 (Dec. 2007), 20\u201332. https://doi.org/10.1145/ \n1323688.1323689 \n[50] Pao Siangliulue, Joel Chan, Steven P. Dow, and Krzysztof Z. Gajos. 2016. Idea-\nHound: Improving Large-scale Collaborative Ideation with Crowd-Powered Real-\ntime Semantic Modeling. In Proceedings of the 29th Annual Symposium on User \nInterface Software and Technology (Tokyo, Japan) (UIST \u201916). ACM, New York, NY, \nUSA, 609\u2013624. https://doi.org/10.1145/2984511.2984578 \n[51] Vikash Singh, Celine Latulipe, Erin Carroll, and Danielle Lottridge. 2011. The \nChoreographer\u2019s Notebook: A Video Annotation System for Dancers and Chore-\nographers. In Proceedings of the 8th ACM Conference on Creativity and Cognition \n(Atlanta, Georgia, USA) (C&C \u201911). Association for Computing Machinery, New \nYork, NY, USA, 197\u2013206. https://doi.org/10.1145/2069618.2069653 \n[52] Gillian Smith, Jim Whitehead, and Michael Mateas. 2010. Tanagra: A Mixed-\ninitiative Level Design Tool. In Proceedings of the Fifth International Conference \non the Foundations of Digital Games (Monterey, California) (FDG \u201910). ACM, New \nYork, NY, USA, 209\u2013216. https://doi.org/10.1145/1822348.1822376 \n[53] Robert J Sternberg. 2011. Cognitive Psychology. Cengage Learning, Boston, MA, \nUSA. \n[54] Sou Tabata, Hiroki Yoshihara, Haruka Maeda, and Kei Yokoyama. 2019. Automatic \nLayout Generation for Graphical Design Magazines. In ACM SIGGRAPH 2019 \n",
+        "index":116,
+        "page":14
+    },
+    {
+        "x1":519.2670288085938,
+        "y1":60.00357437133789,
+        "x2":559.9451293945312,
+        "y2":69.30662536621094,
+        "text":"Chilton, et al. \n",
+        "index":117,
+        "page":14
+    },
+    {
+        "x1":317.9549865722656,
+        "y1":85.80345916748047,
+        "x2":561.0521240234375,
+        "y2":572.169677734375,
+        "text":"Posters (Los Angeles, California) (SIGGRAPH \u201919). ACM, New York, NY, USA, \nArticle 9, 2 pages. https://doi.org/10.1145/3306214.3338574 \n[55] Michael Terry and Elizabeth D. Mynatt. 2002. Side Views: Persistent, on-\nDemand Previews for Open-Ended Tasks. In Proceedings of the 15th Annual \nACM Symposium on User Interface Software and Technology (Paris, France) \n(UIST \u201902). Association for Computing Machinery, New York, NY, USA, 71\u201380. \nhttps://doi.org/10.1145/571985.571996 \n[56] Kashyap Todi, Jussi Jokinen, Kris Luyten, and Antti Oulasvirta. 2019. Individualis-\ning Graphical Layouts with Predictive Visual Search Models. ACM Trans. Interact. \nIntell. Syst. 10, 1, Article 9 (Aug. 2019), 24 pages. https://doi.org/10.1145/3241381 \n[57] Rajan Vaish, Shirish Goyal, Amin Saberi, and Sharad Goel. 2018. Creating \nCrowdsourced Research Talks at Scale. In Proceedings of the 2018 World Wide \nWeb Conference (Lyon, France) (WWW \u201918). International World Wide Web \nConferences Steering Committee, Republic and Canton of Geneva, CHE, 1\u201311. \nhttps://doi.org/10.1145/3178876.3186031\n[58] Margot van Mulken, Rob le Pair, and Charles Forceville. 2010. The impact of \nperceived complexity, deviation and comprehension on the appreciation of visual \nmetaphor in advertising across three European countries. Journal of Pragmatics \n42, 12 (2010), 3418 \u2013 3430. https://doi.org/10.1016/j.pragma.2010.04.030 \n[59] Hao-Chuan Wang, Dan Cosley, and Susan R. Fussell. 2010. Idea Expander: Sup-\nporting Group Brainstorming with Conversationally Triggered Visual Thinking \nStimuli. In Proceedings of the 2010 ACM Conference on Computer Supported Cooper-\native Work (Savannah, Georgia, USA) (CSCW \u201910). Association for Computing Ma-\nchinery, New York, NY, USA, 103\u2013106. https://doi.org/10.1145/1718918.1718938 \n[60] Jingdong Wang and Xian-Sheng Hua. 2011. Interactive image search by color \nmap. ACM Transactions on Intelligent Systems and Technology (TIST) 3, 1 (2011), \n1\u201323. \n[61] Kento Watanabe, Yuichiroh Matsubayashi, Kentaro Inui, Tomoyasu Nakano, \nSatoru Fukayama, and Masataka Goto. 2017. LyriSys: An interactive support \nsystem for writing lyrics based on topic transition. In International Conference on \nIntelligent User Interfaces, Proceedings IUI. Association for Computing Machinery, \nNew York, New York, USA, 559\u2013563. https://doi.org/10.1145/3025171.3025194 \n[62] Ariel Weingarten, Ben Lafreniere, George Fitzmaurice, and Tovi Grossman. \n2019. DreamRooms: Prototyping Rooms in Collaboration with a Generative \nProcess. In Proceedings of the 45th Graphics Interface Conference on Proceed-\nings of Graphics Interface 2019 (Kingston, Canada) (GI\u201919). Canadian Human-\nComputer Communications Society, Waterloo, CAN, Article 19, 9 pages. https: \n//doi.org/10.20380/GI2019.19 \n[63] Anbang Xu, Shih-Wen Huang, and Brian Bailey. 2014. Voyant: Generating Struc-\ntured Feedback on Visual Designs Using a Crowd of Non-experts. In Proceedings \nof the 17th ACM Conference on Computer Supported Cooperative Work &#38; Social \nComputing (Baltimore, Maryland, USA) (CSCW \u201914). ACM, New York, NY, USA, \n1433\u20131444. https://doi.org/10.1145/2531602.2531604 \n[64] Lixiu Yu, Aniket Kittur, and Robert E. Kraut. 2014. Distributed Analogical Idea \nGeneration: Inventing with Crowds. In Proceedings of the SIGCHI Conference on \nHuman Factors in Computing Systems (Toronto, Ontario, Canada) (CHI \u201914). ACM, \nNew York, NY, USA, 1245\u20131254. https://doi.org/10.1145/2556288.2557371 \n[65] Lixiu Yu, Aniket Kittur, and Robert E. Kraut. 2014. Searching for Analogical \nIdeas with Crowds. In Proceedings of the 32Nd Annual ACM Conference on Human \nFactors in Computing Systems (Toronto, Ontario, Canada) (CHI \u201914). ACM, New \nYork, NY, USA, 1225\u20131234. https://doi.org/10.1145/2556288.2557378 \n[66] Lixiu Yu and Jefrey V. Nickerson. 2011. Cooks or Cobblers?: Crowd Creativity \nThrough Combination. In Proceedings of the SIGCHI Conference on Human Factors \nin Computing Systems (Vancouver, BC, Canada) (CHI \u201911). ACM, New York, NY, \nUSA, 1393\u20131402. https://doi.org/10.1145/1978942.1979147 \n[67] Zhenpeng Zhao, Sriram Karthik Badam, Senthil Chandrasegaran, Deok Gun \nPark, Niklas Elmqvist, Lorraine Kisselburgh, and Karthik Ramani. 2014. SkWiki: \nA multimedia sketching system for collaborative creativity. In Conference on \nHuman Factors in Computing Systems - Proceedings. Association for Computing \nMachinery, New York, New York, USA, 1235\u20131244. https://doi.org/10.1145/ \n2556288.2557394 \n",
+        "index":118,
+        "page":14
+    }
+]

@@ -1,0 +1,202 @@
+{
+    "sourcePath": "/example_input3_source/",
+    "template": {
+        "width": 640,
+        "height": 360,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "base_font_size": 16
+    },
+    "video": {
+        "source": "instructor_whole.mp4",
+        "control": [
+            {
+                "start_time": 0.0,
+                "box_info": [489, 139, 140, 221]
+            }
+        ]
+    },
+    "content": [
+        {
+            "shot_id": 1,
+            "column": 2,
+            "bg_image": "bg_video52_2_2_shot8.jpg",
+            "start_time": 0.0,
+            "end_time": 5.34,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [277, 8, 149, 26],
+                    "path": "video52_2_2_shot8_DE45845_title.png"
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [0, 130, 382, 230],
+                    "path": "video52_2_2_shot8_DE45847_picture.png",
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "avail_size": 1.2
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [452, 0, 188, 163],
+                    "path": "video52_2_2_shot8_DE45848_picture.png",
+
+                    "in_column": 2,
+                    "order": 1,
+
+                    "avail_size": 1.0
+                }
+            ]
+        },
+        {
+            "shot_id": 2,
+            "column": 0,
+            "bg_image": "bg_video52_1_13_shot1.jpg",
+            "start_time": 5.34,
+            "end_time": 11.88,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [239, 6, 191, 20],
+                    "path": "video52_1_13_shot1_DE45903_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [22, 276, 188, 13],
+
+                    "in_column": 0,
+                    "order": 0,
+                    "text_content": "Data from thousands of couples",
+                    "original_font_ size": 0.9375,
+                    "avail_font_size": 1.0625,
+                    "typeface": "arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(225, 225, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [21, 293, 162, 14],
+
+                    "in_column": 0,
+                    "order": 0,
+
+                    "text_content": "Identified five telltale signs",
+                    "original_font_ size": 0.9375,
+                    "avail_font_size": 1.0625,
+                    "typeface": "arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(225, 225, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [21, 311, 348, 15],
+
+                    "in_column": 0,
+                    "order": 0,
+
+                    "text_content": "Predict divorce within next four years with over 94% accuracy",
+                    "original_font_ size": 0.9375,
+                    "avail_font_size": 1.0625,
+                    "typeface": "arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(225, 225, 225)"
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [1, 2, 94, 152],
+                    "path": "video52_1_13_shot1_DE45904_picture.png",
+
+                    "in_column": 0,
+                    "order": 0,
+
+                    "avail_size": 1.0
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [95, 103, 157, 143],
+                    "path": "video52_1_13_shot1_DE45905_picture.png",
+
+                    "in_column": 0,
+                    "order": 0,
+
+                    "avail_size": 1.0
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [261, 163, 220, 144],
+                    "path": "video52_1_13_shot1_DE45906_picture.png",
+
+                    "in_column": 0,
+                    "order": 0,
+
+                    "avail_size": 1.0
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [293, 39, 148, 124],
+                    "path": "video52_1_13_shot1_DE45907_picture.png",
+
+                    "in_column": 0,
+                    "order": 0,
+
+                    "avail_size": 1.0
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [510, 1, 129, 114],
+                    "path": "video52_1_13_shot1_DE45908_picture.png",
+
+                    "in_column": 0,
+                    "order": 0,
+
+                    "avail_size": 1.1
+                }
+            ]
+        },
+
+        {
+            "shot_id": 3,
+            "column": 2,
+            "bg_image": "bg_video52_1_12_shot10.jpg",
+            "start_time": 11.88,
+            "end_time": 14.0,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [237, 7, 177, 19],
+                    "path": "video52_1_12_shot10_DE45935_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [238, 35, 177, 19],
+
+                    "in_column": 2,
+                    "order": 1,
+
+                    "text_content": "How can we use them?",
+                    "original_font_ size": 0.875,
+                    "avail_font_size": 3.438,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [0, 0, 209, 118],
+                    "path": "video52_1_12_shot10_DE45933_picture.png",
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "avail_size": 1.8
+                }
+            ]
+        }
+    ]
+}

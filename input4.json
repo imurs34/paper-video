@@ -1,0 +1,2553 @@
+{
+    "sourcePath": "/input4/",
+    "template": {
+        "width": 640,
+        "height": 360,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "base_font_size": 16,
+        "top_img": null,
+        "top_img_dark": null,
+        "bottom_img": null,
+        "bottom_img_dark": null,
+        "fontUrl": ["https://fonts.googleapis.com/css2?family=Roboto&display=swap", "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Stint+Ultra+Condensed&display=swap"],
+        "toggleTemplateButton":false,
+        "toggleInstructorButton":false
+    },
+    "video": {
+        "source": "video93_3_2.mp4",
+        "control": [
+            {
+                "start_time": 0.0,
+                "box_info": null
+            }
+        ]
+    },
+    "content": {
+        "original": [
+            {
+                "shot_id": 1,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "shot1.jpg",
+                "start_time": 0.0,
+                "end_time": 7.0,
+                "learning_material": null
+            },
+            {
+                "shot_id": 2,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot16.jpg",
+                "start_time": 7.0,
+                "end_time": 41.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot2_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 70, 630, 50],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Graphs are one of the most widely used forms of data visualization in public health and epidemiology",
+                        "avail_font_size": 0.8,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 120, 630, 31],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Why do we use graphs?\n     - Displays data in visual form\n     - Can highlight patterns and differences that are harder to discern in a list of numbers\n     - Effective way to communicate with a variety of audiences",
+                        "avail_font_size": 0.8,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 250, 630, 27],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• As public health professionals we have a responsibility to...\n     - Convey data in a way that is accessible to our target audience\n     - Convey data in a way that is NOT biased or misleading",
+                        "avail_font_size": 0.8,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 3,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot20.jpg",
+                "start_time": 41.0,
+                "end_time": 76.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 141, 31],
+                        "path": "shot3_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 71, 620, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Every line or shape should have a purpose—it should convey something\n\n• Ensure labels and titles are all clear and self-explanatory\n\n• Define all symbols and abbreviations\n\n• Consider your message, and make an effort to convey this message in a straightforward and objective manner\n\n• Decisions made in the type or style of graph can fundamentally change the story conveyed by the figure",
+                        "avail_font_size": 1.2,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 4,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot20.jpg",
+                "start_time": 76.0,
+                "end_time": 116.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot4_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 71, 620, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Title: clearly delineate the data being depicted\n\n• Axis titles: let the audience know what is being shown on each axis\n\n• Legend: describe the different components depicted on the graph\n\n• Data source: if not indicated in the title, should be placed in a separate text box\n\n• Essentially, the graph should be able to stand alone",
+                        "avail_font_size": 1.2,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 5,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot12.jpg",
+                "start_time": 116.0,
+                "end_time": 190.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 90, 31],
+                        "path": "shot5_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 80, 370, 61],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Different types of graphs can highlight different points or trends in your data\n\n• Compare the two graphs and think about the differences in the messages conveyed by each\n\n• However, certain types of graphs may not be appropriate for certain types of data\n     - Example: is it appropriate to connect the dots across the different \"series\" in this line graph?",
+                        "avail_font_size": 1.2,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [400, 70, 150, 248],
+                        "path": "shot5_picture1.jpg",
+                        "in_column": 1,
+                        "order": 2,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 6,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot12.jpg",
+                "start_time": 190.0,
+                "end_time": 258.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 65, 31],
+                        "path": "shot6_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 70, 338, 54],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• When might a dual-axis graph be appropriate?\n\n• It is a useful way to depict two very different types of data\n     - Opposite trend directions\n     - Different scales",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [290, 80, 230, 240],
+                        "path": "shot6_picture1.jpg",
+                        "in_column": 1,
+                        "order": 1,
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 7,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot12.jpg",
+                "start_time": 258.0,
+                "end_time": 328.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 80, 31],
+                        "path": "shot7_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 70, 430, 54],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Why did the graph maker choose to break the y-axis in the bottom graph?\n\n• Clearly, the values of the first column are dwarfing the values in the subsequent categories in the top graph\n     - The differences between categories 2, 3, and 4 are barely visible when the axis is unbroken\n\n• However, consider your audience\n     - Is the broken axis clear, or does it convey a misleading message?",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [472, 60, 147, 280],
+                        "path": "shot7_picture1.jpg",
+                        "in_column": 1,
+                        "order": 1,
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 8,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot5.jpg",
+                "start_time": 328.0,
+                "end_time": 397.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 82, 90],
+                        "path": "shot8_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [200, 15, 300, 54],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• In looking at the top graph, what inferences do you make about the average number of hours worked in Germany or the UK versus France or Italy?\n\n• Now observe the bottom graph\n     - Do your inferences change?",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [530, 5, 120, 340],
+                        "path": "shot8_picture1.jpg",
+                        "in_column": 1,
+                        "order": 1,
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 9,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot12.jpg",
+                "start_time": 397.0,
+                "end_time": 464.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot9_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 70, 280, 54],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Look at this graph Gun deaths in Florida\n     - What inferences do you make about the impact of the highlighted legislation on firearm homicides?\n\n• The axis is inverted\n     - Does this clearly depict an increase in the number of firearm deaths after the implemented legislation?",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [322, 63, 155, 265],
+                        "path": "shot9_picture1.jpg",
+                        "in_column": 1,
+                        "order": 1,
+                        "avail_size": 1.0
+                    }
+                ]
+            }
+        ],
+
+        "original_dark": [
+            {
+                "shot_id": 1,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot1_dark.jpg",
+                "start_time": 0.0,
+                "end_time": 27.33,
+                "learning_material": null
+            },
+            {
+                "shot_id": 2,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot2_dark.jpg",
+                "start_time": 27.33,
+                "end_time": 57.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot2_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 111, 595, 50],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Understand what data visualization is and why it is an essential tool in public health and epidemiologic practice",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 152, 454, 31],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Describe risk factors in public health and how they are measured",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 187, 539, 27],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Explore the Visualization Hub of the Institute for Health Metrics and Evaluation",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 230, 549, 26],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Describe the key components and considerations in graphing public health data",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 3,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot3_dark.jpg",
+                "start_time": 57.0,
+                "end_time": 64.0,
+                "learning_material": null
+            },
+            {
+                "shot_id": 4,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot4_dark.jpg",
+                "start_time": 64.0,
+                "end_time": 101.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot4_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 91, 600, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• The presentation of data in pictorial or graphical format\n     - Can be interactive, allowing the user to change inputs and view the resulting patterns and trends",
+                        "avail_font_size": 0.8,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 159, 600, 45],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• As computer technology has improved, data visualization has been brought to the forefront of corporate work and, more recently, of, public health practice",
+                        "avail_font_size": 0.8,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 200, 600, 43],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Large amounts of complex data can be better understand using visualizations as opposed to charts and tables",
+                        "avail_font_size": 0.8,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 255, 600, 50],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• \"A picture is worth a thousand words\"",
+                        "avail_font_size": 0.8,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 5,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot5_dark.jpg",
+                "start_time": 101.0,
+                "end_time": 139.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [15, 0, 129, 102],
+                        "path": "shot6_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [190, 16, 428, 61],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• 1812-1813: Charls Minard (a civil engineer) created a map showing the movement of Napoleon's army into and out of Russia",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [190, 78, 419, 39],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Shows the army's path, including number of soldiers, temperature, and time",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [179, 121, 402, 218],
+                        "path": "shot6_picture1.png",
+                        "in_column": 1,
+                        "order": 3,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 6,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot6_dark.jpg",
+                "start_time": 139.0,
+                "end_time": 176.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot8_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 92, 526, 31],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Allow individuals to comprehend information quickly and easily",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 130, 526, 31],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Show patterns, relationships, and trends",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 170, 526, 31],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Identifies newly emerging changes, hotspots, or outliers",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 211, 526, 31],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Allows prediction of future events (through extrapolation, not modeling)",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 253, 526, 31],
+                        "in_column": 1,
+                        "order": 5,
+                        "text_content": "• Communicates a story or a message",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 7,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot10_dark.jpg",
+                "start_time": 176.0,
+                "end_time": 228.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot10_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 89, 525, 21],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Analyses of politics, economics, sports, and anything else of popular concern",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 131, 525, 41],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• A licensed feature of the New York Times online since 2010\n     - Acquired by ABC News in April 2018",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 191, 525, 100],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Has won numerous awards",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 230, 525, 40],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Look at the FiveThirtyEight website\n     - Why is it so popular?",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 8,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot12_dark.jpg",
+                "start_time": 228.0,
+                "end_time": 261.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot12_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [17, 55, 595, 70],
+                        "in_column": 1,
+                        "order": 0,
+                        "text_content": "• One of the reasons is the creativity they use in visually depicting data related to issues taht are of concern or interests to the general public",
+                        "avail_font_size": 1.7,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [10, 148, 146, 151],
+                        "path": "shot12_picture1.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [220, 169, 170, 126],
+                        "path": "shot12_picture2.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [483, 147, 152, 152],
+                        "path": "shot12_picture3.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    }
+                ]
+            },
+            {
+                "shot_id": 9,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot13_dark.jpg",
+                "start_time": 261.0,
+                "end_time": 275.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot13_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 90, 150, 23],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Charts",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 129, 150, 23],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Graphs",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 170, 150, 23],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Maps",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 210, 150, 23],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Infographics",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 250, 150, 23],
+                        "in_column": 1,
+                        "order": 5,
+                        "text_content": "• Dashboards",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 290, 150, 23],
+                        "in_column": 1,
+                        "order": 6,
+                        "text_content": "• Storyboards",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 10,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot14_dark.jpg",
+                "start_time": 275.0,
+                "end_time": 306.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot14_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 90, 601, 44],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• The US Census Bureau compiles geographic and sociodemographic information on all US residents on a regular basis",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 137, 500, 44],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• One of its tools is a Data Visualization Gallery",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 189, 434, 42],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Open one of the visualization options that is of interest to you\n     - Answer the questions displayed on the following slide",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 11,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot15_dark.jpg",
+                "start_time": 306.0,
+                "end_time": 336.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot15_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 88, 581, 22],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• In two to three sentences, describe the data and the message that is being conveyed",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 131, 458, 22],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Name two positive aspects of the chosen method of visualization",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 171, 528, 39],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Name two areas for improvement or challenges of your chosen visualization\n     - Consider: how might you have done this differently?",
+                        "avail_font_size": 1.0,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 12,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot16_dark.jpg",
+                "start_time": 336.0,
+                "end_time": 391.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot16_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 70, 338, 54],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Description: this is a time-trend map showing the US population without health insurance coverage from 2008 to 2015",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 145, 339, 88],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Positive aspects:\n     - The map is engaging as it scrolls through the relevant years in a fairly rapid fashion\n     - It is easy to spot the patterns, or geographic areas where coverage is particularly good or poor",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 239, 338, 83],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Areas for improvement:\n     - There is no clear delineation of major policy changes, like the passing of the Affordable Cara Act\n     - You do not see years next to each other, making it more difficult to compare",
+                        "avail_font_size": 1.3,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [412, 103, 155, 185],
+                        "path": "shot17_picture1.png",
+                        "in_column": 1,
+                        "order": 1,
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 13,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot19_dark.jpg",
+                "start_time": 391.0,
+                "end_time": 414.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 250, 42],
+                        "path": "shot19_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 60, 442, 50],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Understand your data",
+                        "avail_font_size": 0.9,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 110, 442, 39],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Decide on the message or story you would like to Communicate\n     - This must be tailored to your target audience",
+                        "avail_font_size": 0.9,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 179, 442, 83],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Consider logistical details\n     - Should it be interactive?\n     - What is the computing access and power of your target audience?\n     - How current or updated can you keep your visualization?",
+                        "avail_font_size": 0.9,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 300, 442, 42],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Learn from others\n     - numerous blogs, books and articles, and examples are available on the Internet",
+                        "avail_font_size": 0.9,
+                        "typeface": "Stint Ultra Condensed",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            }
+        ],
+        "restructure": [
+            {
+                "shot_id": 1,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot1.jpg",
+                "start_time": 0.0,
+                "end_time": 27.33,
+                "learning_material": null
+            },
+            {
+                "shot_id": 2,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot2.jpg",
+                "start_time": 27.33,
+                "end_time": 57.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot2_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 91, 595, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Understand what data visualization is and why it is an essential tool in public health and epidemiologic practice",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 160, 454, 40],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Describe risk factors in public health and how they are measured",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 202, 539, 40],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Explore the Visualization Hub of the Institute for Health Metrics and Evaluation",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 244, 549, 40],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Describe the key components and considerations in graphing public health data",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 3,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot3.jpg",
+                "start_time": 57.0,
+                "end_time": 64.0,
+                "learning_material": null
+            },
+            {
+                "shot_id": 4,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot4.jpg",
+                "start_time": 64.0,
+                "end_time": 89.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot4_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 91, 604, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• The presentation of data in pictorial or graphical format\n     - Can be interactive, allowing the user to change inputs and view the resulting patterns and trends",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 190, 606, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• As computer technology has improved, data visualization has been brought to the forefront of corporate work and, more recently, of, public health practice",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 5,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot6.jpg",
+                "start_time": 89.0,
+                "end_time": 101.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot5_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 91, 556, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Large amounts of complex data can be better understand using visualizations as opposed to charts and tables",
+                        "avail_font_size": 1.5,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 190, 250, 31],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• \"A picture is worth a thousand words\"",
+                        "avail_font_size": 1.5,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 6,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot5.jpg",
+                "start_time": 101.0,
+                "end_time": 117.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [15, 0, 129, 102],
+                        "path": "shot6_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [190, 12, 425, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• 1812-1813: Charls Minard (a civil engineer) created a map showing the movement of Napoleon's army into and out of Russia",
+                        "avail_font_size": 2.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [179, 121, 402, 218],
+                        "path": "shot6_picture1.png",
+                        "in_column": 1,
+                        "order": 2,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 7,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot7.jpg",
+                "start_time": 117.0,
+                "end_time": 139.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [15, 0, 129, 102],
+                        "path": "shot7_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [190, 12, 425, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Shows the army's path, including number of soldiers, temperature, and time",
+                        "avail_font_size": 2.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [179, 121, 402, 218],
+                        "path": "shot7_picture1.png",
+                        "in_column": 1,
+                        "order": 2,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 8,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot10.jpg",
+                "start_time": 139.0,
+                "end_time": 165.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot8_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 92, 446, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Allow individuals to comprehend information quickly and easily",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 130, 300, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Show patterns, relationships, and trends",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 170, 394, 30],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Identifies newly emerging changes, hotspots, or outliers",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 9,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot10.jpg",
+                "start_time": 165.0,
+                "end_time": 176.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot8_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 92, 500, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Allows prediction of future events (through extrapolation, not modeling)",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 130, 267, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Communicates a story or a message",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 10,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot10.jpg",
+                "start_time": 176.0,
+                "end_time": 214.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot10_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 89, 525, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Analyses of politics, economics, sports, and anything else of popular concern",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 131, 418, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• A licensed feature of the New York Times online since 2010\n     - Acquired by ABC News in April 2018",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 11,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot11.jpg",
+                "start_time": 214.0,
+                "end_time": 228.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot10_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 89, 205, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Has won numerous awards",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 131, 261, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Look at the FiveThirtyEight website\n     - Why is it so popular?",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 12,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot12.jpg",
+                "start_time": 228.0,
+                "end_time": 261.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot12_title.jpg"
+                    },
+
+                    {
+                        "label": "text_box",
+                        "box_info_original": [17, 55, 588, 60],
+                        "in_column": 1,
+                        "order": 0,
+                        "text_content": "• One of the reasons is the creativity they use in visually depicting data related to issues taht are of concern or interests to the general public",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [10, 118, 170, 240],
+                        "path": "shot12_picture1.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [190, 139, 230, 180],
+                        "path": "shot12_picture2.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [443, 117, 170, 240],
+                        "path": "shot12_picture3.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    }
+                ]
+            },
+            {
+                "shot_id": 13,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot13.jpg",
+                "start_time": 261.0,
+                "end_time": 275.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot13_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 90, 120, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Charts",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 129, 120, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Graphs",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 170, 120, 30],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Maps",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 210, 120, 30],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Infographics",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 250, 120, 30],
+                        "in_column": 1,
+                        "order": 5,
+                        "text_content": "• Dashboards",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 290, 120, 30],
+                        "in_column": 1,
+                        "order": 6,
+                        "text_content": "• Storyboards",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 14,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot14.jpg",
+                "start_time": 275.0,
+                "end_time": 306.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot14_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 90, 601, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• The US Census Bureau compiles geographic and sociodemographic information on all US residents on a regular basis",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 160, 500, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• One of its tools is a Data Visualization Gallery",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 200, 610, 60],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Open one of the visualizaion options that is of interest to you\n     - Answer the questions displayed on the following slide",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 15,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot15.jpg",
+                "start_time": 306.0,
+                "end_time": 336.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot15_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 88, 581, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• In two to three sentences, describe the data and the message that is being conveyed",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 141, 581, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Name two positive aspects of the chosen method of visualization",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 201, 581, 60],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Name two areas for improvement or challenges of your chosen visualization\n     - Consider: how might you have done this differently?",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 16,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot16.jpg",
+                "start_time": 336.0,
+                "end_time": 352.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot16_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 63, 606, 40],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Description: this is a time-trend map showing the US population without health insurance coverage from 2008 to 2015",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [206, 122, 225, 235],
+                        "path": "shot16_picture1.png",
+                        "in_column": 1,
+                        "order": 2,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 17,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot17.jpg",
+                "start_time": 352.0,
+                "end_time": 372.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot17_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 73, 388, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Positive aspects:\n     - The map is engaging as it scrolls through the relevant years in a fairly rapid fashion\n     - It is easy to spot the patterns, or geographic areas where coverage is particularly good or poor",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [412, 48, 231, 275],
+                        "path": "shot17_picture1.png",
+                        "in_column": 2,
+                        "order": 1,
+
+                        "avail_size": 1.05
+                    }
+                ]
+            },
+            {
+                "shot_id": 18,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot18.jpg",
+                "start_time": 372.0,
+                "end_time": 391.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot18_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 73, 388, 180],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Areas for improvement:\n     - There is no clear delineation of major policy changes, like the passing of the Affordable Cara Act\n     - You do not see years next to each other, making it more difficult to compare",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [412, 48, 231, 275],
+                        "path": "shot17_picture1.png",
+                        "in_column": 2,
+                        "order": 1,
+
+                        "avail_size": 1.05
+                    }
+                ]
+            },
+            {
+                "shot_id": 19,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot19.jpg",
+                "start_time": 391.0,
+                "end_time": 414.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 250, 42],
+                        "path": "shot19_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 89, 320, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Understand your data",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 130, 590, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Decide on the message or story you would like to Communicate\n     - This must be tailored to your target audience",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 20,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot20.jpg",
+                "start_time": 414.0,
+                "end_time": 470.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 250, 42],
+                        "path": "shot19_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 89, 590, 120],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Consider logistical details\n     - Should it be interactive?\n     - What is the computing access and power of your target audience?\n     - How current or updated can you keep your visualization?",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 220, 590, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Learn from others \n     - numerous blogs, books and articles, and examples are available on the Internet",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(18, 18, 18)",
+                        "color_bg": "(253, 253, 253)"
+                    }
+                ]
+            }
+        ],
+        "restructure_dark": [
+            {
+                "shot_id": 1,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot1_dark.jpg",
+                "start_time": 0.0,
+                "end_time": 27.33,
+                "learning_material": null
+            },
+            {
+                "shot_id": 2,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot2_dark.jpg",
+                "start_time": 27.33,
+                "end_time": 57.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot2_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 91, 595, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Understand what data visualization is and why it is an essential tool in public health and epidemiologic practice",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 160, 454, 40],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Describe risk factors in public health and how they are measured",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 202, 539, 40],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Explore the Visualization Hub of the Institute for Health Metrics and Evaluation",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 244, 549, 40],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Describe the key components and considerations in graphing public health data",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 3,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot3_dark.jpg",
+                "start_time": 57.0,
+                "end_time": 64.0,
+                "learning_material": null
+            },
+            {
+                "shot_id": 4,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot4_dark.jpg",
+                "start_time": 64.0,
+                "end_time": 89.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot4_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 91, 604, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• The presentation of data in pictorial or graphical format\n     - Can be interactive, allowing the user to change inputs and view the resulting patterns and trends",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 190, 606, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• As computer technology has improved, data visualization has been brought to the forefront of corporate work and, more recently, of, public health practice",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 5,
+                "ratio": 0.4,
+                "column": 0,
+                "bg_image": "bg_shot6_dark.jpg",
+                "start_time": 89.0,
+                "end_time": 101.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot5_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 91, 556, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Large amounts of complex data can be better understand using visualizations as opposed to charts and tables",
+                        "avail_font_size": 1.5,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 190, 250, 31],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• \"A picture is worth a thousand words\"",
+                        "avail_font_size": 1.5,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 6,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot5_dark.jpg",
+                "start_time": 101.0,
+                "end_time": 117.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [15, 0, 129, 102],
+                        "path": "shot6_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [190, 12, 425, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• 1812-1813: Charls Minard (a civil engineer) created a map showing the movement of Napoleon's army into and out of Russia",
+                        "avail_font_size": 2.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [179, 121, 402, 218],
+                        "path": "shot6_picture1.png",
+                        "in_column": 1,
+                        "order": 2,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 7,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot7_dark.jpg",
+                "start_time": 117.0,
+                "end_time": 139.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [15, 0, 129, 102],
+                        "path": "shot7_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [190, 12, 425, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Shows the army's path, including number of soldiers, temperature, and time",
+                        "avail_font_size": 2.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [179, 121, 402, 218],
+                        "path": "shot7_picture1.png",
+                        "in_column": 1,
+                        "order": 2,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 8,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot6_dark.jpg",
+                "start_time": 139.0,
+                "end_time": 165.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot8_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 92, 446, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Allow individuals to comprehend information quickly and easily",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 130, 300, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Show patterns, relationships, and trends",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 170, 394, 30],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Identifies newly emerging changes, hotspots, or outliers",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 9,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot10_dark.jpg",
+                "start_time": 165.0,
+                "end_time": 176.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot8_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 92, 500, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Allows prediction of future events (through extrapolation, not modeling)",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [16, 130, 267, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Communicates a story or a message",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 10,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot10_dark.jpg",
+                "start_time": 176.0,
+                "end_time": 214.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot10_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 89, 525, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Analyses of politics, economics, sports, and anything else of popular concern",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 131, 418, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• A licensed feature of the New York Times online since 2010\n     - Acquired by ABC News in April 2018",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 11,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot10_dark.jpg",
+                "start_time": 214.0,
+                "end_time": 228.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot10_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 89, 205, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Has won numerous awards",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 131, 261, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Look at the FiveThirtyEight website\n     - Why is it so popular?",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 12,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot12_dark.jpg",
+                "start_time": 228.0,
+                "end_time": 261.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 161, 45],
+                        "path": "shot12_title.jpg"
+                    },
+
+                    {
+                        "label": "text_box",
+                        "box_info_original": [17, 55, 588, 60],
+                        "in_column": 1,
+                        "order": 0,
+                        "text_content": "• One of the reasons is the creativity they use in visually depicting data related to issues taht are of concern or interests to the general public",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [10, 118, 170, 240],
+                        "path": "shot12_picture1.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [190, 139, 230, 180],
+                        "path": "shot12_picture2.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [443, 117, 170, 240],
+                        "path": "shot12_picture3.png",
+                        "in_column": 1,
+                        "order": 0,
+
+                        "avail_size": 1.1
+                    }
+                ]
+            },
+            {
+                "shot_id": 13,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot13_dark.jpg",
+                "start_time": 261.0,
+                "end_time": 275.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot13_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 90, 120, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Charts",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 129, 120, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Graphs",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 170, 120, 30],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Maps",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 210, 120, 30],
+                        "in_column": 1,
+                        "order": 4,
+                        "text_content": "• Infographics",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 250, 120, 30],
+                        "in_column": 1,
+                        "order": 5,
+                        "text_content": "• Dashboards",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 290, 120, 30],
+                        "in_column": 1,
+                        "order": 6,
+                        "text_content": "• Storyboards",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 14,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot14_dark.jpg",
+                "start_time": 275.0,
+                "end_time": 306.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot14_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 90, 601, 60],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• The US Census Bureau compiles geographic and sociodemographic information on all US residents on a regular basis",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 160, 500, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• One of its tools is a Data Visualization Gallery",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [15, 200, 610, 60],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Open one of the visualizaion options that is of interest to you\n     - Answer the questions displayed on the following slide",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 15,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot15_dark.jpg",
+                "start_time": 306.0,
+                "end_time": 336.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot15_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 88, 581, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• In two to three sentences, describe the data and the message that is being conveyed",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 141, 581, 30],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Name two positive aspects of the chosen method of visualization",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [14, 201, 581, 60],
+                        "in_column": 1,
+                        "order": 3,
+                        "text_content": "• Name two areas for improvement or challenges of your chosen visualization\n     - Consider: how might you have done this differently?",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 16,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot16_dark.jpg",
+                "start_time": 336.0,
+                "end_time": 352.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot16_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 63, 606, 40],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Description: this is a time-trend map showing the US population without health insurance coverage from 2008 to 2015",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [206, 122, 225, 235],
+                        "path": "shot16_picture1.png",
+                        "in_column": 1,
+                        "order": 2,
+
+                        "avail_size": 1.0
+                    }
+                ]
+            },
+            {
+                "shot_id": 17,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot17_dark.jpg",
+                "start_time": 352.0,
+                "end_time": 372.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot17_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 73, 388, 90],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Positive aspects:\n     - The map is engaging as it scrolls through the relevant years in a fairly rapid fashion\n     - It is easy to spot the patterns, or geographic areas where coverage is particularly good or poor",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [390, 60, 231, 275],
+                        "path": "shot17_picture1.png",
+                        "in_column": 2,
+                        "order": 1,
+
+                        "avail_size": 1.05
+                    }
+                ]
+            },
+            {
+                "shot_id": 18,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot18_dark.jpg",
+                "start_time": 372.0,
+                "end_time": 391.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 181, 31],
+                        "path": "shot18_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [13, 73, 388, 180],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Areas for improvement:\n     - There is no clear delineation of major policy changes, like the passing of the Affordable Cara Act\n     - You do not see years next to each other, making it more difficult to compare",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "picture",
+                        "box_info_original": [390, 60, 231, 275],
+                        "path": "shot17_picture1.png",
+                        "in_column": 2,
+                        "order": 1,
+
+                        "avail_size": 1.05
+                    }
+                ]
+            },
+            {
+                "shot_id": 19,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot19_dark.jpg",
+                "start_time": 391.0,
+                "end_time": 414.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 250, 42],
+                        "path": "shot19_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 89, 320, 30],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Understand your data",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 130, 590, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Decide on the message or story you would like to Communicate\n     - This must be tailored to your target audience",
+                        "avail_font_size": 1.8,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            },
+            {
+                "shot_id": 20,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "bg_shot20_dark.jpg",
+                "start_time": 414.0,
+                "end_time": 470.0,
+                "learning_material": [
+                    {
+                        "label": "title",
+                        "box_info_original": [14, 0, 250, 42],
+                        "path": "shot19_title.jpg"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 89, 590, 120],
+                        "in_column": 1,
+                        "order": 1,
+                        "text_content": "• Consider logistical details\n     - Should it be interactive?\n     - What is the computing access and power of your target audience?\n     - How current or updated can you keep your visualization?",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    },
+                    {
+                        "label": "text_box",
+                        "box_info_original": [12, 220, 590, 60],
+                        "in_column": 1,
+                        "order": 2,
+                        "text_content": "• Learn from others - numerous blogs, books and articles, and examples are available on the Internet",
+                        "avail_font_size": 1.0,
+                        "typeface": "Roboto",
+                        "color_font": "(253, 253, 253)",
+                        "color_bg": "(47, 48, 49)"
+                    }
+                ]
+            }
+        ]
+    }
+}
