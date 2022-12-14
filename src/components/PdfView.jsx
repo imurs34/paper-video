@@ -192,7 +192,7 @@ class App extends Component {
                     />
                   );
                 }}
-                highlights={showHighlight ? highlights : []}
+                highlights={this.props.paragraphs ? highlights : []}
               />
             )}
           </PdfLoader>
