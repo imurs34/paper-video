@@ -2871,3 +2871,6 @@ h6 {
   widows: 2;
   text-align: left;
 }
+.Highlight--scrolledTo .Highlight__part {
+  background: rgba(255, 226, 143, 1) !important
+}

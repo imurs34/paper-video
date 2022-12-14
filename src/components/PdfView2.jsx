@@ -3,7 +3,7 @@ import { pdfjs, Document, Page } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import pdfmap from "../pdfmap1.json";
 
 const options = {
@@ -65,28 +65,28 @@ function PdfView({ paragraphs }) {
     setNumPages(nextNumPages);
   }
 
-  const router = useRouter();
+  // const router = useRouter();
 
-  useEffect(() => {
-    const { page, para } = router.query;
-    if (!para) {
-      console.log({ page });
-      if (page) {
-        setPageNumber(Number(page));
-      }
-    } else {
-      setTimeout(() => {
-        // searchTextInSentence(textArray, 'We perform')
-      }, 1000);
-      pdfmap.map((item) => {
-        if (Number(item.id) == para) {
-          setPageNumber(Number(item.page));
-          console.log("item.paragraphs " + item.paragraphs);
-          setSearchText(item.paragraphs.split(" "));
-        }
-      });
-    }
-  }, [router.query.page, router.query.para]);
+  // useEffect(() => {
+  //   const { page, para } = router.query;
+  //   if (!para) {
+  //     console.log({ page });
+  //     if (page) {
+  //       setPageNumber(Number(page));
+  //     }
+  //   } else {
+  //     setTimeout(() => {
+  //       // searchTextInSentence(textArray, 'We perform')
+  //     }, 1000);
+  //     pdfmap.map((item) => {
+  //       if (Number(item.id) == para) {
+  //         setPageNumber(Number(item.page));
+  //         console.log("item.paragraphs " + item.paragraphs);
+  //         setSearchText(item.paragraphs.split(" "));
+  //       }
+  //     });
+  //   }
+  // }, [router.query.page, router.query.para]);
 
   useEffect(() => {
     if (paragraphs) {

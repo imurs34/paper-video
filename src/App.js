@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Base from "../components/base";
-import input from "../input1.json";
-import PdfView from "../components/PdfView";
-import PdfView2 from "../components/PdfView2";
-import PdfView3 from "../components/PdfView3";
+import Base from "./components/base";
+import input from "./input1.json";
+import PdfView from "./components/PdfView";
 
 const Index = () => {
   const [paragraphs, setParagraphs] = useState();
@@ -25,8 +23,6 @@ const Index = () => {
           <span>&gt;</span>
         </a>
         <PdfView paragraphs={paragraphs} />
-        {/* <PdfView2 paragraphs={paragraphs} /> */}
-        {/* <PdfView3 paragraphs={paragraphs} /> */}
       </div>
     </>
   );
