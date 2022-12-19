@@ -1,4 +1,5 @@
 import _ from "lodash";
+import Head from "next/head";
 import React from "react";
 import shortid from "shortid";
 import styled, { css } from "styled-components";
@@ -176,11 +177,23 @@ const Base = ({ input, paragraphs }) => {
 
   return (
     <>
-      <Container
-        className="node w-full h-screen"
-        style={{ height: "50rem", width: "100%" }}
-        isDark={dark}
-      >
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        {input.template.fontUrl.map((url) => {
+          return <link href={url} rel="stylesheet" />;
+        })}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta
+          name="viewport"
+          content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </Head>
+      <Container className="node w-full h-screen" isDark={dark}>
         {portrait && breakpoint === "S" && (
           <Block>
             <p>가로잠금을 해제 후 화면을 가로로 놓아주세요</p>

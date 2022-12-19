@@ -2,7 +2,9 @@
     {
       "id": 0,
       "paragraphs": "Iterative improvement is the essence of the iterative design process. No design is perfect at inception, thus iteration through prototypes is necessary to improve it. If a prototype passes an evaluation, it should become a new, higher fdelity prototype that can be tested and potentially iterated upon again. In case studies of improved software usability by the Nielsen Norman Group [40], median improvement per stage of iteration was 38%, leading to overall usability improvements of 165%. Iteration is not just an aspect of usability engineering, it is a fundamental part of the design process that generalizes across many domains. In web design, designers start with a wireframe prototype and move to a minimum viable product. In mechanical design, designers improve upon initial proofs of concept by iterating upon features and prototype reliability. In graphic design, designers sketch prototypes and then move onto higher-fdelity mockups. In each domain, iteration looks diferent, but the objective is the same -to extend the prototype to move closer to the goal. To help novice designers in a meaningful and practical way, we need tools to support iteration.",
-      "page": 1
+      "page": 1,
+      "index": [853,957]
+
     },
     {
       "id": 1,
@@ -11,12 +13,15 @@
     {
       "id": 2,
       "paragraphs": "Like all prototyping tools, iteration tools must be domain-specifc so they can efectively operate on the materials of that domain. We focus on the difcult design challenge of making visual blends [3]. Visual blends are an advanced graphic design technique used to convey a message visually in journalism, advertising, and public service announcements. They combine two visual symbols into one object to convey a new meaning. For example, in Figure 1 the Guggenheim Museum is blended with an acorn to convey the message \"Visit New York City this autumn\". Visual blends are a canonical example of a creative design challenge [25,43] because they are open-ended enough to encapsulate all aspects of the design process, but well-defned enough to test in a short time frame. Moreover, cognitive scientists consider blending to be an important aspect of general creativity for its ability to \"create new meaning out of old. \" [15] Currently, tools already exist to help people brainstorm and create initial prototypes [9] by fnding the right images and arrangements to use for the blend. However, visual blends generally require an expert with Photoshop skills to execute the design and it would be faster, easier, and more empowering for novices to improve blends by themselves, without relying on an expert.",
-      "page": 2
+      "page": 2,
+      "index": [557,987]
+
     },
     {
       "id": 3,
       "paragraphs": "We perform several formative studies to learn how experts approach the iterative improvement of visual blends. From an analysis of blends created by experts and a participatory design process with graphic designers, we learned that blends do not simply blend the surface-level style of two objects, they combine the secondary visual dimensions of both objects such as silhouette, color and internal details. Based on this observation, we present a method for structuring the iterative improvement process of blends based on secondary design dimensions. In this method, the improvement process is frst broken into stages that blend each of the dimensions separately.",
-      "page": 2
+      "page": 2,
+      "index": [989,1196]
     },
     {
       "id": 4,
@@ -33,7 +38,9 @@
     {
       "id": 7,
       "paragraphs": "• Three preliminary investigations into the process of improving prototypes of visual blends: a demonstration of how fully automatic systems fail, an analysis of patterns used by professionals, and a co-design process with graphic artists. • Three design principles for a computational approach to improving visual blends. • A method of using secondary design dimensions to structure the improvement process. This method is grounded in the neuroscience of human visual object recognition. • VisiFit, a system that applies the method and design principles in a pipeline of computational tools. • An evaluation of VisiFit showing that in under 4 minutes, novices can substantially improve blends in 76% of cases and create blends suitable to publish on social media in 70% of cases.",
-      "page": 2
+      "page": 2,
+      "index": [1484,1732]
+
     },
     {
       "id": 8,
@@ -82,7 +89,9 @@
     {
       "id": 19,
       "paragraphs": "To explore approaches to iteration we conducted three preliminary investigations that informed the three design principles we propose for improving blends. We tie it all together into a general technique for structuring the iterative improvement of blends.",
-      "page": 4
+      "page": 4,
+      "index": [490,530]
+
     },
     {
       "id": 20,

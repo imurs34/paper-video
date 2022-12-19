@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Base from "./components/base";
-import input from "./input1.json";
-import PdfView from "./components/PdfView";
+import Base from "../components/base";
+import input from "../input1.json";
+import PdfView from "../components/PdfView";
 
 const Index = () => {
   const [paragraphs, setParagraphs] = useState();
-
   const currentParagraphs = (val) => {
     setParagraphs(val);
   };
