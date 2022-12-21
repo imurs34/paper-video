@@ -194,11 +194,11 @@ const Base = ({ input, paragraphs }) => {
         />
       </Head>
       <Container className="node w-full h-screen" isDark={dark}>
-        {portrait && breakpoint === "S" && (
+        {/* {portrait && breakpoint === "S" && (
           <Block>
             <p>가로잠금을 해제 후 화면을 가로로 놓아주세요</p>
           </Block>
-        )}
+        )} */}
         <Loading isLoading={!duration}>
           <p>loading..</p>
         </Loading>

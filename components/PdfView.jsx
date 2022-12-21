@@ -48,7 +48,6 @@ function PdfView({ paragraphs }) {
     },
     [paragraph]
   );
-
   const clicked = (index) => {
     pdfmap.map((item) => {
       if (Number(item.id) == paragraphs.paragraphs[index]) {
@@ -60,8 +59,8 @@ function PdfView({ paragraphs }) {
 
   return (
     <div className="pdfview">
-      <div className="pdfview__container">
-        <div className="pdfview__container__document">
+      <div className=" pdfview__container">
+        <div className=" pdfview__container__document flex-col">
           <Document
             file={file}
             onLoadSuccess={onDocumentLoadSuccess}
@@ -69,12 +68,14 @@ function PdfView({ paragraphs }) {
             className=""
           >
             <Page
-              className="w-full text-center"
+              className=""
               pageNumber={pageNumber}
               customTextRenderer={textRenderer}
+              width={window.innerWidth * 0.29}
+              scale={1}
             />
           </Document>
-          <div className="flex flex-col text-white ml-12 text-sm">
+          <div className="flex flex-col text-white ml-12  mt-2 text-sm">
             {(() => {
               if (paragraphs) {
                 if (paragraphs.sections) {
@@ -92,7 +93,7 @@ function PdfView({ paragraphs }) {
                     });
 
                     buttons.push(
-                      <div className="flex items-center mb-3">
+                      <div className="flex items-center my-1">
                         <button
                           onClick={() => clicked(i)}
                           type="button"

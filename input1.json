@@ -178,19 +178,8 @@
                     {
                         "label": "picture",
                         "slide_id": 1,
-                        "box_info_original": [500, 250, 485, 294],
-                        "path": "004_0.3.png_picture_0.2876961164641314.jpg",
-
-                        "in_column": 2,
-                        "order": 1,
-
-                        "avail_size": 1.0
-                    },
-                    {
-                        "label": "picture",
-                        "slide_id": 1,
-                        "box_info_original": [200, 400, 461, 266],
-                        "path": "004_0.3.png_picture_0.3558949254215803.jpg",
+                        "box_info_original": [170, 250, 1000, 553],
+                        "path": "004_0.3.png_picture_0.2876961164641314.png",
 
                         "in_column": 2,
                         "order": 1,
