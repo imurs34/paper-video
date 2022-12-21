@@ -2,30 +2,30 @@ import React, { useState, useEffect } from "react";
 import Base from "../components/base";
 import input from "../input1.json";
 import PdfView from "../components/PdfView";
-
+import Split from "react-split";
 const Index = () => {
   const [paragraphs, setParagraphs] = useState();
+  const [width, setWidth] = useState([50, 50]);
   const currentParagraphs = (val) => {
     setParagraphs(val);
   };
 
+  const handleDrag = (sizes) => {
+    setWidth(sizes);
+  };
   return (
-    <>
-      <div className="video-container flex w-screen bg-black overflow-hidden">
-        <div className="w-2/4 border border-white">
-          <Base input={input} paragraphs={currentParagraphs} />
-        </div>
-        <div className="pdf-wrapper basis-1">
-          <a href="javascript:void(0)" className="resize-btn">
-            <span>&lt;</span>
-            <span>&gt;</span>
-          </a>
-        </div>
-        <div className="flex justify-center w-2/4 ">
-          <PdfView paragraphs={paragraphs} />
-        </div>
+    <Split
+      gutterSize={20}
+      onDragEnd={handleDrag}
+      className="flex w-screen h-screen z-[1000]"
+    >
+      <div className="ml-8">
+        <Base input={input} paragraphs={currentParagraphs} width={width[0]} />
       </div>
-    </>
+      <div>
+        <PdfView paragraphs={paragraphs} width={width[1]} />
+      </div>
+    </Split>
   );
 };
 

@@ -126,7 +126,7 @@ const imageSelector = ({ location, dark }) => {
   }
 };
 
-const Base = ({ input, paragraphs }) => {
+const Base = ({ input, paragraphs, width }) => {
   const [dark] = useAtom(darkModeAtom);
   const [mobile] = useAtom(mobileModeAtom);
   const [height, setHeight] = useAtom(frameHeightAtom);
@@ -193,54 +193,55 @@ const Base = ({ input, paragraphs }) => {
           content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
         />
       </Head>
-      <Container className="node w-full h-screen" isDark={dark}>
-        {/* {portrait && breakpoint === "S" && (
-          <Block>
-            <p>가로잠금을 해제 후 화면을 가로로 놓아주세요</p>
-          </Block>
-        )} */}
-        <Loading isLoading={!duration}>
-          <p>loading..</p>
-        </Loading>
-        <InnerContainer
-          isFull={!withVideo}
-          disableControl={_.get(input, "template.disableControl")}
+      <div className="flex justify-center items-center h-screen ">
+        <Container
+          className="node w-full h-[50rem] items-center "
+          isDark={dark}
         >
-          <InnerContent key={key}>
-            {content.map((data, index) => {
-              return (
-                <Content
-                  key={index}
-                  data={data}
-                  index={index}
-                  sourcePath={input.sourcePath}
-                  frameInfo={frameInfo}
-                  isFull={!withVideo}
-                  template={input.template}
-                  disableControl={_.get(input, "template.disableControl")}
-                  currentParagraphs={currentParagraphs}
-                />
-              );
-            })}
-          </InnerContent>
-          <Video
-            className="ml-0"
-            src={videoSource}
-            content={content}
-            ref={videoComponentRef}
-            videoLocation={input.video.control}
-          />
-        </InnerContainer>
-        <ControllerContainer>
-          <Controller
-            reset={reset}
-            togglePlay={togglePlay}
-            jump={jump}
+          <Loading isLoading={!duration}>
+            <p>loading..</p>
+          </Loading>
+          <InnerContainer
+            isFull={!withVideo}
             disableControl={_.get(input, "template.disableControl")}
-          />
-          <ControllerLine content={content} />
-        </ControllerContainer>
-      </Container>
+          >
+            <InnerContent key={key}>
+              {content.map((data, index) => {
+                return (
+                  <Content
+                    key={index}
+                    data={data}
+                    index={index}
+                    width={width}
+                    sourcePath={input.sourcePath}
+                    frameInfo={frameInfo}
+                    isFull={!withVideo}
+                    template={input.template}
+                    disableControl={_.get(input, "template.disableControl")}
+                    currentParagraphs={currentParagraphs}
+                  />
+                );
+              })}
+            </InnerContent>
+            <Video
+              className="ml-0"
+              src={videoSource}
+              content={content}
+              ref={videoComponentRef}
+              videoLocation={input.video.control}
+            />
+          </InnerContainer>
+          <ControllerContainer>
+            <Controller
+              reset={reset}
+              togglePlay={togglePlay}
+              jump={jump}
+              disableControl={_.get(input, "template.disableControl")}
+            />
+            <ControllerLine content={content} />
+          </ControllerContainer>
+        </Container>
+      </div>
     </>
   );
 };

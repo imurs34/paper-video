@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useCallback, useState, useEffect, useRef } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -19,7 +19,7 @@ function highlightPattern(text, paragraph) {
     return `<mark>${text.str}</mark>`;
 }
 
-function PdfView({ paragraphs }) {
+function PdfView({ paragraphs, width }) {
   const [file, setFile] = useState("/pdfs/visifit.pdf");
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = React.useState(1);
@@ -28,6 +28,13 @@ function PdfView({ paragraphs }) {
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
   }
+  // useEffect(() => {
+  //   console.log(width[1]);
+  //   // setFile("");
+  //   setTimeout(() => {
+  //     // setFile("/pdfs/visifit.pdf");
+  //   }, 3000);
+  // }, [width]);
 
   useEffect(() => {
     if (paragraphs) {
@@ -56,26 +63,30 @@ function PdfView({ paragraphs }) {
       }
     });
   };
-
   return (
-    <div className="pdfview">
-      <div className=" pdfview__container">
-        <div className=" pdfview__container__document flex-col">
+    <div className="pdfview m-auto w-full h-screen items-center flex justify-center">
+      <div className="pdfview__container ">
+        <div
+          className={`pdfview__container__document flex-${
+            paragraph && width > 70 ? "row" : "col"
+          }`}
+        >
           <Document
             file={file}
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
             className=""
+            renderMode="svg"
           >
             <Page
               className=""
               pageNumber={pageNumber}
               customTextRenderer={textRenderer}
-              width={window.innerWidth * 0.29}
-              scale={1}
+              width={width * 10}
+              scale={0.8}
             />
           </Document>
-          <div className="flex flex-col text-white ml-12  mt-2 text-sm">
+          <div className="flex flex-col text-white ml-12  mt-2 text-sm -z-50">
             {(() => {
               if (paragraphs) {
                 if (paragraphs.sections) {

@@ -16,6 +16,7 @@
     "react-is": "^17.0.2",
     "react-pdf": "^6.2.0",
     "react-rnd": "^10.3.3",
+    "react-split": "^2.0.14",
     "react-use": "^17.2.4",
     "shortid": "^2.2.16",
     "styled-components": "^5.2.3",

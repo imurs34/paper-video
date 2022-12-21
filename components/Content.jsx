@@ -17,7 +17,7 @@ import useOnClickOutside from "../hooks/onClickOutside";
 import pdfmap2 from "../pdfmap2.json";
 
 const ChunkedData = React.memo(
-  ({ data, addFixedData, index, sourcePath, isFull }) => {
+  ({ data, addFixedData, index, sourcePath, isFull, width }) => {
     const sortedData = _.orderBy(data, "order");
     return (
       <InnerColumn>
@@ -57,12 +57,21 @@ const ChunkedData = React.memo(
   }
 );
 const PositionedData = React.memo(
-  ({ data, addFixedData, index, sourcePath, isFull, template, paragraphs }) => {
+  ({
+    data,
+    addFixedData,
+    index,
+    sourcePath,
+    isFull,
+    template,
+    paragraphs,
+    width: componentWidth,
+  }) => {
     const [x, y, width, height] = data.box_info_original;
     const startXRatio = (x / template.width) * 10;
     const startYRatio = (y / template.height) * 100;
-    const widthRatio = (width / template.width) * 60;
-    const heightRatio = (height / template.height) * 60;
+    const widthRatio = (width / template.width) * componentWidth + 5;
+    const heightRatio = (height / template.height) * componentWidth + 5;
     const currentParagraphs = (val) => {
       paragraphs(val);
     };
@@ -147,9 +156,12 @@ const PositionedDataContainer = styled.div`
 `;
 
 const checkOnlyData = (prev, next) => {
-  return prev.data === next.data && prev.isFull === next.isFull;
+  return (
+    prev.data === next.data &&
+    prev.isFull === next.isFull &&
+    prev.width === next.width
+  );
 };
-
 const MemoedChunkedData = React.memo(ChunkedData, checkOnlyData);
 const MemoedPositionedData = React.memo(PositionedData, checkOnlyData);
 
@@ -300,6 +312,7 @@ function Content({
   data,
   index,
   sourcePath,
+  width,
   frameInfo,
   isFull,
   template,
@@ -356,6 +369,7 @@ function Content({
         isactive={isactive}
         bg={`${sourcePath}${data.bg_image}`}
         disableControl={disableControl}
+        width={width}
       >
         <Inner>
           {frameInfo.topBg && (
@@ -381,6 +395,7 @@ function Content({
                     <MemoedPositionedData
                       data={obj}
                       key={index}
+                      width={width}
                       paragraphs={paragraphs}
                       template={template}
                       addFixedData={addFixedData}
@@ -407,7 +422,11 @@ function Content({
     );
   }
   return (
-    <Container isactive={isactive} bg={`${sourcePath}${data.bg_image}`}>
+    <Container
+      isactive={isactive}
+      bg={`${sourcePath}${data.bg_image} `}
+      width={width}
+    >
       <Inner>
         {frameInfo.topBG && (
           <Frame
@@ -544,7 +563,7 @@ const Container = styled.div`
   background-color: ${(props) =>
     props.bg.includes("rgb") ? `r${props.bg.split("r")[1]}` : "transparent"};
   background-repeat: no-repeat;
-  background-size: 60% 100%;
+  background-size: ${(props) => `${props.width + 15}% 100%`};
   flex: 1;
   align-items: stretch;
   ${(props) =>
@@ -554,4 +573,4 @@ const Container = styled.div`
     `};
 `;
 
-export default React.memo(Content);
+export default Content;
