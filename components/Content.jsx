@@ -69,8 +69,8 @@ const PositionedData = React.memo(
   }) => {
     const [x, y, width, height] = data.box_info_original;
     const startXRatio = (x / template.width) * 10;
-    const startYRatio = (y / template.height) * 100;
-    const widthRatio = (width / template.width) * componentWidth + 5;
+    const startYRatio = (y / template.height) * 120;
+    const widthRatio = (width / template.width) * componentWidth + 10;
     const heightRatio = (height / template.height) * componentWidth + 5;
     const currentParagraphs = (val) => {
       paragraphs(val);

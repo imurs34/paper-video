@@ -82,7 +82,7 @@ function PdfView({ paragraphs, width }) {
               className=""
               pageNumber={pageNumber}
               customTextRenderer={textRenderer}
-              width={width * 10}
+              width={width > 60 ? width * 12 : width * 20}
               scale={0.8}
             />
           </Document>
