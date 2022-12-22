@@ -71,14 +71,14 @@
                     {
                         "label": "title",
                         "slide_id": 1,
-                        "box_info_original": [30, 10, 50, 100],
+                        "box_info_original": [30, 10, 50, 80],
                         "path": "001_0.08.png_title_0.35840664702978375.jpg",
                         "color_bg": "(169,230,224)"
                     },
                     {
                         "label": "text_box",
                         "slide_id": 1,
-                        "box_info_original": [110, 157, 1200, 16],
+                        "box_info_original": [110, 157, 1000, 16],
                         "in_column": 1,
                         "order": 1,
                         "text_content": "Structuring Iterative Improvement for Novice Designers",
@@ -91,7 +91,7 @@
                     {
                         "label": "text_box",
                         "slide_id": 1,
-                        "box_info_original": [110, 350, 1200, 10],
+                        "box_info_original": [110, 350, 1000, 10],
                         "in_column": 1,
                         "order": 1,
                         "text_content": "Lydia B. Chilton, Ecenaz Jen Ozmen, Sam Ross, Vivian Liu, Columbia University, Barnard College",
@@ -144,13 +144,13 @@
                     {
                         "label": "title",
                         "slide_id": 1,
-                        "box_info_original": [150, 53, 943, 42],
+                        "box_info_original": [170, 50, 785, 44],
                         "path": "003_0.26.png_title_0.7867422401374902.jpg"
                     },
                     {
                         "label": "picture",
                         "slide_id": 1,
-                        "box_info_original": [60, 150, 1075, 583],
+                        "box_info_original": [60, 100, 1054, 732],
                         "path": "003_0.26.png_picture_0.7765112935256571.jpg",
 
                         "in_column": 2,

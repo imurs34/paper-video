@@ -69,9 +69,17 @@ const PositionedData = React.memo(
   }) => {
     const [x, y, width, height] = data.box_info_original;
     const startXRatio = (x / template.width) * 10;
-    const startYRatio = (y / template.height) * 120;
-    const widthRatio = (width / template.width) * componentWidth + 10;
-    const heightRatio = (height / template.height) * componentWidth + 5;
+    const startYRatio = (y / template.height) * 110;
+    const widthRatio = (width / template.width) * componentWidth + 5;
+    const heightRatio =
+      (height / template.height) * componentWidth +
+      (componentWidth > 70
+        ? -2
+        : componentWidth > 50
+        ? 5
+        : componentWidth > 40
+        ? 9
+        : 20);
     const currentParagraphs = (val) => {
       paragraphs(val);
     };
@@ -89,6 +97,7 @@ const PositionedData = React.memo(
             addFixedData={addFixedData}
             key={shortid.generate()}
             isFull={isFull}
+            width={componentWidth}
             currentParagraphs={currentParagraphs}
           />
         </PositionedDataContainer>
@@ -440,20 +449,7 @@ function Content({
             <TitleImg src={`${sourcePath}${titleObj.path}`} />
           </TitleContainer>
         )}
-        <ColumnContainer>
-          {_.times(state.column, (i) => {
-            return (
-              <MemoedChunkedData
-                data={state.chunkedData[i + 1]}
-                key={i}
-                addFixedData={addFixedData}
-                index={index}
-                sourcePath={sourcePath}
-                isFull={isFull}
-              />
-            );
-          })}
-        </ColumnContainer>
+
         {frameInfo.bottomBg && (
           <Frame
             src={frameInfo.sourcePath + frameInfo.bottomBg}

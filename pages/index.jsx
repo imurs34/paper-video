@@ -17,7 +17,7 @@ const Index = () => {
     <Split
       gutterSize={20}
       onDragEnd={handleDrag}
-      className="flex w-screen h-screen z-[1000]"
+      className="flex w-screen h-screen "
     >
       <div className="mx-8">
         <Base input={input} paragraphs={currentParagraphs} width={width[0]} />

@@ -69,7 +69,7 @@ function PdfView({ paragraphs, width }) {
         <div
           className={`pdfview__container__document flex-${
             paragraph && width > 70 ? "row" : "col"
-          }`}
+          } ${width < 20 && "hidden"}`}
         >
           <Document
             file={file}
@@ -79,14 +79,22 @@ function PdfView({ paragraphs, width }) {
             renderMode="svg"
           >
             <Page
-              className=""
+              className={`${width < 20 && "hidden"}`}
               pageNumber={pageNumber}
               customTextRenderer={textRenderer}
-              width={width > 60 ? width * 12 : width * 20}
-              scale={0.8}
+              width={
+                width > 60
+                  ? (width * window.innerWidth) / 150
+                  : (width * window.innerWidth) / 100
+              }
+              scale={paragraph ? 0.5 : 0.8}
             />
           </Document>
-          <div className="flex flex-col text-white ml-12  mt-2 text-sm -z-50">
+          <div
+            className={`flex flex-col text-white ml-12  mt-2 text-sm ${
+              width < 20 && "hidden"
+            }`}
+          >
             {(() => {
               if (paragraphs) {
                 if (paragraphs.sections) {

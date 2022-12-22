@@ -127,8 +127,6 @@ const imageSelector = ({ location, dark }) => {
 };
 
 const Base = ({ input, paragraphs, width }) => {
-  console.log(parseInt(width));
-
   useEffect(() => {
     document.getElementById("videoContainer").style.height = `${width}%`;
   }, [width]);
@@ -198,7 +196,11 @@ const Base = ({ input, paragraphs, width }) => {
           content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
         />
       </Head>
-      <div className={"flex justify-center items-center h-screen"}>
+      <div
+        className={`flex justify-center items-center h-screen ${
+          width < 20 && "hidden"
+        }`}
+      >
         <Container
           className={`node w-full h-[50%] items-center`}
           id="videoContainer"
