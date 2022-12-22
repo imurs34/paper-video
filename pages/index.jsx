@@ -19,7 +19,7 @@ const Index = () => {
       onDragEnd={handleDrag}
       className="flex w-screen h-screen z-[1000]"
     >
-      <div className="ml-8">
+      <div className="mx-8">
         <Base input={input} paragraphs={currentParagraphs} width={width[0]} />
       </div>
       <div>
