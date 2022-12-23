@@ -1,7 +1,6 @@
 import _ from "lodash";
 import styled from "styled-components";
 import React, { useState } from "react";
-import { Rnd } from "react-rnd";
 import { useAtom } from "jotai";
 
 import { darkModeAtom, lockAtom } from "../atom";
@@ -14,28 +13,6 @@ function Image({ url, addFixedData }) {
     if (lock) {
       return;
     }
-    setFixed(true);
-    const { top, right, bottom, left, width, height, x, y } =
-      e.currentTarget.firstChild.getBoundingClientRect();
-    addFixedData({
-      label: e.target.tagName,
-      text: e.target.InnerHTML,
-      src: e.target.src,
-      style: _.pick(window.getComputedStyle(e.currentTarget.firstChild), [
-        "font-size",
-        "padding",
-        "color",
-        "background-color",
-      ]),
-      top,
-      right,
-      bottom,
-      left,
-      width,
-      height,
-      x,
-      y,
-    });
   };
   return (
     <Container fixed={fixed} onClick={onClick} isDark={dark}>

@@ -1,14 +1,11 @@
 import _ from "lodash";
-import toStyle from "css-to-style";
-import useFitText from "use-fit-text";
 import styled, { css } from "styled-components";
-import { Rnd } from "react-rnd";
 import { createBreakpoint } from "react-use";
 import { useAtom } from "jotai";
 import { useEffect, useRef, useState } from "react";
 
 import useWindowHeight from "../hooks/windowHeight";
-import { INSTRUCTURE_VALUE, MOBILE_VALUE, TEMPLATE_VALUE } from "../store";
+import { MOBILE_VALUE } from "../store";
 import { LINE_HEIGHT } from "../store";
 import {
   darkModeAtom,
@@ -33,9 +30,6 @@ function Text({ obj, addFixedData, isFull, currentParagraphs, width }) {
     if (lock) {
       return;
     }
-    setFixed(true);
-    const { top, right, bottom, left, width, height, x, y } =
-      e.currentTarget.getBoundingClientRect();
 
     if (obj.text_content.length > 0) {
       pdfmap2.map((item) => {
@@ -48,34 +42,7 @@ function Text({ obj, addFixedData, isFull, currentParagraphs, width }) {
         }
       });
     }
-
-    addFixedData({
-      label: "P",
-      text: obj.text_content,
-      src: e.target.src,
-      style: {
-        ..._.pick(window.getComputedStyle(e.currentTarget), [
-          "font-size",
-          "padding",
-          "color",
-          "background-color",
-          "letter-spacing",
-          "font-weight",
-          "font-family",
-        ]),
-        lineHeight: goal.lineHeight,
-      },
-      top,
-      right,
-      bottom,
-      left,
-      width,
-      height,
-      x,
-      y,
-    });
   };
-  // const { fontSize, ref } = useFitText({ maxFontSize: parseInt(goal), resolution: 5 });
   const [dark] = useAtom(darkModeAtom);
   const [frameHeight] = useAtom(frameHeightAtom);
 
@@ -97,9 +64,6 @@ function Text({ obj, addFixedData, isFull, currentParagraphs, width }) {
 
   return (
     <Container fixed={fixed} isDark={dark}>
-      {/* <Font ref={ref} style={{ fontSize }} color={obj.color_font} bg={obj.color_bg} onClick={onClick}>
-                {obj.text_content}
-            </Font> */}
       <P
         goal={goal}
         onClick={onClick}
@@ -135,6 +99,5 @@ const Container = styled.div`
   box-sizing: border-box;
   visibility: ${(props) => (props.fixed ? "hidden" : "visible")};
 `;
-// background-color: ${(props) => (props.isDark ? "rgb(47, 48, 49)" : "white")};
 
 export default Text;
