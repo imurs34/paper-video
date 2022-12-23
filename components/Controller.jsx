@@ -133,6 +133,7 @@ const Container = styled.div`
   flex-direction: column;
   height: 50px;
   padding-top: 5px;
+  margin-bottom: 10px;
   padding-bottom: 15px;
 `;
 const Buttons = styled.div`
