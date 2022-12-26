@@ -5,18 +5,35 @@ import { useAtom } from "jotai";
 
 import { darkModeAtom, lockAtom } from "../atom";
 
-function Image({ url, addFixedData }) {
+function Image({ url, width, widthRatio, heightRatio }) {
+  // console.log({ widthRatio, heightRatio });
+  console.log("props.widthRatio", widthRatio);
+  console.log("width", width);
   const [fixed, setFixed] = useState();
   const [lock] = useAtom(lockAtom);
   const [dark] = useAtom(darkModeAtom);
+  const [active, setActive] = useState("");
   const onClick = (e) => {
+    setActive(e.target.id);
     if (lock) {
       return;
     }
   };
+  // console.log({ active });
+
   return (
     <Container fixed={fixed} onClick={onClick} isDark={dark}>
-      <Img src={url} draggable="false" />
+      {active == url ? (
+        <ImgOverlayer
+          src={url}
+          id={url}
+          width={width}
+          widthRatio={widthRatio}
+          heightRatio={heightRatio}
+        />
+      ) : (
+        <Img src={url} id={url} />
+      )}
     </Container>
   );
 }
@@ -25,7 +42,7 @@ function FixedImage({ url }) {
   const [dark] = useAtom(darkModeAtom);
   return (
     <FixedContainer isDark={dark}>
-      <Img src={url} draggable="false" />
+      <Img src={url} />
     </FixedContainer>
   );
 }
@@ -35,21 +52,40 @@ const FixedContainer = styled.div`
   flex-basis: 0;
   overflow: hidden;
 `;
-// background-color: ${(props) => (props.isDark ? "rgb(47, 48, 49)" : "white")};
 const Container = styled.div`
   display: flex;
   flex: 1;
   flex-basis: 0;
   overflow: hidden;
   visibility: ${(props) => (props.fixed ? "hidden" : "visible")};
+  padding: 5px 0px;
+  margin: 0 auto;
+  border:10px solid red
+  width: 100rem;
+  
+};
 `;
-// background-color: ${(props) => (props.isDark ? "rgb(47, 48, 49)" : "white")};
 const Img = styled.img`
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
 `;
+const ImgOverlayer = styled.div`
+  background: ${(
+    props
+  ) => `linear-gradient(rgb(72, 0, 72, 0.5), rgb(72, 0, 72, 0.5)),
+  url(${props.src})
+    no-repeat;`}
+  width:${(props) =>
+    `${props.widthRatio < 50 ? props.widthRatio + 5 : props.widthRatio}%`};
+  height: ${(props) =>
+    `${
+      props.heightRatio < 50 ? props.heightRatio + 5 : props.heightRatio + 50
+    }rem`};
 
+//  height:10rem;  
+  margin: 0 auto;
+  background-size:contain;
+`;
 export default React.memo(Image);
-
 export { FixedImage };

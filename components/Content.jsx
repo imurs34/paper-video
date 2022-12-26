@@ -1,5 +1,4 @@
 import shortid from "shortid";
-import toStyle from "css-to-style";
 import useFitText from "use-fit-text";
 import React, { useCallback, useEffect, useReducer, useRef } from "react";
 import styled, { css } from "styled-components";
@@ -150,6 +149,9 @@ const PositionedData = React.memo(
           url={`${sourcePath}${data.path}`}
           addFixedData={addFixedData}
           key={shortid.generate()}
+          width={componentWidth}
+          widthRatio={widthRatio}
+          heightRatio={heightRatio}
         />
       </PositionedDataContainer>
     );

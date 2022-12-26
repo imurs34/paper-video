@@ -75,8 +75,6 @@ function PdfView({ paragraphs, width }) {
             file={file}
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
-            className=""
-            renderMode="svg"
           >
             <Page
               className={`${width < 20 && "hidden"}`}

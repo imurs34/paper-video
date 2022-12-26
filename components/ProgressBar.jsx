@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useAtom } from "jotai";
 import { useRef } from "react";
 
-import { jumpAtom, percentAtom } from "../atom";
+import { percentAtom } from "../atom";
 
 function Control({ jump }) {
   const [percent] = useAtom(percentAtom);

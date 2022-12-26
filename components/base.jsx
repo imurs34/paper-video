@@ -35,11 +35,13 @@ const ControllerLine = ({ content }) => {
 
   return (
     <Line>
-      {startTimes.map((time) => {
+      {startTimes.map((time, index) => {
         return (
-          <LinePoint value={(time / duration) * 100} key={shortid.generate()}>
-            <Circle />
-          </LinePoint>
+          <div key={index}>
+            <LinePoint key={shortid.generate()} value={(time / duration) * 100}>
+              <Circle />
+            </LinePoint>
+          </div>
         );
       })}
     </Line>
@@ -183,8 +185,8 @@ const Base = ({ input, paragraphs, width }) => {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        {input.template.fontUrl.map((url) => {
-          return <link href={url} rel="stylesheet" />;
+        {input.template.fontUrl.map((url, index) => {
+          return <link href={url} key={index} rel="stylesheet" />;
         })}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta
