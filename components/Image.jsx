@@ -2,8 +2,7 @@ import _ from "lodash";
 import styled from "styled-components";
 import React, { useState } from "react";
 import { useAtom } from "jotai";
-
-import { darkModeAtom, lockAtom, highlightAtom } from "../atom";
+import { darkModeAtom, highlightAtom } from "../atom";
 
 function Image({ url, width, widthRatio, heightRatio }) {
   const [fixed] = useState();

@@ -24,7 +24,7 @@ function PdfView({ paragraphs, width }) {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = React.useState(1);
   const [paragraph, setParagraph] = useState(null);
-
+  const [scale, setScale] = useState(paragraph ? 0.5 : 0.8);
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
   }
@@ -56,14 +56,32 @@ function PdfView({ paragraphs, width }) {
       }
     });
   };
+  const handlezoom = (type) => {
+    if (type == "+") {
+      setScale(scale + 0.1);
+    } else {
+      setScale(scale - 0.1);
+    }
+  };
   return (
-    <div className="pdfview m-auto w-full h-screen items-center flex justify-center">
+    <div className="pdfview m-auto w-full h-screen items-center flex justify-center relative">
       <div className="pdfview__container ">
         <div
           className={`pdfview__container__document flex-${
             paragraph && width > 70 ? "row" : "col"
           } ${width < 20 && "hidden"}`}
         >
+          <div className="h-12 text-[#f1f1f1] py-5 text-2xl justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
+            <button className="text-3xl" onClick={() => handlezoom("+")}>
+              +
+            </button>
+            <span className="relative bg-[#191b1c] text-sm p-1 rounded">
+              {parseInt(scale * 100)}%
+            </span>
+            <button className="text-3xl" onClick={() => handlezoom("-")}>
+              &ndash;
+            </button>
+          </div>
           <Document
             file={file}
             onLoadSuccess={onDocumentLoadSuccess}
@@ -78,7 +96,7 @@ function PdfView({ paragraphs, width }) {
                   ? (width * window.innerWidth) / 150
                   : (width * window.innerWidth) / 100
               }
-              scale={paragraph ? 0.5 : 0.8}
+              scale={scale}
             />
           </Document>
           <div
