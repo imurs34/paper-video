@@ -56,6 +56,7 @@ function PdfView({ paragraphs, width }) {
       }
     });
   };
+
   const handlezoom = (type) => {
     if (type == "+") {
       setScale(scale + 0.1);
@@ -63,6 +64,14 @@ function PdfView({ paragraphs, width }) {
       setScale(scale - 0.1);
     }
   };
+  const handlePage = (type) => {
+    if (type == "next") {
+      setPageNumber(pageNumber + 1);
+    } else {
+      setPageNumber(pageNumber - 1);
+    }
+  };
+
   return (
     <div className="pdfview m-auto w-full h-screen items-center flex justify-center relative">
       <div className="pdfview__container ">
@@ -71,7 +80,25 @@ function PdfView({ paragraphs, width }) {
             paragraph && width > 70 ? "row" : "col"
           } ${width < 20 && "hidden"}`}
         >
-          <div className="h-12 text-[#f1f1f1] py-5 text-2xl justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
+          <div className="h-12 text-[#f1f1f1] py-5  justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
+            <button
+              disabled={pageNumber <= numPages}
+              className="text-sm"
+              onClick={() => handlePage("prev")}
+            >
+              Prev
+            </button>
+            <span className="relative bg-[#191b1c] text-sm p-1 rounded">
+              {pageNumber}/{numPages}
+            </span>
+            <button
+              disabled={pageNumber >= numPages}
+              className="text-sm"
+              onClick={() => handlePage("next")}
+            >
+              Next
+            </button>
+            |
             <button className="text-3xl" onClick={() => handlezoom("+")}>
               +
             </button>
