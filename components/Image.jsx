@@ -3,27 +3,19 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import { useAtom } from "jotai";
 
-import { darkModeAtom, lockAtom } from "../atom";
+import { darkModeAtom, lockAtom, highlightAtom } from "../atom";
 
 function Image({ url, width, widthRatio, heightRatio }) {
-  // console.log({ widthRatio, heightRatio });
-  console.log("props.widthRatio", widthRatio);
-  console.log("width", width);
-  const [fixed, setFixed] = useState();
-  const [lock] = useAtom(lockAtom);
+  const [fixed] = useState();
   const [dark] = useAtom(darkModeAtom);
-  const [active, setActive] = useState("");
+  const [highlight, setHighlightAtom] = useAtom(highlightAtom);
   const onClick = (e) => {
-    setActive(e.target.id);
-    if (lock) {
-      return;
-    }
+    setHighlightAtom(e.target.id);
   };
-  // console.log({ active });
 
   return (
     <Container fixed={fixed} onClick={onClick} isDark={dark}>
-      {active == url ? (
+      {highlight == url ? (
         <ImgOverlayer
           src={url}
           id={url}

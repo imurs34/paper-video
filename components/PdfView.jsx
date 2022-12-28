@@ -28,13 +28,6 @@ function PdfView({ paragraphs, width }) {
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
   }
-  // useEffect(() => {
-  //   console.log(width[1]);
-  //   // setFile("");
-  //   setTimeout(() => {
-  //     // setFile("/pdfs/visifit.pdf");
-  //   }, 3000);
-  // }, [width]);
 
   useEffect(() => {
     if (paragraphs) {

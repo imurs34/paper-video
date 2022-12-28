@@ -2,12 +2,14 @@ import styled from "styled-components";
 import { useAtom } from "jotai";
 import { useRef } from "react";
 
-import { percentAtom } from "../atom";
+import { highlightAtom, percentAtom } from "../atom";
 
 function Control({ jump }) {
   const [percent] = useAtom(percentAtom);
   const ref = useRef();
+  const [, setHighlightAtom] = useAtom(highlightAtom);
   const jumpToPlay = (e) => {
+    setHighlightAtom(null);
     const percentPoint = e.nativeEvent.offsetX / ref.current.offsetWidth;
     jump(percentPoint);
   };
@@ -26,7 +28,6 @@ const ProgressBarLine = styled.div`
   height: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
-  display: flex;
   background-color: #adadad;
   cursor: pointer;
 `;
