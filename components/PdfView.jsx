@@ -23,12 +23,24 @@ function PdfView({ paragraphs, width }) {
   const [file, setFile] = useState("/pdfs/visifit.pdf");
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = React.useState(1);
+  const [value, setValue] = useState(1);
   const [paragraph, setParagraph] = useState(null);
   const [scale, setScale] = useState(paragraph ? 0.5 : 0.8);
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
   }
 
+  const handleChange = (e) => {
+    const value = Number(e.target.value);
+    if (value >= 0 && value <= numPages) setValue(value);
+    if (value > 0 && value <= numPages) {
+      setPageNumber(value);
+    }
+  };
+
+  useEffect(() => {
+    setValue(pageNumber);
+  }, [pageNumber]);
   useEffect(() => {
     if (paragraphs) {
       pdfmap.map((item) => {
@@ -61,7 +73,7 @@ function PdfView({ paragraphs, width }) {
     if (type == "+") {
       setScale(scale + 0.1);
     } else {
-      setScale(scale - 0.1);
+      if (scale > 0.2) setScale(scale - 0.1);
     }
   };
   const handlePage = (type) => {
@@ -71,25 +83,30 @@ function PdfView({ paragraphs, width }) {
       setPageNumber(pageNumber - 1);
     }
   };
-
   return (
-    <div className="pdfview m-auto w-full h-screen items-center flex justify-center relative">
-      <div className="pdfview__container ">
+    <div className="pdfview m-auto w-full overflow-auto  h-screen  items-center flex justify-center relative">
+      <div className="pdfview__container">
         <div
-          className={`pdfview__container__document flex-${
+          className={`pdfview__container__document overflow-auto flex-${
             paragraph && width > 70 ? "row" : "col"
           } ${width < 20 && "hidden"}`}
         >
-          <div className="h-12 text-[#f1f1f1] py-5  justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
+          <div className="h-12 text-[#f1f1f1] py-5 overflow-auto justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
             <button
-              disabled={pageNumber <= numPages}
+              disabled={pageNumber <= 1}
               className="text-sm"
               onClick={() => handlePage("prev")}
             >
               Prev
             </button>
-            <span className="relative bg-[#191b1c] text-sm p-1 rounded">
-              {pageNumber}/{numPages}
+            <span className="relative  bg-[#191b1c] text-sm p-1 justify-center items-center rounded flex">
+              <input
+                className="relative w-4 border-0 outline-none bg-[#191b1c] text-sm rounded"
+                value={value}
+                type="number"
+                onChange={handleChange}
+              />
+              {"  "} / {numPages}
             </span>
             <button
               disabled={pageNumber >= numPages}
