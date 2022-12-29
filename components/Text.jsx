@@ -10,26 +10,23 @@ import { LINE_HEIGHT } from "../store";
 import {
   darkModeAtom,
   frameHeightAtom,
-  lockAtom,
   withFrameAtom,
+  highlightAtom,
 } from "../atom";
 
 import pdfmap2 from "../pdfmap2.json";
 
 const useBreakpoint = createBreakpoint({ XL: 1280, L: 768, S: 350 });
 
-function Text({ obj, addFixedData, isFull, currentParagraphs, width }) {
-  const [lock] = useAtom(lockAtom);
+function Text({ obj, isFull, currentParagraphs, width }) {
   const [withFrame] = useAtom(withFrameAtom);
-  const [fixed, setFixed] = useState();
+  const [fixed] = useState();
   const breakpoint = useBreakpoint();
   const height = useWindowHeight();
   const ref = useRef();
-
+  const [highlight, setHighlightAtom] = useAtom(highlightAtom);
   const onClick = (e) => {
-    if (lock) {
-      return;
-    }
+    setHighlightAtom(e.target.id);
 
     if (obj.text_content.length > 0) {
       pdfmap2.map((item) => {
@@ -61,6 +58,7 @@ function Text({ obj, addFixedData, isFull, currentParagraphs, width }) {
       setGoal({ fontSize: size, lineHeight: LINE_HEIGHT, fontWeight });
     }
   }, [frameHeight, height, isFull, withFrame]);
+  // console.log(obj.text_content);
 
   return (
     <Container fixed={fixed} isDark={dark}>
@@ -71,6 +69,8 @@ function Text({ obj, addFixedData, isFull, currentParagraphs, width }) {
         color={obj.color_font}
         typeFace={obj.typeface}
         ref={ref}
+        highlight={highlight}
+        id={obj.id}
         width={width}
       >
         {obj.text_content}
@@ -87,7 +87,8 @@ const P = styled.p`
   letter-spacing: 0;
   overflow-wrap: wrap;
   color: ${(props) => (props.color ? `rgb${props.color}` : "black")};
-  background-color: ${(props) => (props.bg ? `rgb${props.bg}` : "black")};
+  background-color: ${(props) =>
+    props.highlight === props.id ? `rgb(72, 0, 72, 0.5)` : `rgb${props.bg}`};
   font-family: ${(props) => props.typeFace};
 `;
 
