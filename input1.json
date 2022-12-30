@@ -77,7 +77,7 @@
                     },
                     {
                         "label": "text_box",
-                        "slide_id": 1,
+                        "slide_id": 0,
                         "box_info_original": [110, 157, 1000, 16],
                         "in_column": 1,
                         "order": 1,
@@ -91,7 +91,7 @@
                     },
                     {
                         "label": "text_box",
-                        "slide_id": 1,
+                        "slide_id": 0,
                         "box_info_original": [110, 350, 1000, 10],
                         "in_column": 1,
                         "order": 1,
@@ -107,7 +107,7 @@
             },
             {
                 "shot_id": 3,
-                "slide_id": 1,
+                "slide_id": 2,
                 "ratio": 0.3,
                 "column": 0,
                 "bg_image": "rgb(185,233,228)",
@@ -136,7 +136,7 @@
             {
                 
                 "shot_id": 4,
-                "slide_id": 1,
+                "slide_id": 3,
                 "ratio": 0.3,
                 "column": 0,
                 "bg_image": "rgb(185,233,228)",
@@ -151,7 +151,7 @@
                     },
                     {
                         "label": "picture",
-                        "slide_id": 1,
+                        "slide_id": 3,
                         "box_info_original": [60, 100, 1054, 732],
                         "path": "003_0.26.png_picture_0.7765112935256571.jpg",
 
@@ -164,7 +164,7 @@
             },
             {
                 "shot_id": 5,
-                "slide_id": 1,
+                "slide_id": 4,
                 "ratio": 0.3,
                 "column": 0,
                 "bg_image": "rgb(185,233,228)",
@@ -173,13 +173,13 @@
                 "learning_material": [
                     {
                         "label": "title",
-                        "slide_id": 1,
+                        "slide_id": 4,
                         "box_info_original": [170, 53, 864, 166],
                         "path": "004_0.3.png_handwriting_0.5933713092107841.jpg"
                     },
                     {
                         "label": "picture",
-                        "slide_id": 1,
+                        "slide_id": 4,
                         "box_info_original": [170, 250, 1000, 553],
                         "path": "004_0.3.png_picture_0.2876961164641314.png",
 

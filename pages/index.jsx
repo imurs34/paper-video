@@ -7,6 +7,7 @@ const Index = () => {
   const [paragraphs, setParagraphs] = useState();
   const [width, setWidth] = useState([50, 50]);
   const currentParagraphs = (val) => {
+    console.log({ val });
     setParagraphs(val);
   };
 

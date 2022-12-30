@@ -46,6 +46,7 @@ const ChunkedData = React.memo(
               <Image
                 url={`${sourcePath}${obj.path}`}
                 addFixedData={addFixedData}
+                obj={obj}
                 key={shortid.generate()}
               />
             );
@@ -148,8 +149,10 @@ const PositionedData = React.memo(
         <Image
           url={`${sourcePath}${data.path}`}
           addFixedData={addFixedData}
+          obj={data}
           key={shortid.generate()}
           width={componentWidth}
+          currentParagraphs={currentParagraphs}
           widthRatio={widthRatio}
           heightRatio={heightRatio}
         />

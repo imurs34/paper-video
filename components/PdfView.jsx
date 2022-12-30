@@ -4,6 +4,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import pdfmap from "../pdfmap1.json";
+import { useAtom } from "jotai";
+import { paragraphAtom } from "../atom";
 
 const options = {
   cMapUrl: "cmaps/",
@@ -19,7 +21,10 @@ function highlightPattern(text, paragraph) {
     return `<mark>${text.str}</mark>`;
 }
 
-function PdfView({ paragraphs, width }) {
+function PdfView({ width }) {
+  const [paragraphs] = useAtom(paragraphAtom);
+  console.log({ paragraphs });
+
   const [file, setFile] = useState("/pdfs/visifit.pdf");
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = React.useState(1);
@@ -43,8 +48,10 @@ function PdfView({ paragraphs, width }) {
   }, [pageNumber]);
   useEffect(() => {
     if (paragraphs) {
+      console.log({ paragraphs });
       pdfmap.map((item) => {
-        if (Number(item.id) == paragraphs.paragraphs[0]) {
+        if (Number(item.id) == paragraphs.paragraph[0]) {
+          console.log({ item });
           setPageNumber(Number(item.page));
           setParagraph(item);
         }
@@ -62,7 +69,7 @@ function PdfView({ paragraphs, width }) {
   );
   const clicked = (index) => {
     pdfmap.map((item) => {
-      if (Number(item.id) == paragraphs.paragraphs[index]) {
+      if (Number(item.id) == paragraphs.paragraph[index]) {
         setPageNumber(Number(item.page));
         setParagraph(item);
       }
@@ -77,6 +84,7 @@ function PdfView({ paragraphs, width }) {
     }
   };
   const handlePage = (type) => {
+    setParagraph(null);
     if (type == "next") {
       setPageNumber(pageNumber + 1);
     } else {
@@ -87,9 +95,9 @@ function PdfView({ paragraphs, width }) {
     <div className="pdfview m-auto w-full overflow-auto  h-screen  items-center flex justify-center relative">
       <div className="pdfview__container  ">
         <div
-          className={`pdfview__container__document  h-[90vh]  overflow-auto  flex-${
-            paragraph && width > 70 ? "row" : "col"
-          } ${width < 20 && "hidden"}`}
+          className={`pdfview__container__document  h-[90vh]  overflow-auto  flex-col ${
+            width < 20 && "hidden"
+          }`}
         >
           <div className="h-12 text-[#f1f1f1] py-5  justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
             <button
@@ -126,6 +134,7 @@ function PdfView({ paragraphs, width }) {
               &ndash;
             </button>
           </div>
+
           <Document
             file={file}
             onLoadSuccess={onDocumentLoadSuccess}
@@ -159,7 +168,7 @@ function PdfView({ paragraphs, width }) {
                   for (let i = 0; i < sections.length; i++) {
                     let para = "";
                     pdfmap.map((item) => {
-                      if (Number(item.id) == paragraphs.paragraphs[i]) {
+                      if (Number(item.id) == paragraphs.paragraph[i]) {
                         para = item.paragraphs.split(" ").slice(0, 7).join(" ");
                       }
                     });

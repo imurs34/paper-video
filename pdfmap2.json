@@ -5,14 +5,13 @@
       "start": 2,
       "textual_group": "Making Waves, Combining Strengths\n\n | Visit structuring iterative Improvement for novice designers.",
       "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'DISCUSSION', 'DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
-      "paragraphs": [
+      "paragraph": [
         19,
         77,
         74,
         66,
         78
-      ],
-      "scores": [
+      ], "scores": [
         0.5255077481269836,
         0.5173649787902832,
         0.5120598673820496,
@@ -26,14 +25,13 @@
       "start": 8,
       "textual_group": "Structuring Iterative Improvement for\nNovice Designers\n\n | Aeration is about improving a prototype, but it aration is never a straight shot from A to B.how can we structure iteration to guide users to retire Fidelity prototypes, We focus this question on visual Blends which are when two objects are combined seamlessly and aesthetically into one visual to convey a new meaning, some examples are shown on the left.",
       "sections": "['INTRODUCTION', 'INTRODUCTION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'INTRODUCTION', 'INTRODUCTION']",
-      "paragraphs": [
+      "paragraph":[
         3,
         0,
         19,
         7,
         2
-      ],
-      "scores": [
+      ],    "scores": [
         0.7199791073799133,
         0.7057110071182251,
         0.6560177206993103,
@@ -47,7 +45,7 @@
       "start": 26,
       "textual_group": "But iteration is never a straight shot from A to B.\n\n | We propose the following design principles to structure, iteration one structure, the problem into subtasks and provide interactive tools specific to each subtask.",
       "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'RELATED WORK 2.1 Design Tools', 'RELATED WORK 2.1 Design Tools', 'INTRODUCTION']",
-      "paragraphs": [
+      "paragraph":[
         24,
         19,
         10,
@@ -64,11 +62,11 @@
     },
     {
       "": 3,
-      "slide_id": 6,
+      "slide_id": 3,
       "start": 42,
       "textual_group": "(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeaning\n\n |",
       "sections": "['BACKGROUND: VISUAL BLENDS', 'INTRODUCTION', 'VISIFIT SYSTEM', 'VISIFIT SYSTEM', 'RELATED WORK 2.1 Design Tools']",
-      "paragraphs": [
+      "paragraph":[
         15,
         2,
         49,
@@ -85,18 +83,17 @@
     },
     {
       "": 4,
-      "slide_id": 7,
+      "slide_id": 4,
       "start": 43,
       "textual_group": "“-|.|.-”=\".=-\n(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeanlnn\n\n | To identify secondary dyemensions to structure.The iteration process for visual Blends.Those dimensions are silhouette colors, and internal details.Three provide high-level tools related to the secondary visuals.I mentioned I can preview results without requiring expert knowledge or tedious low-level manipulation.",
       "sections": "['VISIFIT SYSTEM', 'INTRODUCTION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'VISIFIT SYSTEM']",
-      "paragraphs": [
+      "paragraph":[
         48,
         3,
         34,
         37,
         47
-      ],
-      "scores": [
+      ],      "scores": [
         0.6122137308120728,
         0.6033878326416016,
         0.6003776788711548,

@@ -12,6 +12,7 @@ import {
   frameHeightAtom,
   withFrameAtom,
   highlightAtom,
+  paragraphAtom,
 } from "../atom";
 
 import pdfmap2 from "../pdfmap2.json";
@@ -25,20 +26,14 @@ function Text({ obj, isFull, currentParagraphs, width }) {
   const height = useWindowHeight();
   const ref = useRef();
   const [highlight, setHighlightAtom] = useAtom(highlightAtom);
+  const [paragraph, setParagraphAtom] = useAtom(paragraphAtom);
   const onClick = (e) => {
     setHighlightAtom(e.target.id);
-
-    if (obj.text_content.length > 0) {
-      pdfmap2.map((item) => {
-        if (Number(item.slide_id) == obj.slide_id) {
-          currentParagraphs({
-            sections: item.sections,
-            paragraphs: item.paragraphs,
-            scores: item.scores,
-          });
-        }
-      });
-    }
+    pdfmap2.map((item) => {
+      if (Number(item.slide_id) == obj.slide_id) {
+        setParagraphAtom(item);
+      }
+    });
   };
   const [dark] = useAtom(darkModeAtom);
   const [frameHeight] = useAtom(frameHeightAtom);

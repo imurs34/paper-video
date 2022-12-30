@@ -6,6 +6,7 @@ const activityAtom = atom({
   slide: 0,
 });
 const highlightAtom = atom(null);
+const paragraphAtom = atom(null);
 const lockAtom = atom(false);
 const frameHeightAtom = atom();
 const playingAtom = atom(false);
@@ -22,6 +23,7 @@ const mobileModeAtom = atom(false);
 export {
   activityAtom,
   playingAtom,
+  paragraphAtom,
   lockAtom,
   withFrameAtom,
   withVideoAtom,

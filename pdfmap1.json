@@ -48,7 +48,9 @@
     },
     {
       "id": 9,
-      "paragraphs": "Design tools and creativity support tools (CSTs) have a rich tradition of accelerating innovation and discovery [49] by supporting the design process. A survey of 143 papers from 1999-2018 on creativity support tools (CSTs) found that there are papers supporting all phases of the design process: ideation, exploration, prototyping, implementation, evaluation, and process/pipeline, and iteration. [17]. Many of these tools support more than one phase of the design process. However, not all phases of the design process are equally represented in the literature. In fact, a majority of these tools focused on either very early or very late phases of the design process. Of the systems in the survey, 45% support ideation [30,50,59], 41% support implementation, including high-fdelity tools [57] or low-fdelity tools for prototyping or sketching [10,21,31,32], and 18% supported evaluation through feedback [36,63] or expert annotation [51]. However, only 6% of the systems surveyed supported iteration, and only 4% supported the related task of design management or pipelines. More research is needed on how to support iteration more efectively -that is, how to help designers improve on an initial prototype to get closer to their fnal design goal. Our work in this paper focuses on this problem."
+      "paragraphs": "Design tools and creativity support tools (CSTs) have a rich tradition of accelerating innovation and discovery [49] by supporting the design process. A survey of 143 papers from 1999-2018 on creativity support tools (CSTs) found that there are papers supporting all phases of the design process: ideation, exploration, prototyping, implementation, evaluation, and process/pipeline, and iteration. [17]. Many of these tools support more than one phase of the design process. However, not all phases of the design process are equally represented in the literature. In fact, a majority of these tools focused on either very early or very late phases of the design process. Of the systems in the survey, 45% support ideation [30,50,59], 41% support implementation, including high-fdelity tools [57] or low-fdelity tools for prototyping or sketching [10,21,31,32], and 18% supported evaluation through feedback [36,63] or expert annotation [51]. However, only 6% of the systems surveyed supported iteration, and only 4% supported the related task of design management or pipelines. More research is needed on how to support iteration more efectively -that is, how to help designers improve on an initial prototype to get closer to their fnal design goal. Our work in this paper focuses on this problem.",
+     "page": 2,
+      "index": [1811,2230]
     },
     {
       "id": 10,
@@ -64,7 +66,9 @@
     },
     {
       "id": 13,
-      "paragraphs": "Computational tools have long been a promising approach to aid design because they can search a design space and help meet a constraint. The power of computational or computer-aided design has been shown in many felds such as: education [34], medicine [22], games [52], urban planning [5], and accessibility [18]. The system designer must defne the space and the search parameters, as well as provide design patterns for solutions that can be adapted to diferent inputs. [2,64,65] Computational design tools have had particularly strong adoption in graphic design problems like optimizing layout [7,11,41,56], making icons [4,6], and providing inspiration through mood boards [29,60] and relevant examples [12,30]. This is also true in the 3D domain, where computational tools can be used to search a design space and create multiple mesh and texture variations of objects (i.e. trees or airplanes) that can make computer generated scenes more diverse [37,54]. Deep learning has also been applied to generate new designs that ft user specifcations [38,62]. In this paper, we address a specifc kind of graphic design problem of that requires blending two objects into one in order to convey a new meaning. To our knowledge, none of the existing computational design tools have addressed this problem."
+      "paragraphs": "Computational tools have long been a promising approach to aid design because they can search a design space and help meet a constraint. The power of computational or computer-aided design has been shown in many felds such as: education [34], medicine [22], games [52], urban planning [5], and accessibility [18]. The system designer must defne the space and the search parameters, as well as provide design patterns for solutions that can be adapted to diferent inputs. [2,64,65] Computational design tools have had particularly strong adoption in graphic design problems like optimizing layout [7,11,41,56], making icons [4,6], and providing inspiration through mood boards [29,60] and relevant examples [12,30]. This is also true in the 3D domain, where computational tools can be used to search a design space and create multiple mesh and texture variations of objects (i.e. trees or airplanes) that can make computer generated scenes more diverse [37,54]. Deep learning has also been applied to generate new designs that ft user specifcations [38,62]. In this paper, we address a specifc kind of graphic design problem of that requires blending two objects into one in order to convey a new meaning. To our knowledge, none of the existing computational design tools have addressed this problem.",
+      "page": 3,
+      "index": [784 ,1258]
     },
     {
       "id": 14,
@@ -72,7 +76,9 @@
     },
     {
       "id": 15,
-      "paragraphs": "Visual blends are an advanced graphic design technique where two objects are blended into one to convey a message symbolically. They represent a canonical and very challenging design problem [3] because the two objects must be blended into one object, yet still remain individually identifable so the viewer can tell what objects were blended. When asked to defne design, Charles Eames once said, \"Design is a plan for arranging elements to accomplish a particular purpose\". [42] In a visual blend, the objects to blend are the elements, the way they overlap is their arrangement, and the particular purpose is the seamless blend of the objects to convey a message. Because they are a difcult design challenge, visual blends are studied by several diverse felds. In cognitive science, researchers study how creativity emerges from conceptual blending [43]. In visual communication, researcher study how visual blends convey meaning through through context and implicature rather than through explicit language [15,16,44,58]. Creativity and cognition researchers study how computers might achieve creativity by creating visual blends [26]."
+      "paragraphs": "Visual blends are an advanced graphic design technique where two objects are blended into one to convey a message symbolically. They represent a canonical and very challenging design problem [3] because the two objects must be blended into one object, yet still remain individually identifable so the viewer can tell what objects were blended. When asked to defne design, Charles Eames once said, \"Design is a plan for arranging elements to accomplish a particular purpose\". [42] In a visual blend, the objects to blend are the elements, the way they overlap is their arrangement, and the particular purpose is the seamless blend of the objects to convey a message. Because they are a difcult design challenge, visual blends are studied by several diverse felds. In cognitive science, researchers study how creativity emerges from conceptual blending [43]. In visual communication, researcher study how visual blends convey meaning through through context and implicature rather than through explicit language [15,16,44,58]. Creativity and cognition researchers study how computers might achieve creativity by creating visual blends [26].",
+      "page": 3,
+      "index": [1625,1999]
     },
     {
       "id": 16,
@@ -151,7 +157,9 @@
     },
     {
       "id": 34,
-      "paragraphs": "The concepts of color, silhouette, and internal details were intuitive to the artists, and they readily used them to improve the blends. Blending color was a familiar idea to them, and it was very easy for them to do in Photoshop. An efective tool one artist used for blending was the \"Multiply\" feature, which preserved both the color and the texture of each object, as seen in the top row of Figure 4. Both artists were surprised at how efectively silhouettes could be used in blends. They tried using the concept of silhouette blending in blends such as the middle row of Figure 4 and were pleased with the results. The idea of extracting and reapplying details was natural to them, as they had employed analogous features in Photoshop (i.e. magic wand) to manipulate details before. However, even with industry tools, extraction was often tedious. In general, both designers thought that if they worked on the basis of these visual dimensions, they could recreate any visual blend."
+      "paragraphs": "The concepts of color, silhouette, and internal details were intuitive to the artists, and they readily used them to improve the blends. Blending color was a familiar idea to them, and it was very easy for them to do in Photoshop. An efective tool one artist used for blending was the \"Multiply\" feature, which preserved both the color and the texture of each object, as seen in the top row of Figure 4. Both artists were surprised at how efectively silhouettes could be used in blends. They tried using the concept of silhouette blending in blends such as the middle row of Figure 4 and were pleased with the results. The idea of extracting and reapplying details was natural to them, as they had employed analogous features in Photoshop (i.e. magic wand) to manipulate details before. However, even with industry tools, extraction was often tedious. In general, both designers thought that if they worked on the basis of these visual dimensions, they could recreate any visual blend.",
+      "page": 6,
+      "index": [927 ,1270 ]
     },
     {
       "id": 35,
@@ -163,7 +171,9 @@
     },
     {
       "id": 37,
-      "paragraphs": "Design Principle 3. Provide novices with high-level tools related to the secondary visual dimensions that can preview results without requiring expert knowledge or tedious, lowlevel manipulation. In VisiFit, these tools include (1) extracting and applying silhouettes, (2) blending colors between two objects, and (3) extracting and replacing internal details from one object to another."
+      "paragraphs": "Design Principle 3. Provide novices with high-level tools related to the secondary visual dimensions that can preview results without requiring expert knowledge or tedious, lowlevel manipulation. In VisiFit, these tools include (1) extracting and applying silhouettes, (2) blending colors between two objects, and (3) extracting and replacing internal details from one object to another.",
+      "page": 6,
+      "index": [1862 ,1970 ]
     },
     {
       "id": 38,
@@ -171,7 +181,9 @@
     },
     {
       "id": 39,
-      "paragraphs": "(1) An ordered pair of images that have a shape match. We refer to them as Object A and Object B. In Object A, the shape covers the entire object. In Object B, the shape covers only the main body of the object, leaving out parts of the object outside the shape. When blending the images, Object A will be mapped onto Object B. (2) The positioning parameters to align Object A to the shape in Object B: x-scale factor, y-scale factor, angle of rotation, and center position. In the prototype of the blend, Object A is cropped, scaled, and positioned to ft into the shape of Object B."
+      "paragraphs": "An ordered pair of images that have a shape match. We refer to them as Object A and Object B. In Object A, the shape covers the entire object. In Object B, the shape covers only the main body of the object, leaving out parts of the object outside the shape. When blending the images, Object A will be mapped onto Object B. (2) The positioning parameters to align Object A to the shape in Object B: x-scale factor, y-scale factor, angle of rotation, and center position. In the prototype of the blend, Object A is cropped, scaled, and positioned to ft into the shape of Object B.",
+      "page": 7,
+      "index": [132,257]
     },
     {
       "id": 40,
@@ -203,15 +215,21 @@
     },
     {
       "id": 47,
-      "paragraphs": "Step 4. Select and adjust color blending options. Color is the next dimension to include in the blend. There are 5 options for color blending. The user can keep the original colors, or use one of four adjustable tools to blend on the colors of objects:"
+      "paragraphs": "Step 4. Select and adjust color blending options. Color is the next dimension to include in the blend. There are 5 options for color blending. The user can keep the original colors, or use one of four adjustable tools to blend on the colors of objects:",
+      "page": 8,
+      "index": [382,469]
     },
     {
       "id": 48,
-      "paragraphs": "• Transparency. We layer Object A onto Object B with 50% transparency to allow the colors of both objects to come through, although somewhat weakly. The user can adjust the transparency level with a slider. • Color Blend. We use K-means clustering to determine the most common color in the main shape of Object B. We then do an additive color blend with the color of Object A. This only works well when one object is very light -otherwise the color turns very dark. • Multiply colors. Multiplying two images is a way to combine colors in a way that preserves characteristics from both. Whereas transparency will always balance between the two, multiplication blends both of the colors (and their shadings) simultaneously. All three examples in Figure 4 use multiply to blend colors. For example, in the Lego and ring example, multiplying colors allowed the Lego to take on the red color and keep the shading of both objects so that the facets of the diamond and the bumps on the Lego can both be seen. • Replace color. We use K-means clustering to determine the most common colors in the main shapes of Object A and B. We replace Object A's most common color with Object B's most common color and provide users with an adjustable threshold controlling the degree of color replacement. They can also choose to blend the image with colors they select from an eye dropper tool (not shown in Figure 5)."
+      "paragraphs": "Transparency. We layer Object A onto Object B with 50% transparency to allow the colors of both objects to come through, although somewhat weakly. The user can adjust the transparency level with a slider. • Color Blend. We use K-means clustering to determine the most common color in the main shape of Object B. We then do an additive color blend with the color of Object A. This only works well when one object is very light -otherwise the color turns very dark. • Multiply colors. Multiplying two images is a way to combine colors in a way that preserves characteristics from both. Whereas transparency will always balance between the two, multiplication blends both of the colors (and their shadings) simultaneously. All three examples in Figure 4 use multiply to blend colors. For example, in the Lego and ring example, multiplying colors allowed the Lego to take on the red color and keep the shading of both objects so that the facets of the diamond and the bumps on the Lego can both be seen. • Replace color. We use K-means clustering to determine the most common colors in the main shapes of Object A and B. We replace Object A's most common color with Object B's most common color and provide users with an adjustable threshold controlling the degree of color replacement. They can also choose to blend the image with colors they select from an eye dropper tool (not shown in Figure 5).",
+      "page": 8,
+      "index": [469,965]
     },
     {
       "id": 49,
-      "paragraphs": "Step 5. Select and re-apply internal details to blend. The last visual dimension to include is internal details -these are smaller objects or salient features that help identify the object. In the snowman and orange blend, the snowman is not as iconic without his facial details. Thus, we want to extract them from the original Object B and place them back on Object A. Again, we use Interactive Grabcut to allow the user to select and refne what details to extract. While we could have used other tools such as context-aware select, Grabcut worked well on our test set and was a method users had already become familiar with in earlier stages of the pipeline."
+      "paragraphs": "Step 5. Select and re-apply internal details to blend. The last visual dimension to include is internal details -these are smaller objects or salient features that help identify the object. In the snowman and orange blend, the snowman is not as iconic without his facial details. Thus, we want to extract them from the original Object B and place them back on Object A. Again, we use Interactive Grabcut to allow the user to select and refne what details to extract. While we could have used other tools such as context-aware select, Grabcut worked well on our test set and was a method users had already become familiar with in earlier stages of the pipeline.",
+      "page": 8,
+      "index": [966,1200]
     },
     {
       "id": 50,
@@ -279,7 +297,9 @@
     },
     {
       "id": 66,
-      "paragraphs": "The two main contributions of this paper are 1) the method of using secondary design dimensions to structure the iterative improvement process and 2) the VisiFit system that helps novices improve blends with a pipeline of computational tools. In this discussion we want to explore how the computational tools could generalize to the needs of expert designers and how secondary design dimensions can be applied to domains beyond visual blends. Additionally, we discuss the intellectual and engineering challenges that come with applying these ideas to new domains."
+      "paragraphs": "The two main contributions of this paper are 1) the method of using secondary design dimensions to structure the iterative improvement process and 2) the VisiFit system that helps novices improve blends with a pipeline of computational tools. In this discussion we want to explore how the computational tools could generalize to the needs of expert designers and how secondary design dimensions can be applied to domains beyond visual blends. Additionally, we discuss the intellectual and engineering challenges that come with applying these ideas to new domains.",
+      "page": 10,
+      "index": [65,241]
     },
     {
       "id": 67,
@@ -311,7 +331,9 @@
     },
     {
       "id": 74,
-      "paragraphs": "Computational tools would be needed to extract and reapply the aforementioned dimensions of motion. Parameters for each dimension would become points of interactions for users. These tools could then be chained together into a pipeline similar to VisiFit to structure the iterative improvement of animated blends. 7.2.2 Fashion and Furniture Design. In furniture and fashion design, one type of problem is to combine diferent styles to achieve a new purpose. One way to do this is arguably a type of blendingto borrow from the functional and stylistic elements of both styles to create a new hybrid style. Two examples of hybrid styles include athleisure clothing and \"updated classics\" in furniture design."
+      "paragraphs": "Computational tools would be needed to extract and reapply the aforementioned dimensions of motion. Parameters for each dimension would become points of interactions for users. These tools could then be chained together into a pipeline similar to VisiFit to structure the iterative improvement of animated blends. 7.2.2 Fashion and Furniture Design. In furniture and fashion design, one type of problem is to combine diferent styles to achieve a new purpose. One way to do this is arguably a type of blendingto borrow from the functional and stylistic elements of both styles to create a new hybrid style. Two examples of hybrid styles include athleisure clothing and \"updated classics\" in furniture design.",
+      "page": 11,
+      "index": [264,355]
     },
     {
       "id": 75,
@@ -323,11 +345,15 @@
     },
     {
       "id": 77,
-      "paragraphs": "We believe this blending process can also be structured by chaining together computational tools for each of the secondary design dimensions. This process should be interactive, using human judgment not only to guide the search, but also to constantly consider aspects outside the dimensions such as the social acceptability of the design, the appeal to the target market, and whether its construction is feasible within desired price points."
+      "paragraphs": "We believe this blending process can also be structured by chaining together computational tools for each of the secondary design dimensions. This process should be interactive, using human judgment not only to guide the search, but also to constantly consider aspects outside the dimensions such as the social acceptability of the design, the appeal to the target market, and whether its construction is feasible within desired price points.",
+      "page": 11,
+      "index": [982,1125]
     },
     {
       "id": 78,
-      "paragraphs": "We propose that creating items within these hybrid styles could be structured using secondary design dimensions. Once the user"
+      "paragraphs": "We propose that creating items within these hybrid styles could be structured using secondary design dimensions. Once the user",
+      "page": 11,
+      "index": [1126,1200]
     },
     {
       "id": 79,
