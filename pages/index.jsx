@@ -18,12 +18,12 @@ const Index = () => {
     <Split
       gutterSize={20}
       onDragEnd={handleDrag}
-      className="flex w-screen h-screen "
+      className="flex w-screen h-screen relative "
     >
       <div className="mx-8">
         <Base input={input} paragraphs={currentParagraphs} width={width[0]} />
       </div>
-      <div>
+      <div className="overflow-auto">
         <PdfView paragraphs={paragraphs} width={width[1]} />
       </div>
     </Split>

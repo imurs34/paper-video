@@ -91,12 +91,16 @@ function PdfView({ width }) {
     }
   };
   return (
-    <div className="pdfview m-auto w-full overflow-auto  h-screen  items-center flex justify-center relative">
+    <div
+      className={`pdfview m-auto w-[${
+        width - 20
+      }rem] overflow-auto  relative h-[${
+        width - 20
+      }rem]  items-center flex justify-center relative`}
+    >
       <div className="pdfview__container  ">
         <div
-          className={`pdfview__container__document  h-[90vh]  overflow-auto  flex-col ${
-            width < 20 && "hidden"
-          }`}
+          className={`pdfview__container__document  h-[90vh]  overflow-auto  flex-col `}
         >
           <div className="h-12 text-[#f1f1f1] py-5  justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
             <button
@@ -140,7 +144,6 @@ function PdfView({ width }) {
             options={options}
           >
             <Page
-              className={`${width < 20 && "hidden"}`}
               pageNumber={pageNumber}
               customTextRenderer={textRenderer}
               width={
@@ -151,11 +154,7 @@ function PdfView({ width }) {
               scale={scale}
             />
           </Document>
-          <div
-            className={`flex flex-col text-white ml-12  mt-2 text-sm ${
-              width < 20 && "hidden"
-            }`}
-          >
+          <div className={`flex flex-col text-white ml-12  mt-2 text-sm `}>
             {(() => {
               if (paragraphs) {
                 if (paragraphs.sections) {
