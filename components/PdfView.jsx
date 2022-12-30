@@ -23,7 +23,6 @@ function highlightPattern(text, paragraph) {
 
 function PdfView({ width }) {
   const [paragraphs] = useAtom(paragraphAtom);
-  console.log({ paragraphs });
 
   const [file, setFile] = useState("/pdfs/visifit.pdf");
   const [numPages, setNumPages] = useState(null);

@@ -103,7 +103,7 @@ function Video({ src, content, videoLocation }, ref) {
         const time = percentPoint * duration;
         setPercent(percentPoint);
         videoRef.current.currentTime = time;
-        videoRef.current.play();
+        // videoRef.current.play();
         setTimeout(() => {
           if (!play) {
             videoRef.current.pause();
