@@ -36,21 +36,17 @@ function PdfView({ width }) {
 
   const handleChange = (e) => {
     const value = Number(e.target.value);
-    if (value >= 0 && value <= numPages) setValue(value);
-    if (value > 0 && value <= numPages) {
-      setPageNumber(value);
-    }
+    if (value >= 0 && value <= numPages) setValue(e.target.value);
   };
 
   useEffect(() => {
+    setParagraph(null);
     setValue(pageNumber);
   }, [pageNumber]);
   useEffect(() => {
     if (paragraphs) {
-      console.log({ paragraphs });
       pdfmap.map((item) => {
         if (Number(item.id) == paragraphs.paragraph[0]) {
-          console.log({ item });
           setPageNumber(Number(item.page));
           setParagraph(item);
         }
@@ -73,6 +69,14 @@ function PdfView({ width }) {
         setParagraph(item);
       }
     });
+  };
+  const handlePress = (e) => {
+    if (e.key === "Enter") {
+      const Value = Number(value);
+      if (Value > 0 && Value <= numPages) {
+        setPageNumber(Value);
+      }
+    }
   };
 
   const handlezoom = (type) => {
@@ -114,8 +118,8 @@ function PdfView({ width }) {
               <input
                 className="relative w-4 border-0 outline-none bg-[#191b1c] text-sm rounded"
                 value={value}
-                type="number"
                 onChange={handleChange}
+                onKeyDown={handlePress}
               />
               {"  "} / {numPages}
             </span>
