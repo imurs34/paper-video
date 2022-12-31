@@ -96,9 +96,7 @@ function PdfView({ width }) {
     <div
       className={`pdfview m-auto w-[${
         width - 20
-      }rem] overflow-auto  relative h-[${
-        width - 20
-      }rem]  items-center flex justify-center relative`}
+      }rem] overflow-auto h-full  items-center flex justify-center relative`}
     >
       <div className="pdfview__container  ">
         <div
