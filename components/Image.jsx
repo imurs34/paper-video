@@ -5,24 +5,15 @@ import { useAtom } from "jotai";
 import { darkModeAtom, highlightAtom, paragraphAtom } from "../atom";
 import pdfmap2 from "../pdfmap2.json";
 
-function Image({
-  currentParagraphs,
-  obj,
-  url,
-  width,
-  widthRatio,
-  heightRatio,
-}) {
+function Image({ obj, url, width, widthRatio, heightRatio }) {
   const [fixed] = useState();
   const [dark] = useAtom(darkModeAtom);
   const [highlight, setHighlightAtom] = useAtom(highlightAtom);
   const [paragraph, setParagraphAtom] = useAtom(paragraphAtom);
 
   const onClick = (e) => {
-    console.log({ obj });
     pdfmap2.map((item) => {
       if (Number(item.slide_id) == obj.slide_id) {
-        console.log(item);
         setParagraphAtom(item);
       }
     });

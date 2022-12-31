@@ -23,7 +23,6 @@ function highlightPattern(text, paragraph) {
 
 function PdfView({ width }) {
   const [paragraphs] = useAtom(paragraphAtom);
-
   const [file, setFile] = useState("/pdfs/visifit.pdf");
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = React.useState(1);
@@ -33,14 +32,12 @@ function PdfView({ width }) {
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
   }
-
   const handleChange = (e) => {
     const value = Number(e.target.value);
     if (value >= 0 && value <= numPages) setValue(e.target.value);
   };
 
   useEffect(() => {
-    setParagraph(null);
     setValue(pageNumber);
   }, [pageNumber]);
   useEffect(() => {
@@ -74,6 +71,7 @@ function PdfView({ width }) {
     if (e.key === "Enter") {
       const Value = Number(value);
       if (Value > 0 && Value <= numPages) {
+        setParagraph(null);
         setPageNumber(Value);
       }
     }
@@ -182,7 +180,7 @@ function PdfView({ width }) {
                           type="button"
                           className={`${
                             scores[i] < 0.7 ? "bg-yellow-500" : "bg-rose-800"
-                          } text-white w-44 py-4 rounded-lg text-center font-bold mr-3`}
+                          } text-white w-44 text-sm py-3 rounded-lg text-center font-bold mr-3`}
                         >
                           {sections[i]}
                         </button>
