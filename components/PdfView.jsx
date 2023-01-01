@@ -98,7 +98,7 @@ function PdfView({ width }) {
         width - 20
       }rem] overflow-auto h-full  items-center flex justify-center relative`}
     >
-      <div className="pdfview__container  ">
+      <div className="pdfview__container ">
         <div
           className={`pdfview__container__document  h-[90vh]  overflow-auto  flex-col `}
         >
@@ -127,14 +127,14 @@ function PdfView({ width }) {
               Next
             </button>
             |
-            <button className="text-3xl" onClick={() => handlezoom("+")}>
-              +
+            <button className="text-3xl" onClick={() => handlezoom("-")}>
+              &ndash;
             </button>
             <span className="relative bg-[#191b1c] text-sm p-1 rounded">
               {parseInt(scale * 100)}%
             </span>
-            <button className="text-3xl" onClick={() => handlezoom("-")}>
-              &ndash;
+            <button className="text-3xl" onClick={() => handlezoom("+")}>
+              +
             </button>
           </div>
 
