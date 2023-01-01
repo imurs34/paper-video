@@ -173,15 +173,15 @@ function PdfView({ width }) {
 
                     buttons.push(
                       <div className="flex items-center my-1">
-                        <button
+                        <div
                           onClick={() => clicked(i)}
                           type="button"
                           className={`${
                             scores[i] < 0.7 ? "bg-yellow-500" : "bg-rose-800"
-                          } text-white w-44 text-sm py-3 rounded-lg text-center font-bold mr-3`}
+                          } text-white w-44  py-3  rounded-lg text-center font-extrabold font-sans mr-3`}
                         >
                           {sections[i]}
-                        </button>
+                        </div>
                         <span>{para}...</span>
                       </div>
                     );
