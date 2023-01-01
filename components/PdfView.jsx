@@ -55,9 +55,11 @@ function PdfView({ width }) {
 
   const textRenderer = useCallback(
     (textItem) => {
-      return highlightPattern(textItem, paragraph);
+      if (paragraph.page === pageNumber) {
+        return highlightPattern(textItem, paragraph);
+      }
     },
-    [paragraph]
+    [paragraph, pageNumber]
   );
   const clicked = (index) => {
     pdfmap.map((item) => {
@@ -85,7 +87,6 @@ function PdfView({ width }) {
     }
   };
   const handlePage = (type) => {
-    setParagraph(null);
     if (type == "next") {
       setPageNumber(pageNumber + 1);
     } else {
