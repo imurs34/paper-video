@@ -4,7 +4,6 @@
       "paragraphs": "Iterative improvement is the essence of the iterative design process. No design is perfect at inception, thus iteration through prototypes is necessary to improve it. If a prototype passes an evaluation, it should become a new, higher fdelity prototype that can be tested and potentially iterated upon again. In case studies of improved software usability by the Nielsen Norman Group [40], median improvement per stage of iteration was 38%, leading to overall usability improvements of 165%. Iteration is not just an aspect of usability engineering, it is a fundamental part of the design process that generalizes across many domains. In web design, designers start with a wireframe prototype and move to a minimum viable product. In mechanical design, designers improve upon initial proofs of concept by iterating upon features and prototype reliability. In graphic design, designers sketch prototypes and then move onto higher-fdelity mockups. In each domain, iteration looks diferent, but the objective is the same -to extend the prototype to move closer to the goal. To help novice designers in a meaningful and practical way, we need tools to support iteration.",
       "page": 1,
       "index": [853,957]
-
     },
     {
       "id": 1,

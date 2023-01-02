@@ -29,6 +29,7 @@ function PdfView({ width }) {
   const [value, setValue] = useState(1);
   const [paragraph, setParagraph] = useState(null);
   const [scale, setScale] = useState(paragraph ? 0.5 : 0.8);
+  const pageRefs = useRef({});
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
   }
@@ -42,8 +43,10 @@ function PdfView({ width }) {
   }, [pageNumber]);
   useEffect(() => {
     if (paragraphs) {
+      // console.log({ paragraphs });
       pdfmap.map((item) => {
         if (Number(item.id) == paragraphs.paragraph[0]) {
+          // console.log(item);s
           setPageNumber(Number(item.page));
           setParagraph(item);
         }
@@ -52,12 +55,21 @@ function PdfView({ width }) {
       setPageNumber(1);
     }
   }, [paragraphs]);
-
+  // console.log(pageNumber);
   const textRenderer = useCallback(
     (textItem) => {
-      if (paragraph.page === pageNumber) {
-        return highlightPattern(textItem, paragraph);
-      }
+      // console.log(textItem);
+      // console.log(paragraph.page, pageNumber);
+      // console.log(paragraph.page === pageNumber);
+      // pageRefs.current[pageNumber];
+      // console.log({ pageNumber });
+      // console.log(pageRefs.current[pageNumber].attributes[1].value);
+      // console.log(
+      //   Number(pageRefs.current[pageNumber].attributes[1].value) == pageNumber
+      // );
+      // if (pageRefs.current[pageNumber].attributes[1].value == pageNumber) {
+      return highlightPattern(textItem, paragraph);
+      // }
     },
     [paragraph, pageNumber]
   );
@@ -75,6 +87,7 @@ function PdfView({ width }) {
       if (Value > 0 && Value <= numPages) {
         setParagraph(null);
         setPageNumber(Value);
+        pageRefs.current[value - 1].scrollIntoView({ behavior: "smooth" });
       }
     }
   };
@@ -88,11 +101,18 @@ function PdfView({ width }) {
   };
   const handlePage = (type) => {
     if (type == "next") {
+      pageRefs.current[pageNumber + 1].scrollIntoView({ behavior: "smooth" });
       setPageNumber(pageNumber + 1);
     } else {
+      pageRefs.current[pageNumber - 1].scrollIntoView({ behavior: "smooth" });
+
       setPageNumber(pageNumber - 1);
     }
   };
+  useEffect(() => {
+    const el = document.getElementById("test");
+    console.log(el);
+  }, [paragraph]);
   return (
     <div
       className={`pdfview m-auto w-[${
@@ -138,23 +158,31 @@ function PdfView({ width }) {
               +
             </button>
           </div>
+          <div className="min-h-screen overflow-auto">
+            <Document
+              file={file}
+              onLoadSuccess={onDocumentLoadSuccess}
+              options={options}
+            >
+              {Array.from(new Array(numPages), (page, index) => (
+                <Page
+                  key={index}
+                  inputRef={(ref) => (pageRefs.current[index] = ref)}
+                  pageNumber={index + 1}
+                  customTextRenderer={textRenderer}
+                  pageIndex={index}
+                  id={"test"}
+                  width={
+                    width > 60
+                      ? (width * window.innerWidth) / 150
+                      : (width * window.innerWidth) / 100
+                  }
+                  scale={scale}
+                />
+              ))}
+            </Document>
+          </div>
 
-          <Document
-            file={file}
-            onLoadSuccess={onDocumentLoadSuccess}
-            options={options}
-          >
-            <Page
-              pageNumber={pageNumber}
-              customTextRenderer={textRenderer}
-              width={
-                width > 60
-                  ? (width * window.innerWidth) / 150
-                  : (width * window.innerWidth) / 100
-              }
-              scale={scale}
-            />
-          </Document>
           <div className={`flex flex-col text-white ml-12  mt-2 text-sm `}>
             {(() => {
               if (paragraphs) {
