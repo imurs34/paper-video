@@ -42,21 +42,10 @@
                     {
                         "label": "title",
                         "slide_id": 0,
-                        "box_info_original": [600, 50, 549, 120],
-                        "path": "000_0.02.png_title_0.21959233848497595.jpg"
-                    },
-                    {
-                        "label": "title",
-                        "slide_id": 0,
-                        "box_info_original": [624, 170, 500, 37],
-                        "path": "000_0.02.png_text box_0.2646288428228032.jpg"
-                    },
-                    {
-                        "label": "title",
-                        "slide_id": 0,
-                        "box_info_original": [600, 250, 558, 54],
-                        "path": "000_0.02.png_figure_0.6557040141518872.jpg"
+                        "box_info_original": [600, 50, 549, 400],
+                        "path": "first.jpg"
                     }
+                    
                 ]
             },
             {
@@ -123,7 +112,7 @@
                     {
                         "label": "picture",
                         "slide_id": 1,
-                        "box_info_original": [60, 300, 1054, 232],
+                        "box_info_original": [60, 300, 1030, 232],
                         "path": "002_0.18.png_diagram_0.8596559962150454.jpg",
 
                         "in_column": 2,
@@ -152,7 +141,7 @@
                     {
                         "label": "picture",
                         "slide_id": 3,
-                        "box_info_original": [60, 100, 1054, 732],
+                        "box_info_original": [170, 150, 910, 553],
                         "path": "003_0.26.png_picture_0.7765112935256571.jpg",
 
                         "in_column": 2,
@@ -174,7 +163,7 @@
                     {
                         "label": "title",
                         "slide_id": 4,
-                        "box_info_original": [170, 53, 864, 166],
+                        "box_info_original": [170, 100, 785, 180],
                         "path": "004_0.3.png_handwriting_0.5933713092107841.jpg"
                     },
                     {

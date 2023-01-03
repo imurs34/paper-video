@@ -74,7 +74,7 @@ const PositionedData = React.memo(
     const heightRatio =
       (height / template.height) * componentWidth +
       (componentWidth > 70
-        ? -2
+        ? -10
         : componentWidth > 50
         ? 5
         : componentWidth > 40

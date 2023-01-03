@@ -10,7 +10,6 @@ function Image({ obj, url, width, widthRatio, heightRatio }) {
   const [dark] = useAtom(darkModeAtom);
   const [highlight, setHighlightAtom] = useAtom(highlightAtom);
   const [paragraph, setParagraphAtom] = useAtom(paragraphAtom);
-
   const onClick = (e) => {
     pdfmap2.map((item) => {
       if (Number(item.slide_id) == obj.slide_id) {
@@ -19,20 +18,9 @@ function Image({ obj, url, width, widthRatio, heightRatio }) {
     });
     setHighlightAtom(e.target.id);
   };
-
   return (
     <Container fixed={fixed} onClick={onClick} isDark={dark}>
-      {highlight == url ? (
-        <ImgOverlayer
-          src={url}
-          id={url}
-          width={width}
-          widthRatio={widthRatio}
-          heightRatio={heightRatio}
-        />
-      ) : (
-        <Img src={url} id={url} />
-      )}
+      <Img src={url} id={url} highlight={highlight} />
     </Container>
   );
 }
@@ -68,23 +56,11 @@ const Img = styled.img`
   margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
+  filter: ${(props) =>
+    props.src === props.highlight
+      ? `grayscale(10%) invert(30%) saturate(200%)`
+      : "none"};
 `;
-const ImgOverlayer = styled.div`
-  background: ${(
-    props
-  ) => `linear-gradient(rgb(72, 0, 72, 0.5), rgb(72, 0, 72, 0.5)),
-  url(${props.src})
-    no-repeat;`}
-  width:${(props) =>
-    `${props.widthRatio < 50 ? props.widthRatio + 5 : props.widthRatio}%`};
-  height: ${(props) =>
-    `${
-      props.heightRatio < 50 ? props.heightRatio + 5 : props.heightRatio + 50
-    }rem`};
 
-//  height:10rem;  
-  margin: 0 auto;
-  background-size:contain;
-`;
 export default React.memo(Image);
 export { FixedImage };
