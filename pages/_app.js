@@ -5,7 +5,7 @@ import "../styles/globals.css";
 import { LINE_HEIGHT } from "../store";
 // Import the styles provided by the react-pdf-viewer packages
 import "@react-pdf-viewer/core/lib/styles/index.css";
-// import "@react-pdf-viewer/default-layout/lib/styles/index.css";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 
 const GlobalStyle = createGlobalStyle`
     ${reset}

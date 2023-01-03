@@ -1,226 +1,137 @@
-import React, { useCallback, useState, useEffect, useRef } from "react";
-import { pdfjs, Document, Page } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import "react-pdf/dist/esm/Page/TextLayer.css";
+import React, { useState, useEffect } from "react";
 import pdfmap from "../pdfmap1.json";
 import { useAtom } from "jotai";
 import { paragraphAtom } from "../atom";
-
-const options = {
-  cMapUrl: "cmaps/",
-  cMapPacked: true,
-  standardFontDataUrl: "standard_fonts/",
-};
-
-function highlightPattern(text, paragraph) {
-  if (
-    text.itemIndex >= paragraph.index[0] &&
-    text.itemIndex <= paragraph.index[1]
-  )
-    return `<mark>${text.str}</mark>`;
-}
-
+import { Viewer, Worker } from "@react-pdf-viewer/core";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import { highlightPlugin, Trigger } from "@react-pdf-viewer/highlight";
+import { pageNavigationPlugin } from "@react-pdf-viewer/page-navigation";
+import "@react-pdf-viewer/page-navigation/lib/styles/index.css";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import "@react-pdf-viewer/highlight/lib/styles/index.css";
+import "@react-pdf-viewer/page-navigation/lib/styles/index.css";
 function PdfView({ width }) {
   const [paragraphs] = useAtom(paragraphAtom);
-  const [file, setFile] = useState("/pdfs/visifit.pdf");
-  const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = React.useState(1);
   const [value, setValue] = useState(1);
-  const [paragraph, setParagraph] = useState(null);
-  const [scale, setScale] = useState(paragraph ? 0.5 : 0.8);
-  const pageRefs = useRef({});
-  function onDocumentLoadSuccess({ numPages: nextNumPages }) {
-    setNumPages(nextNumPages);
-  }
-  const handleChange = (e) => {
-    const value = Number(e.target.value);
-    if (value >= 0 && value <= numPages) setValue(e.target.value);
-  };
+  // const [scale, setScale] = useState(paragraph ? 0.5 : 0.8);
+  const pageNavigationPluginInstance = pageNavigationPlugin();
+  const { jumpToPage } = pageNavigationPluginInstance;
+  const [areas, setAreas] = React.useState(null);
 
   useEffect(() => {
     setValue(pageNumber);
   }, [pageNumber]);
   useEffect(() => {
     if (paragraphs) {
-      // console.log({ paragraphs });
       pdfmap.map((item) => {
         if (Number(item.id) == paragraphs.paragraph[0]) {
-          // console.log(item);s
-          setPageNumber(Number(item.page));
-          setParagraph(item);
+          console.log(item);
+          jumpToPage(item.pageIndex - 1);
+          setAreas({ ...item, pageIndex: item.pageIndex - 1 });
         }
       });
     } else {
       setPageNumber(1);
     }
   }, [paragraphs]);
-  // console.log(pageNumber);
-  const textRenderer = useCallback(
-    (textItem) => {
-      // console.log(textItem);
-      // console.log(paragraph.page, pageNumber);
-      // console.log(paragraph.page === pageNumber);
-      // pageRefs.current[pageNumber];
-      // console.log({ pageNumber });
-      // console.log(pageRefs.current[pageNumber].attributes[1].value);
-      // console.log(
-      //   Number(pageRefs.current[pageNumber].attributes[1].value) == pageNumber
-      // );
-      // if (pageRefs.current[pageNumber].attributes[1].value == pageNumber) {
-      return highlightPattern(textItem, paragraph);
-      // }
-    },
-    [paragraph, pageNumber]
-  );
+
   const clicked = (index) => {
     pdfmap.map((item) => {
       if (Number(item.id) == paragraphs.paragraph[index]) {
-        setPageNumber(Number(item.page));
-        setParagraph(item);
+        console.log(item);
+        jumpToPage(item.pageIndex - 1);
+        setAreas({ ...item, pageIndex: item.pageIndex - 1 });
       }
     });
   };
-  const handlePress = (e) => {
-    if (e.key === "Enter") {
-      const Value = Number(value);
-      if (Value > 0 && Value <= numPages) {
-        setParagraph(null);
-        setPageNumber(Value);
-        pageRefs.current[value - 1].scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
 
-  const handlezoom = (type) => {
-    if (type == "+") {
-      setScale(scale + 0.1);
-    } else {
-      if (scale > 0.2) setScale(scale - 0.1);
-    }
-  };
-  const handlePage = (type) => {
-    if (type == "next") {
-      pageRefs.current[pageNumber + 1].scrollIntoView({ behavior: "smooth" });
-      setPageNumber(pageNumber + 1);
-    } else {
-      pageRefs.current[pageNumber - 1].scrollIntoView({ behavior: "smooth" });
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
-      setPageNumber(pageNumber - 1);
-    }
-  };
-  useEffect(() => {
-    const el = document.getElementById("test");
-    console.log(el);
-  }, [paragraph]);
+  const renderHighlights = (props) => (
+    <div>
+      {areas?.highlights
+        ?.filter(() => areas.pageIndex === props.pageIndex)
+        ?.map((area, idx) => {
+          return (
+            <div
+              key={idx}
+              className="highlight-area"
+              style={Object.assign(
+                {},
+                {
+                  background: "yellow",
+                  opacity: 0.18,
+                },
+                props.getCssProperties(area, props.rotation)
+              )}
+            />
+          );
+        })}
+    </div>
+  );
+
+  const highlightPluginInstance = highlightPlugin({
+    renderHighlights,
+    trigger: Trigger.None,
+  });
+
   return (
     <div
       className={`pdfview m-auto w-[${
         width - 20
-      }rem] overflow-auto h-full  items-center flex justify-center relative`}
+      }rem] overflow-auto h-full items-center flex justify-center relative`}
     >
-      <div className="pdfview__container ">
-        <div
-          className={`pdfview__container__document  h-[90vh]  overflow-auto  flex-col `}
-        >
-          <div className="h-12 text-[#f1f1f1] py-5  justify-center z-50  select-none items-center flex gap-2 absolute top-0 bg-[#323639] w-full">
-            <button
-              disabled={pageNumber <= 1}
-              className="text-sm"
-              onClick={() => handlePage("prev")}
-            >
-              Prev
-            </button>
-            <span className="relative  bg-[#191b1c] text-sm p-1 justify-center items-center rounded flex">
-              <input
-                className="relative w-4 border-0 outline-none bg-[#191b1c] text-sm rounded"
-                value={value}
-                onChange={handleChange}
-                onKeyDown={handlePress}
-              />
-              {"  "} / {numPages}
-            </span>
-            <button
-              disabled={pageNumber >= numPages}
-              className="text-sm"
-              onClick={() => handlePage("next")}
-            >
-              Next
-            </button>
-            |
-            <button className="text-3xl" onClick={() => handlezoom("-")}>
-              &ndash;
-            </button>
-            <span className="relative bg-[#191b1c] text-sm p-1 rounded">
-              {parseInt(scale * 100)}%
-            </span>
-            <button className="text-3xl" onClick={() => handlezoom("+")}>
-              +
-            </button>
-          </div>
-          <div className="min-h-screen overflow-auto">
-            <Document
-              file={file}
-              onLoadSuccess={onDocumentLoadSuccess}
-              options={options}
-            >
-              {Array.from(new Array(numPages), (page, index) => (
-                <Page
-                  key={index}
-                  inputRef={(ref) => (pageRefs.current[index] = ref)}
-                  pageNumber={index + 1}
-                  customTextRenderer={textRenderer}
-                  pageIndex={index}
-                  id={"test"}
-                  width={
-                    width > 60
-                      ? (width * window.innerWidth) / 150
-                      : (width * window.innerWidth) / 100
-                  }
-                  scale={scale}
-                />
-              ))}
-            </Document>
-          </div>
+      <div className={` w-full h-[100vh]  overflow-auto  flex-col `}>
+        <div className={` w-[90%] m-auto  h-[80vh]  overflow-auto  flex-col `}>
+          <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.js">
+            <Viewer
+              fileUrl="/pdfs/visifit.pdf"
+              plugins={[
+                defaultLayoutPluginInstance,
+                highlightPluginInstance,
+                pageNavigationPluginInstance,
+              ]}
+            />
+          </Worker>
+        </div>
+        <div className={`flex flex-col text-white ml-12  mt-2 text-sm `}>
+          {(() => {
+            if (paragraphs) {
+              if (paragraphs.sections) {
+                let sections = paragraphs.sections.replace(/'/g, '"'); //replacing all ' with "
+                let scores = paragraphs.scores;
+                sections = JSON.parse(sections);
 
-          <div className={`flex flex-col text-white ml-12  mt-2 text-sm `}>
-            {(() => {
-              if (paragraphs) {
-                if (paragraphs.sections) {
-                  let sections = paragraphs.sections.replace(/'/g, '"'); //replacing all ' with "
-                  let scores = paragraphs.scores;
-                  sections = JSON.parse(sections);
+                let buttons = [];
+                for (let i = 0; i < sections.length; i++) {
+                  let para = "";
+                  pdfmap.map((item) => {
+                    if (Number(item.id) == paragraphs.paragraph[i]) {
+                      para = item.paragraphs.split(" ").slice(0, 7).join(" ");
+                    }
+                  });
 
-                  let buttons = [];
-                  for (let i = 0; i < sections.length; i++) {
-                    let para = "";
-                    pdfmap.map((item) => {
-                      if (Number(item.id) == paragraphs.paragraph[i]) {
-                        para = item.paragraphs.split(" ").slice(0, 7).join(" ");
-                      }
-                    });
-
-                    buttons.push(
-                      <div className="flex items-center my-1">
-                        <div
-                          onClick={() => clicked(i)}
-                          type="button"
-                          className={`${
-                            scores[i] < 0.7 ? "bg-yellow-500" : "bg-rose-800"
-                          } text-white w-44  py-3  rounded-lg text-center font-extrabold font-sans mr-3`}
-                        >
-                          {sections[i]}
-                        </div>
-                        <span>{para}...</span>
+                  buttons.push(
+                    <div className="flex items-center my-1" key={i}>
+                      <div
+                        onClick={() => clicked(i)}
+                        type="button"
+                        className={`${
+                          scores[i] < 0.7 ? "bg-yellow-500" : "bg-rose-800"
+                        } text-white w-44  py-3  cursor-pointer rounded-lg text-center font-extrabold font-sans mr-3`}
+                      >
+                        {sections[i]}
                       </div>
-                    );
-                  }
-
-                  return buttons;
+                      <span>{para}...</span>
+                    </div>
+                  );
                 }
+
+                return buttons;
               }
-            })()}
-          </div>
+            }
+          })()}
         </div>
       </div>
     </div>
