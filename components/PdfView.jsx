@@ -2,51 +2,44 @@ import React, { useState, useEffect } from "react";
 import pdfmap from "../pdfmap1.json";
 import { useAtom } from "jotai";
 import { paragraphAtom } from "../atom";
-import { Viewer, Worker } from "@react-pdf-viewer/core";
-import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import { Viewer, Worker, SpecialZoomLevel } from "@react-pdf-viewer/core";
 import { highlightPlugin, Trigger } from "@react-pdf-viewer/highlight";
 import { pageNavigationPlugin } from "@react-pdf-viewer/page-navigation";
+import { zoomPlugin } from "@react-pdf-viewer/zoom";
+import "@react-pdf-viewer/zoom/lib/styles/index.css";
 import "@react-pdf-viewer/page-navigation/lib/styles/index.css";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/highlight/lib/styles/index.css";
-import "@react-pdf-viewer/page-navigation/lib/styles/index.css";
+
 function PdfView({ width }) {
   const [paragraphs] = useAtom(paragraphAtom);
-  const [pageNumber, setPageNumber] = React.useState(1);
-  const [value, setValue] = useState(1);
-  // const [scale, setScale] = useState(paragraph ? 0.5 : 0.8);
   const pageNavigationPluginInstance = pageNavigationPlugin();
-  const { jumpToPage } = pageNavigationPluginInstance;
+  const { jumpToPage, CurrentPageInput, GoToNextPageButton, GoToPreviousPage } =
+    pageNavigationPluginInstance;
+  const zoomPluginInstance = zoomPlugin();
+  const { ZoomInButton, ZoomOutButton, ZoomPopover } = zoomPluginInstance;
+
   const [areas, setAreas] = React.useState(null);
 
-  useEffect(() => {
-    setValue(pageNumber);
-  }, [pageNumber]);
   useEffect(() => {
     if (paragraphs) {
       pdfmap.map((item) => {
         if (Number(item.id) == paragraphs.paragraph[0]) {
-          console.log(item);
           jumpToPage(item.pageIndex - 1);
           setAreas({ ...item, pageIndex: item.pageIndex - 1 });
         }
       });
-    } else {
-      setPageNumber(1);
     }
   }, [paragraphs]);
 
   const clicked = (index) => {
     pdfmap.map((item) => {
       if (Number(item.id) == paragraphs.paragraph[index]) {
-        console.log(item);
         jumpToPage(item.pageIndex - 1);
         setAreas({ ...item, pageIndex: item.pageIndex - 1 });
       }
     });
   };
-
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   const renderHighlights = (props) => (
     <div>
@@ -83,12 +76,38 @@ function PdfView({ width }) {
       }rem] overflow-auto h-full items-center flex justify-center relative`}
     >
       <div className={` w-full h-[100vh]  overflow-auto  flex-col `}>
-        <div className={` w-[90%] m-auto  h-[80vh]  overflow-auto  flex-col `}>
+        <div className={` w-[90%] m-auto  h-[90vh]  overflow-auto  flex-col `}>
           <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.js">
+            <div
+              style={{
+                alignItems: "center",
+                backgroundColor: "#eeeeee",
+                borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
+                display: "flex",
+                justifyContent: "center",
+                padding: "4px",
+              }}
+            >
+              <div>
+                <GoToPreviousPage />
+              </div>
+              <div className="w-11">
+                <CurrentPageInput />
+              </div>
+              <div>
+                <GoToNextPageButton />
+              </div>
+              <div className="flex border-l border-solid border-white ml-2">
+                <ZoomOutButton />
+                <ZoomPopover />
+                <ZoomInButton />
+              </div>
+            </div>
             <Viewer
               fileUrl="/pdfs/visifit.pdf"
+              defaultScale={SpecialZoomLevel.PageFit}
               plugins={[
-                defaultLayoutPluginInstance,
+                zoomPluginInstance,
                 highlightPluginInstance,
                 pageNavigationPluginInstance,
               ]}
