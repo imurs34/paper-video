@@ -5,22 +5,22 @@ import { paragraphAtom } from "../atom";
 import { Viewer, Worker, SpecialZoomLevel } from "@react-pdf-viewer/core";
 import { highlightPlugin, Trigger } from "@react-pdf-viewer/highlight";
 import { pageNavigationPlugin } from "@react-pdf-viewer/page-navigation";
-import { zoomPlugin } from "@react-pdf-viewer/zoom";
-import "@react-pdf-viewer/zoom/lib/styles/index.css";
-import "@react-pdf-viewer/page-navigation/lib/styles/index.css";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/highlight/lib/styles/index.css";
 
 function PdfView({ width }) {
   const [paragraphs] = useAtom(paragraphAtom);
   const pageNavigationPluginInstance = pageNavigationPlugin();
-  const { jumpToPage, CurrentPageInput, GoToNextPageButton, GoToPreviousPage } =
-    pageNavigationPluginInstance;
-  const zoomPluginInstance = zoomPlugin();
-  const { ZoomInButton, ZoomOutButton, ZoomPopover } = zoomPluginInstance;
+  const { jumpToPage } = pageNavigationPluginInstance;
+  const defaultLayoutPluginInstance = defaultLayoutPlugin({
+    renderToolbar,
+    sidebarTabs: () => [],
+  });
 
   const [areas, setAreas] = React.useState(null);
-
+  const [ref, setRef] = useState(null);
   useEffect(() => {
     if (paragraphs) {
       pdfmap.map((item) => {
@@ -40,7 +40,18 @@ function PdfView({ width }) {
       }
     });
   };
-
+  useEffect(() => {
+    const el = document.getElementById("highlight-area");
+    console.log(el);
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({
+          block: "center",
+          // inline: "center",
+        });
+      }, 500);
+    }
+  }, [ref]);
   const renderHighlights = (props) => (
     <div>
       {areas?.highlights
@@ -49,7 +60,9 @@ function PdfView({ width }) {
           return (
             <div
               key={idx}
-              className="highlight-area"
+              className="highlight-area z-10"
+              id="highlight-area"
+              ref={(ref) => setRef(ref)}
               style={Object.assign(
                 {},
                 {
@@ -81,35 +94,17 @@ function PdfView({ width }) {
             <div
               style={{
                 alignItems: "center",
-                backgroundColor: "#eeeeee",
-                borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
                 display: "flex",
                 justifyContent: "center",
-                padding: "4px",
               }}
-            >
-              <div>
-                <GoToPreviousPage />
-              </div>
-              <div className="w-11">
-                <CurrentPageInput />
-              </div>
-              <div>
-                <GoToNextPageButton />
-              </div>
-              <div className="flex border-l border-solid border-white ml-2">
-                <ZoomOutButton />
-                <ZoomPopover />
-                <ZoomInButton />
-              </div>
-            </div>
+            ></div>
             <Viewer
               fileUrl="/pdfs/visifit.pdf"
               defaultScale={SpecialZoomLevel.PageFit}
               plugins={[
-                zoomPluginInstance,
                 highlightPluginInstance,
                 pageNavigationPluginInstance,
+                defaultLayoutPluginInstance,
               ]}
             />
           </Worker>
@@ -158,3 +153,36 @@ function PdfView({ width }) {
 }
 
 export default PdfView;
+
+const renderToolbar = (Toolbar) => (
+  <Toolbar>
+    {(slots) => {
+      const {
+        CurrentPageInput,
+        CurrentScale,
+        GoToNextPage,
+        GoToPreviousPage,
+        ZoomIn,
+        ZoomOut,
+      } = slots;
+      return (
+        <div className="flex justify-center w-full">
+          <div>
+            <GoToPreviousPage />
+          </div>
+          <div className="w-11">
+            <CurrentPageInput />
+          </div>
+          <div>
+            <GoToNextPage />
+          </div>
+          <div className="flex items-center border-l border-solid border-white ml-2">
+            <ZoomOut />
+            <CurrentScale />
+            <ZoomIn />
+          </div>
+        </div>
+      );
+    }}
+  </Toolbar>
+);
