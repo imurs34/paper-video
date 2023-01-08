@@ -13,7 +13,7 @@
     "id": 2,
     "paragraphs": "Like all prototyping tools, iteration tools must be domain-specifc so they can efectively operate on the materials of that domain. We focus on the difcult design challenge of making visual blends [3]. Visual blends are an advanced graphic design technique used to convey a message visually in journalism, advertising, and public service announcements. They combine two visual symbols into one object to convey a new meaning. For example, in Figure 1 the Guggenheim Museum is blended with an acorn to convey the message \"Visit New York City this autumn\". Visual blends are a canonical example of a creative design challenge [25,43] because they are open-ended enough to encapsulate all aspects of the design process, but well-defned enough to test in a short time frame. Moreover, cognitive scientists consider blending to be an important aspect of general creativity for its ability to \"create new meaning out of old. \" [15] Currently, tools already exist to help people brainstorm and create initial prototypes [9] by fnding the right images and arrangements to use for the blend. However, visual blends generally require an expert with Photoshop skills to execute the design and it would be faster, easier, and more empowering for novices to improve blends by themselves, without relying on an expert.",
     "pageIndex": 2,
-    "highlights": [{ "height": 28, "width": 43, "left": 6, "top": 47 }]
+    "highlights": [{ "height": 27.5, "width": 43, "left": 6, "top": 47 }]
   },
   {
     "id": 3,
@@ -42,9 +42,9 @@
   },
   {
     "id": 7,
-    "paragraphs": "• Three preliminary investigations into the process of improving prototypes of visual blends: a demonstration of how fully automatic systems fail, an analysis of patterns used by professionals, and a co-design process with graphic artists. • Three design principles for a computational approach to improving visual blends. • A method of using secondary design dimensions to structure the improvement process. This method is grounded in the neuroscience of human visual object recognition. • VisiFit, a system that applies the method and design principles in a pipeline of computational tools. • An evaluation of VisiFit showing that in under 4 minutes, novices can substantially improve blends in 76% of cases and create blends suitable to publish on social media in 70% of cases.",
+    "paragraphs": "Three preliminary investigations into the process of improving prototypes of visual blends: a demonstration of how fully automatic systems fail, an analysis of patterns used by professionals, and a co-design process with graphic artists. • Three design principles for a computational approach to improving visual blends. • A method of using secondary design dimensions to structure the improvement process. This method is grounded in the neuroscience of human visual object recognition. • VisiFit, a system that applies the method and design principles in a pipeline of computational tools. • An evaluation of VisiFit showing that in under 4 minutes, novices can substantially improve blends in 76% of cases and create blends suitable to publish on social media in 70% of cases.",
     "pageIndex": 2,
-    "highlights": [{ "height": 21, "width": 43, "right": 6, "top": 32 }]
+    "highlights": [{ "height": 21, "width": 43, "left": 50, "top": 32 }]
   },
   {
     "id": 8,

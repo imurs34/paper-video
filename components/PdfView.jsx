@@ -36,13 +36,13 @@ function PdfView({ width }) {
     pdfmap.map((item) => {
       if (Number(item.id) == paragraphs.paragraph[index]) {
         jumpToPage(item.pageIndex - 1);
+        setAreas(null);
         setAreas({ ...item, pageIndex: item.pageIndex - 1 });
       }
     });
   };
   useEffect(() => {
     const el = document.getElementById("highlight-area");
-    console.log(el);
     if (el) {
       setTimeout(() => {
         el.scrollIntoView({
