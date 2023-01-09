@@ -7,7 +7,6 @@ const Index = () => {
   const [paragraphs, setParagraphs] = useState();
   const [width, setWidth] = useState([50, 50]);
   const currentParagraphs = (val) => {
-    console.log({ val });
     setParagraphs(val);
   };
 
@@ -21,6 +20,7 @@ const Index = () => {
       className="flex w-screen h-screen relative "
     >
       <div className="mx-8">
+        {/* <h1 className="mt-10 text-2xl text-white">{width[0]}</h1> */}
         <Base input={input} paragraphs={currentParagraphs} width={width[0]} />
       </div>
       <div className="overflow-auto">

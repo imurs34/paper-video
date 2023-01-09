@@ -78,8 +78,17 @@ const PositionedData = React.memo(
         : componentWidth > 50
         ? 5
         : componentWidth > 40
-        ? 15
-        : 20);
+        ? 10
+        : 15);
+    const heightRatio2 =
+      (height / template.height) * componentWidth +
+      (componentWidth > 70
+        ? -10
+        : componentWidth > 50
+        ? 10
+        : componentWidth > 40
+        ? 20
+        : 40);
     const currentParagraphs = (val) => {
       paragraphs(val);
     };
@@ -90,7 +99,7 @@ const PositionedData = React.memo(
           x={startXRatio}
           y={startYRatio}
           width={widthRatio}
-          height={heightRatio}
+          height={heightRatio2}
         >
           <Text
             obj={data}
@@ -144,7 +153,7 @@ const PositionedData = React.memo(
         x={startXRatio}
         y={startYRatio}
         width={widthRatio}
-        height={heightRatio}
+        height={heightRatio2}
       >
         <Image
           url={`${sourcePath}${data.path}`}
