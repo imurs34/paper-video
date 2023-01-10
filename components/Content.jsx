@@ -87,6 +87,8 @@ const PositionedData = React.memo(
         : componentWidth > 50
         ? 10
         : componentWidth > 40
+        ? 15
+        : componentWidth > 30
         ? 20
         : 40);
     const currentParagraphs = (val) => {
