@@ -5,7 +5,7 @@ import PdfView from "../components/PdfView";
 import Split from "react-split";
 const Index = () => {
   const [paragraphs, setParagraphs] = useState();
-  const sizes = [50, 50];
+  const sizes = [60, 40];
   const [width, setWidth] = useState([sizes[0], sizes[1]]);
   const currentParagraphs = (val) => {
     setParagraphs(val);
@@ -22,7 +22,6 @@ const Index = () => {
       sizes={[sizes[0], sizes[1]]}
     >
       <div>
-        {/* <h1 className="mt-10 text-2xl text-white">{width[0]}</h1> */}
         <Base input={input} paragraphs={currentParagraphs} width={width[0]} />
       </div>
       <div className="overflow-auto">

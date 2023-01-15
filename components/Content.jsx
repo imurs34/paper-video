@@ -67,20 +67,12 @@ const PositionedData = React.memo(
     paragraphs,
     width: componentWidth,
   }) => {
-    console.log(data);
     const [x, y, width, height] = data.box_info_original;
-    const startXRatio = (x / template.width) * (componentWidth < 50 ? -15 : 5);
-    // const startYRatio = (y / template.height) * 110;
-    const startYRatio = (y / template.height) * componentWidth + 5;
-    const startYRatio2 =
-      (y / template.height) * componentWidth + (componentWidth < 40 ? 20 : 10);
-    const widthRatio = (width / template.width) * componentWidth + 5;
-    const heightRatio =
-      (height / template.height) *
-      (componentWidth < 20 ? componentWidth - 5 : componentWidth);
-    const heightRatio2 =
-      (height / template.height) *
-      (componentWidth < 20 ? componentWidth - 5 : componentWidth);
+    const startXRatio = x * 100 / template.width;
+    const startYRatio = y * 100 / template.height;
+    const widthRatio = width * 100 / template.width;
+    const heightRatio = height * 100 / template.height;
+
     const currentParagraphs = (val) => {
       paragraphs(val);
     };
@@ -91,7 +83,7 @@ const PositionedData = React.memo(
           x={startXRatio}
           y={startYRatio}
           width={widthRatio}
-          // height={heightRatio2}
+          height={heightRatio}
         >
           <Text
             obj={data}
@@ -108,7 +100,7 @@ const PositionedData = React.memo(
       return (
         <PositionedDataContainer
           x={startXRatio}
-          y={startYRatio2}
+          y={startYRatio}
           width={widthRatio}
           height={heightRatio}
         >
@@ -143,9 +135,9 @@ const PositionedData = React.memo(
     return (
       <PositionedDataContainer
         x={startXRatio}
-        y={startYRatio2}
+        y={startYRatio}
         width={widthRatio}
-        height={heightRatio2}
+        height={heightRatio}
       >
         <Image
           url={`${sourcePath}${data.path}`}
@@ -163,9 +155,9 @@ const PositionedData = React.memo(
 );
 const PositionedDataContainer = styled.div`
   width: ${(props) => props.width}%;
-  height: ${(props) => props.height * 5}px;
-  top: ${(props) => props.y}%;
+  height: ${(props) => props.height}%;
   left: ${(props) => props.x}%;
+  top: ${(props) => props.y}%;
   position: absolute;
   display: flex;
 `;
@@ -491,8 +483,7 @@ const Inner = styled.div`
 `;
 
 const PositionedCanvas = styled.div`
-  --current-height: calc(100vh - 50px);
-  width: calc(var(--current-height) * ${(props) => props.ratio});
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -565,7 +556,7 @@ const Container = styled.div`
   background-color: ${(props) =>
     props.bg.includes("rgb") ? `r${props.bg.split("r")[1]}` : "transparent"};
   background-repeat: no-repeat;
-  background-size: ${(props) => `${props.width + 15}% 100%`};
+  background-size: 100% 100%;
   flex: 1;
   align-items: stretch;
   ${(props) =>

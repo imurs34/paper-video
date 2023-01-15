@@ -44,8 +44,20 @@
           {
             "label": "title",
             "slide_id": 0,
-            "box_info_original": [600, 50, 549, 400],
-            "path": "first.jpg"
+            "box_info_original": [600, 50, 549, 120],
+            "path": "000_0.02.png_title_0.21959233848497595.jpg"
+          },
+          {
+            "label": "title",
+            "slide_id": 0,
+            "box_info_original": [624, 170, 500, 37],
+            "path": "000_0.02.png_text box_0.2646288428228032.jpg"
+          },
+          {
+            "label": "title",
+            "slide_id": 0,
+            "box_info_original": [600, 250, 558, 54],
+            "path": "000_0.02.png_figure_0.6557040141518872.jpg"
           }
         ]
       },
@@ -61,7 +73,7 @@
           {
             "label": "title",
             "slide_id": 1,
-            "box_info_original": [30, 10, 50, 80],
+            "box_info_original": [30, 10, 200, 80],
             "path": "001_0.08.png_title_0.35840664702978375.jpg",
             "color_bg": "(169,230,224)"
           },
@@ -169,7 +181,7 @@
           {
             "label": "picture",
             "slide_id": 4,
-            "box_info_original": [170, 250, 1000, 553],
+            "box_info_original": [178, 273, 800, 500],
             "path": "004_0.3.png_picture_0.2876961164641314.png",
 
             "in_column": 2,
