@@ -201,18 +201,7 @@ function Video({ src, content, videoLocation }, ref) {
   );
 }
 
-const CustomRnd = styled(Rnd)`
-  box-sizing: border-box;
-  z-index: 100000;
-  visibility: ${(props) => props.visiable};
-  ${(props) =>
-    props.colored &&
-    css`
-      z-index: 10;
-      outline: 1px solid #a9ceeb;
-      box-shadow: 0px 1px 2px 2px #a9ceeb;
-    `}
-`;
+const CustomRnd = styled(Rnd)``;
 
 const VideoEl = styled.video`
   margin-left: auto;

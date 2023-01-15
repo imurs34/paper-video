@@ -67,35 +67,20 @@ const PositionedData = React.memo(
     paragraphs,
     width: componentWidth,
   }) => {
+    console.log(data);
     const [x, y, width, height] = data.box_info_original;
-    const startXRatio = (x / template.width) * 10;
-    const startYRatio = (y / template.height) * 110;
+    const startXRatio = (x / template.width) * (componentWidth < 50 ? -15 : 5);
+    // const startYRatio = (y / template.height) * 110;
+    const startYRatio = (y / template.height) * componentWidth + 5;
+    const startYRatio2 =
+      (y / template.height) * componentWidth + (componentWidth < 40 ? 20 : 10);
     const widthRatio = (width / template.width) * componentWidth + 5;
-    const heightRatio = (height / template.height) * componentWidth;
-    // const heightRatio =
-    //   (height / template.height) * componentWidth +
-    //   (componentWidth > 90
-    //     ? -5
-    //     : componentWidth > 50
-    //     ? 5
-    //     : componentWidth > 40
-    //     ? 10
-    //     : 15);
-    // const heightRatio2 =
-    //   (height / template.height) * componentWidth +
-    //   (componentWidth > 70
-    //     ? -8
-    //     : componentWidth > 70
-    //     ? -0
-    //     : componentWidth > 50
-    //     ? 10
-    //     : componentWidth > 40
-    //     ? 15
-    //     : componentWidth > 30
-    //     ? 20
-    //     : 40);
-
-    const heightRatio2 = (height / template.height) * componentWidth;
+    const heightRatio =
+      (height / template.height) *
+      (componentWidth < 20 ? componentWidth - 5 : componentWidth);
+    const heightRatio2 =
+      (height / template.height) *
+      (componentWidth < 20 ? componentWidth - 5 : componentWidth);
     const currentParagraphs = (val) => {
       paragraphs(val);
     };
@@ -123,7 +108,7 @@ const PositionedData = React.memo(
       return (
         <PositionedDataContainer
           x={startXRatio}
-          y={startYRatio}
+          y={startYRatio2}
           width={widthRatio}
           height={heightRatio}
         >
@@ -158,7 +143,7 @@ const PositionedData = React.memo(
     return (
       <PositionedDataContainer
         x={startXRatio}
-        y={startYRatio}
+        y={startYRatio2}
         width={widthRatio}
         height={heightRatio2}
       >
