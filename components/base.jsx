@@ -130,7 +130,11 @@ const imageSelector = ({ location, dark }) => {
 
 const Base = ({ input, paragraphs, width }) => {
   useEffect(() => {
-    document.getElementById("videoContainer").style.height = `${width}%`;
+    let videoContainer = document.getElementById("videoContainer");
+    if (videoContainer != null) {
+      let videoContainer = document.getElementById("videoContainer");
+      videoContainer.style.height = `${((videoContainer.clientWidth / input.template.width) * input.template.height) + 60}px`;
+    }
   }, [width]);
   const [dark] = useAtom(darkModeAtom);
   const [mobile] = useAtom(mobileModeAtom);
