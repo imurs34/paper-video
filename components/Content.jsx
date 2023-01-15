@@ -71,26 +71,31 @@ const PositionedData = React.memo(
     const startXRatio = (x / template.width) * 10;
     const startYRatio = (y / template.height) * 110;
     const widthRatio = (width / template.width) * componentWidth + 5;
-    const heightRatio =
-      (height / template.height) * componentWidth +
-      (componentWidth > 70
-        ? -10
-        : componentWidth > 50
-        ? 5
-        : componentWidth > 40
-        ? 10
-        : 15);
-    const heightRatio2 =
-      (height / template.height) * componentWidth +
-      (componentWidth > 70
-        ? -10
-        : componentWidth > 50
-        ? 10
-        : componentWidth > 40
-        ? 15
-        : componentWidth > 30
-        ? 20
-        : 40);
+    const heightRatio = (height / template.height) * componentWidth;
+    // const heightRatio =
+    //   (height / template.height) * componentWidth +
+    //   (componentWidth > 90
+    //     ? -5
+    //     : componentWidth > 50
+    //     ? 5
+    //     : componentWidth > 40
+    //     ? 10
+    //     : 15);
+    // const heightRatio2 =
+    //   (height / template.height) * componentWidth +
+    //   (componentWidth > 70
+    //     ? -8
+    //     : componentWidth > 70
+    //     ? -0
+    //     : componentWidth > 50
+    //     ? 10
+    //     : componentWidth > 40
+    //     ? 15
+    //     : componentWidth > 30
+    //     ? 20
+    //     : 40);
+
+    const heightRatio2 = (height / template.height) * componentWidth;
     const currentParagraphs = (val) => {
       paragraphs(val);
     };
@@ -101,7 +106,7 @@ const PositionedData = React.memo(
           x={startXRatio}
           y={startYRatio}
           width={widthRatio}
-          height={heightRatio2}
+          // height={heightRatio2}
         >
           <Text
             obj={data}
@@ -173,7 +178,7 @@ const PositionedData = React.memo(
 );
 const PositionedDataContainer = styled.div`
   width: ${(props) => props.width}%;
-  height: ${(props) => props.height}%;
+  height: ${(props) => props.height * 5}px;
   top: ${(props) => props.y}%;
   left: ${(props) => props.x}%;
   position: absolute;
