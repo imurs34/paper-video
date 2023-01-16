@@ -1,15 +1,17 @@
 import _ from "lodash";
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { useAtom } from "jotai";
 import { darkModeAtom, highlightAtom, paragraphAtom } from "../atom";
 import pdfmap2 from "../pdfmap2.json";
+import useOnClickOutside from "../hooks/onClickOutside";
 
 function Image({ obj, url, width, widthRatio, heightRatio }) {
   const [fixed] = useState();
   const [dark] = useAtom(darkModeAtom);
   const [highlight, setHighlightAtom] = useAtom(highlightAtom);
   const [paragraph, setParagraphAtom] = useAtom(paragraphAtom);
+  const imgRef = useRef(null);
   const onClick = (e) => {
     pdfmap2.map((item) => {
       if (Number(item.slide_id) == obj.slide_id) {
@@ -18,9 +20,12 @@ function Image({ obj, url, width, widthRatio, heightRatio }) {
     });
     setHighlightAtom(e.target.id);
   };
+  useOnClickOutside(imgRef, () => setHighlightAtom(null));
+
   return (
     <Img
       fixed={fixed}
+      ref={imgRef}
       onClick={onClick}
       isDark={dark}
       src={url}
