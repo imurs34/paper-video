@@ -44,19 +44,19 @@
           {
             "label": "title",
             "slide_id": 0,
-            "box_info_original": [600, 50, 549, 120],
+            "box_info_original": [60, 50, 549, 120],
             "path": "000_0.02.png_title_0.21959233848497595.jpg"
           },
           {
             "label": "title",
             "slide_id": 0,
-            "box_info_original": [624, 170, 500, 37],
+            "box_info_original": [63, 170, 500, 37],
             "path": "000_0.02.png_text box_0.2646288428228032.jpg"
           },
           {
             "label": "title",
             "slide_id": 0,
-            "box_info_original": [600, 250, 558, 54],
+            "box_info_original": [60, 250, 558, 54],
             "path": "000_0.02.png_figure_0.6557040141518872.jpg"
           }
         ]
@@ -80,13 +80,13 @@
           {
             "label": "text_box",
             "slide_id": 0,
-            "box_info_original": [110, 157, 1000, 16],
+            "box_info_original": [30, 157, 1000, 16],
             "in_column": 1,
             "order": 1,
             "id": "heading1",
             "text_content": "Structuring Iterative Improvement for Novice Designers",
-            "avail_font_size": 2.8,
-            "font_weight": 2200,
+            "avail_font_size": 2.2,
+            "font_weight": 900,
             "typeface": "Open Sans",
             "color_font": "(18, 18, 18)",
             "color_bg": "(169,230,224)"
@@ -94,13 +94,12 @@
           {
             "label": "text_box",
             "slide_id": 0,
-            "box_info_original": [110, 350, 1000, 10],
+            "box_info_original": [30, 350, 1000, 10],
             "in_column": 1,
             "order": 1,
             "id": "names",
             "text_content": "Lydia B. Chilton, Ecenaz Jen Ozmen, Sam Ross, Vivian Liu, Columbia University, Barnard College",
-            "avail_font_size": 1.5,
-            "font_weight": 1000,
+            "avail_font_size": 1.2,
             "typeface": "Open Sans",
             "color_font": "(18, 18, 18)",
             "color_bg": "(169,230,224)"
@@ -153,7 +152,7 @@
           {
             "label": "picture",
             "slide_id": 3,
-            "box_info_original": [170, 150, 910, 553],
+            "box_info_original": [170, 150, 910, 453],
             "path": "003_0.26.png_picture_0.7765112935256571.jpg",
 
             "in_column": 2,
@@ -175,13 +174,13 @@
           {
             "label": "title",
             "slide_id": 4,
-            "box_info_original": [170, 100, 785, 180],
+            "box_info_original": [170, 100, 785, 150],
             "path": "004_0.3.png_handwriting_0.5933713092107841.jpg"
           },
           {
             "label": "picture",
             "slide_id": 4,
-            "box_info_original": [178, 273, 800, 500],
+            "box_info_original": [178, 273, 800, 400],
             "path": "004_0.3.png_picture_0.2876961164641314.png",
 
             "in_column": 2,

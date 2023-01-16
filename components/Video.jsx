@@ -208,18 +208,18 @@ const VideoEl = styled.video`
   display: block;
   opacity: 0;
   height: inherit;
-  max-width: 100%;
+  max-width: 0;
   ${(props) =>
     props.active &&
     css`
-      opacity: 1;
+      opacity: 0;
     `}
 
   ${(props) =>
     props.isDrag &&
     css`
-      height: 100%;
-      width: 100%;
+      height: 0;
+      width: 0;
       object-fit: fill;
     `}
 `;

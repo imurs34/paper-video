@@ -19,9 +19,14 @@ function Image({ obj, url, width, widthRatio, heightRatio }) {
     setHighlightAtom(e.target.id);
   };
   return (
-    <Container fixed={fixed} onClick={onClick} isDark={dark}>
-      <Img src={url} id={url} highlight={highlight} />
-    </Container>
+    <Img
+      fixed={fixed}
+      onClick={onClick}
+      isDark={dark}
+      src={url}
+      id={url}
+      highlight={highlight}
+    />
   );
 }
 
@@ -47,13 +52,12 @@ const Container = styled.div`
   visibility: ${(props) => (props.fixed ? "hidden" : "visible")};
   padding: 5px 0px;
   margin: 0 auto;
-  border:10px solid red
-  width: 100rem;
+  width: 0;
   
 };
 `;
 const Img = styled.img`
-  margin: 0 auto;
+  margin: 0;
   max-width: 100%;
   max-height: 100%;
   filter: ${(props) =>

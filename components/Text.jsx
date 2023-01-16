@@ -39,7 +39,7 @@ function Text({ obj, isFull, currentParagraphs, width }) {
   const [frameHeight] = useAtom(frameHeightAtom);
 
   const [goal, setGoal] = useState({
-    fontSize: 15,
+    fontSize: 1,
     lineHeight: 150,
     fontWeight: 400,
   });
