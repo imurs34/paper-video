@@ -18,6 +18,7 @@ import {
   withVideoAtom,
 } from "../atom";
 import useWindowOrientation from "use-window-orientation";
+import Subtitles from "./Subtitles";
 
 const useBreakpoint = createBreakpoint({ XL: 1280, L: 768, S: 350 });
 
@@ -128,16 +129,15 @@ const imageSelector = ({ location, dark }) => {
   }
 };
 
-const Base = ({ input, paragraphs, width }) => {
+const Base = ({ input, paragraphs, width, transcription }) => {
   useEffect(() => {
     let videoContainer = document.getElementById("videoContainer");
     if (videoContainer != null) {
       let videoContainer = document.getElementById("videoContainer");
-      videoContainer.style.height = `${
-        (videoContainer.clientWidth / input.template.width) *
-          input.template.height +
+      videoContainer.style.height = `${(videoContainer.clientWidth / input.template.width) *
+        input.template.height +
         60
-      }px`;
+        }px`;
     }
   }, [width]);
   const [dark] = useAtom(darkModeAtom);
@@ -206,7 +206,7 @@ const Base = ({ input, paragraphs, width }) => {
           content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
         />
       </Head>
-      <div className={`flex justify-center items-center h-screen mx-8`}>
+      <div className={`flex flex-col justify-center items-center h-screen mx-8`}>
         <Container
           className={`node w-full h-[50%] items-center`}
           id="videoContainer"
@@ -255,6 +255,9 @@ const Base = ({ input, paragraphs, width }) => {
             <ControllerLine content={content} />
           </ControllerContainer>
         </Container>
+        <div className="h-[20%] w-full" >
+          <Subtitles subtitles={transcription} ></Subtitles>
+        </div>
       </div>
     </>
   );
