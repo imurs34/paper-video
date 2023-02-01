@@ -1,0 +1,137 @@
+[
+    {
+        "index": 1,
+        "start": "00:04",
+        "text": "Visifit. Structuring Iterative Improvement for Novice Designers."
+    },
+    {
+        "index": 2,
+        "start": "00:09",
+        "text": "Iteration is about improving a prototype."
+    },
+    {
+        "index": 3,
+        "start": "00:12",
+        "text": "But iteration is never a straight shot from A to B."
+    },
+    {
+        "index": 4,
+        "start": "00:16",
+        "text": "How can we structure iteration to guide users towards higher fidelity prototypes?"
+    },
+    {
+        "index": 5,
+        "start": "00:23",
+        "text": "We focus this question on visual blends, which are when two objects are combined seamlessly and aesthetically into one visual, to convey a new meaning. Some examples are shown on the left."
+    },
+    {
+        "index": 6,
+        "start": "00:37",
+        "text": "We propose the following design principles to structure iteration."
+    },
+    {
+        "index": 7,
+        "start": "00:42",
+        "text": "One. Structure the problem into subtasks and provide interactive tools specific to each subtasks."
+    },
+    {
+        "index": 8,
+        "start": "00:50",
+        "text": "Two. Identify secondary dimensions of the design space to structure the iteration process. For visual blends, those dimensions are silhouette, colors, and internal details."
+    },
+    {
+        "index": 9,
+        "start": "01:00",
+        "text": "Three. Provide high-level tools related to the secondary visual dimensions that can preview results without requiring expert knowledge or tedious, low-level manipulation."
+    },
+    {
+        "index": 10,
+        "start": "01:10",
+        "text": "Let's see VisiFit in action."
+    },
+    {
+        "index": 11,
+        "start": "01:13",
+        "text": "The Visifit system starts off with Image A, Image B, and the Visiblend base, Image A+B"
+    },
+    {
+        "index": 12,
+        "start": "01:20",
+        "text": "The user is first presented with the fundamental dimension of silhouette. The system automatically creates two versions of the blend- one with the silhouette of Object A and one with the silhouette of Object B."
+    },
+    {
+        "index": 13,
+        "start": "01:32",
+        "text": "The user must select which silhouette looks better."
+    },
+    {
+        "index": 14,
+        "start": "01:36",
+        "text": "Color is the next fundamental dimension to include in the blend. Users can decide if they want the color of one object, the other object, or a blend of both."
+    },
+    {
+        "index": 15,
+        "start": "01:46",
+        "text": "We present four automatic, adjustable tools to blend on color and texture: transparency, additive color blending blending, color/texture multiplication, and color replacement."
+    },
+    {
+        "index": 16,
+        "start": "01:59",
+        "text": "The last visual dimension to include is internal details - these are smaller objects or salient features that help identify the object."
+    },
+    {
+        "index": 17,
+        "start": "02:08",
+        "text": "In the snowman and orange blend, the snowman is not as iconic without his facial details. Thus, we want to extract them using Interactive Grabcut and transpose them onto the visual blend."
+    },
+    {
+        "index": 18,
+        "start": "02:22",
+        "text": "We complete the workflow, efficiently completing a structured iterative improvement process."
+    },
+    {
+        "index": 19,
+        "start": "02:27",
+        "text": "Here we demonstrate Visifit again on another initial visual blend."
+    },
+    {
+        "index": 20,
+        "start": "02:38",
+        "text": "Visifit accounts for user choice and control over what effects users would actually like to apply based on the effect previews they interact with. Note that users are always abstracted from doing low-level manipulation to achieve any of these effects ."
+    },
+    {
+        "index": 21,
+        "start": "02:55",
+        "text": "Here we see the Visiblend base and Visifit improved blend side by side. The following is a sequence of our system's results."
+    },
+    {
+        "index": 22,
+        "start": "03:19",
+        "text": "Statistical results. One, we show that in a study of 10 novice designers, novices iterated upon blends in under 4 minutes to improve the visual blends 76.1% of the time."
+    },
+    {
+        "index": 23,
+        "start": "03:32",
+        "text": "Two, additionally, 70.1% of these blends were deemed fit for publication on social media, demonstrating how our tool helps novices efficiently improve visual blends."
+    },
+    {
+        "index": 24,
+        "start": "03:44",
+        "text": "We can apply these principles to other domains such as animated blends, furniture design, and fashion just to name a few."
+    },
+    {
+        "index": 25,
+        "start": "03:52",
+        "text": "Animated blends add motion from reference videos to compliment the message visual blends want to get across. To structure the iteration process of animated blends, motion can also be decomposed into fundamental dimensions."
+    },
+    {
+        "index": 26,
+        "start": "04:07",
+        "text": "One example of which would be the pattern of motion, which can be adjusted and blended upon as it is shown in the example here, where the rising sun shares the up and down dip of a tea bag."
+    },
+    {
+        "index": 27,
+        "start": "04:18",
+        "text": "Visifit demonstrates how computational tools can support novices by enabling them to explore a structured design space quickly and efficiently"
+    }
+]
