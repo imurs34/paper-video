@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Base from "../components/base";
 import input from "../input1.json";
 import subtitles from "../transcription.json";
-import PdfView from "../components/PdfView";
+import PdfView2 from "../components/PdfView2";
 import Split from "react-split";
 const Index = () => {
   const [paragraphs, setParagraphs] = useState();
@@ -26,7 +26,7 @@ const Index = () => {
         <Base transcription={subtitles} input={input} paragraphs={currentParagraphs} width={width[0]} />
       </div>
       <div className="overflow-auto">
-        <PdfView paragraphs={paragraphs} width={width[1]} />
+        <PdfView2 paragraphs={paragraphs} width={width[1]} />
       </div>
     </Split>
   );
