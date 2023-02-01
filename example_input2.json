@@ -1,0 +1,297 @@
+{
+    "sourcePath": "/example_input2_source/",
+    "template": {
+        "width": 640,
+        "height": 360,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "base_font_size": 16
+    },
+    "video": {
+        "source": "instructor_whole.mp4",
+        "control": [
+            {
+                "start_time": 0.0,
+                "box_info": [0, 1, 222, 357]
+            },
+            {
+                "start_time": 4.26,
+                "box_info": null
+            },
+            {
+                "start_time": 14.56,
+                "box_info": [2, 1, 220, 358]
+            },
+            {
+                "start_time": 17.99,
+                "box_info": [52, 107, 138, 135]
+            }
+        ]
+    },
+
+    "content": [
+        {
+            "shot_id": 1,
+            "column": 1,
+            "bg_image": "bg_video5_5_1_shot11.jpg",
+            "start_time": 0.0,
+            "end_time": 4.26,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [244, 28, 246, 26],
+                    "path": "video75_2_3_shot8_DE31674_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [271, 79, 278, 35],
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "text_content": "Trial-based paradigms: presentation of many repetitions of identical stimuli for across-trial averaging or classification.",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [272, 203, 70, 11],
+
+                    "in_column": 1,
+                    "order": 2,
+
+                    "text_content": "Caveats:",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(225, 225, 225)",
+                    "color_bg": "(18, 18, 18)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [272, 287, 299, 11],
+
+                    "in_column": 1,
+                    "order": 3,
+
+                    "text_content": "Not ecologically relevant (Real life is a single trial!);",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [272, 123, 44, 11],
+
+                    "in_column": 1,
+                    "order": 4,
+
+                    "text_content": "Suboptimal time efficiency of data collection;",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [273, 143, 329, 13],
+
+                    "in_column": 1,
+                    "order": 5,
+
+                    "text_content": "Habituation/adaptation and fatigue",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [273, 162, 275, 12],
+
+                    "in_column": 1,
+                    "order": 6,
+
+                    "text_content": "Alternatives:",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(255, 255, 255)",
+                    "color_bg": "(18, 18, 18)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [272, 255, 306, 23],
+
+                    "in_column": 1,
+                    "order": 7,
+
+                    "text_content": "Analysis of responses to sequences of unique stimuli (e.g., isolated words or sentences);",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [273, 223, 313, 23],
+
+                    "in_column": 1,
+                    "order": 8,
+
+                    "text_content": "Continous presentation of a long-duration acoustic stimulus (e.g., an audiobook or a music piece);",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [273, 184, 210, 11],
+
+                    "in_column": 1,
+                    "order": 9,
+
+                    "text_content": "A dialogue between the subject and the experimenter.",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 0.875,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(223, 224, 225)"
+                }
+            ]
+        },
+
+        {
+            "shot_id": 2,
+            "column": 1,
+            "bg_image": "bg_video75_2_3_shot27.jpg",
+            "start_time": 4.26,
+            "end_time": 14.56,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [244, 29, 69, 10],
+                    "path": "video75_2_3_shot27_DE31668_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [270, 142, 266, 55],
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "text_content": "iEEG is the 'gold standard' in studying neural activity within human auditory cortex and generates valuable information about its organization and fuction;",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 2.125,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(255, 255, 255)",
+                    "color_bg": "(18, 18, 18)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [270, 206, 322, 56],
+
+                    "in_column": 1,
+                    "order": 2,
+
+                    "text_content": "Knowledge helps bridge the gap between noninvasive imaging in humans and neurophysiological data obtained in experimental animal studies;",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 2.125,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(255, 255, 255)",
+                    "color_bg": "(18, 18, 18)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [270, 78, 308, 54],
+
+                    "in_column": 1,
+                    "order": 3,
+
+                    "text_content": "Future technical advances (array design, circuit miniaturization, wireless technologies) will enhance the patient's comfort and safety and open new research opportunities.",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 2.125,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(255, 255, 255)",
+                    "color_bg": "(18, 18, 18)"
+                }
+            ]
+        },
+        {
+            "shot_id": 3,
+            "column": 1,
+            "bg_image": "bg_video75_3_1_shot10.jpg",
+            "start_time": 14.56,
+            "end_time": 17.99,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [235, 27, 295, 29],
+                    "path": "video75_3_1_shot10_DE32054_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [269, 92, 285, 71],
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "text_content": "Both PET and fMRI utilize the dependency between local changes in blood flow and neuronal brain activity. Indirect measuring of neuronal activity via blood flow allows mapping of human brain functions.",
+                    "original_font_ size": 0.6875,
+                    "avail_font_size": 1.5,
+                    "typeface": "Ubuntu Mono",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 254, 255)"
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [270, 177, 100, 123],
+                    "path": "video75_3_1_shot10_DE32056_picture.png",
+
+                    "in_column": 1,
+                    "order": 2,
+
+                    "avail_size": 1.1
+                }
+            ]
+        },
+        {
+            "shot_id": 4,
+            "column": 1,
+            "bg_image": "bg_video75_4_6_shot9.jpg",
+            "start_time": 17.99,
+            "end_time": 33.0,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [243, 28, 220, 13],
+                    "path": "video75_4_6_shot9_DE32209_title.png"
+                },
+                {
+                    "label": "diagram",
+                    "box_info_original": [299, 93, 269, 141],
+                    "path": "video75_4_6_shot9_DE32210_diagram.png",
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "avail_size": 1.3
+                }
+            ]
+        }
+    ]
+}

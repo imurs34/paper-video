@@ -1,0 +1,335 @@
+{
+    "sourcePath": "/example_input1_source/",
+    "template": {
+        "width": 1280,
+        "height": 720,
+        "top_padding": 82,
+        "bottom_padding": 55,
+        "base_font_size": 16,
+        "top_img": "header.jpg",
+        "bottom_img": "footer.jpg"
+    },
+    "video": {
+        "source": "instructor_whole.mp4",
+        "control": [
+            {
+                "start_time": 4.55,
+                "box_info": [986, 386, 294, 334]
+            },
+            {
+                "start_time": 10.1,
+                "box_info": null
+            },
+            {
+                "start_time": 13.67,
+                "box_info": [1028, 392, 252, 326]
+            },
+            {
+                "start_time": 18.67,
+                "box_info": [1, 1, 200, 300]
+            }
+        ]
+    },
+    "content": [
+        {
+            "shot_id": 1,
+            "column": 1,
+            "bg_image": "bg_video5_5_1_shot11.jpg",
+            "start_time": 0.0,
+            "end_time": 5.44,
+
+            "learning_material": [
+                {
+                    "label": "text_box",
+                    "box_info_original": [147, 417, 796, 69],
+
+                    "in_column": 1,
+                    "order": 2,
+
+                    "text_content": "* Forecast Accuracy: the further in advance of demand, the more inaccurate a forecast is.",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 2.84,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [158, 183, 828, 204],
+                    "path": "video5_5_1_shot11_DE10022_picture.png",
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "avail_size": 1.3
+                },
+                {
+                    "label": "title",
+                    "box_info_original": [151, 122, 388, 49],
+                    "path": "video5_5_1_shot11_DE10019_title.png"
+                }
+            ]
+        },
+
+        {
+            "shot_id": 2,
+            "column": 1,
+            "bg_image": "bg_video5_5_2_shot25.jpg",
+            "start_time": 5.44,
+            "end_time": 9.66,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [150, 125, 674, 43],
+                    "path": "video5_5_2_shot25_DE10276_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [137, 205, 788, 62],
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "text_content": "Just-In-Time production is one of the key elements of quantity control in Lean Production.",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [136, 291, 439, 24],
+
+                    "in_column": 1,
+                    "order": 2,
+
+                    "text_content": "JIT requires a stable pull-system.",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [139, 330, 790, 107],
+
+                    "in_column": 1,
+                    "order": 3,
+
+                    "text_content": "JIT seeks to reduce any additional inventory in the system, not only from the end products, but upstream in the progress, inlcuding Work-In-Progress (WIP) and buffer stocks.",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [139, 457, 669, 25],
+
+                    "in_column": 1,
+                    "order": 4,
+
+                    "text_content": "Reduced inventory results in a reduction in flow time",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [139, 502, 581, 28],
+
+                    "in_column": 1,
+                    "order": 5,
+
+                    "text_content": "and faster identification of process problems,",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [139, 549, 645, 25],
+
+                    "in_column": 1,
+                    "order": 6,
+
+                    "text_content": "leading to improved processes and less variability,",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [137, 594, 314, 23],
+
+                    "in_column": 1,
+                    "order": 7,
+
+                    "text_content": "reducing waiting times",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [141, 640, 490, 22],
+
+                    "in_column": 1,
+                    "order": 8,
+
+                    "text_content": "which improves the continous flow....",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.67,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                }
+            ]
+        },
+        {
+            "shot_id": 3,
+            "column": 2,
+            "bg_image": "bg_video5_2_9_shot5.jpg",
+            "start_time": 9.66,
+            "end_time": 18.0,
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [162, 129, 203, 35],
+                    "path": "video5_2_9_shot5_DE5073_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [151, 204, 388, 26],
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "text_content": "Takt means \"Cycle\" or \"Beat\"",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 2.17,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "picture",
+                    "box_info_original": [862, 94, 145, 184],
+                    "path": "video5_2_9_shot5_DE5075_picture.png",
+
+                    "in_column": 2,
+                    "order": 1,
+                    "avail_size": 1.8
+                }
+            ]
+        },
+        {
+            "shot_id": 4,
+            "column": 2,
+            "bg_image": "/bg_video5_2_8_shot23.jpg",
+            "start_time": 18.0,
+            "end_time": 29.56,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [140, 121, 383, 48],
+                    "path": "video5_2_9_shot5_DE5073_title.png"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [140, 213, 430, 151],
+
+                    "in_column": 1,
+                    "order": 1,
+
+                    "text_content": "Given that there is enough capacity on average to meet demand (capacity > demand rate).",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.84,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "text_box",
+                    "box_info_original": [140, 379, 405, 191],
+
+                    "in_column": 1,
+                    "order": 2,
+
+                    "text_content": "With variability, there is an exponential increase in the queue time (T) with increasing capacity utilization.",
+                    "original_font_size": 1.67,
+                    "avail_font_size": 1.84,
+                    "typeface": "Arial",
+                    "color_font": "(18, 18, 18)",
+                    "color_bg": "(253, 253, 253)"
+                },
+                {
+                    "label": "chart",
+                    "box_info_original": [621, 231, 494, 409],
+                    "path": "video5_2_8_shot23_DE4964_chart.png",
+
+                    "in_column": 2,
+                    "order": 2,
+
+                    "avail_size": 1.1
+                },
+                {
+                    "label": "figure",
+                    "box_info_original": [711, 124, 337, 61],
+                    "path": "video5_2_8_shot23_DE4962_figure.png",
+
+                    "in_column": 2,
+                    "order": 1,
+
+                    "avail_size": 1.1
+                }
+            ]
+        },
+        {
+            "shot_id": 5,
+            "column": 1,
+            "bg_image": "/bg_video7_4_3_shot45.jpg",
+            "start_time": 29.56,
+            "end_time": 90.5,
+
+            "learning_material": [
+                {
+                    "label": "title",
+                    "box_info_original": [102, 115, 595, 40],
+                    "path": "video7_4_3_shot45_DE20072_title.png"
+                },
+                {
+                    "label": "video",
+                    "box_info_original": [95, 201, 821, 301],
+                    "start_time": 40.39,
+                    "end_time": 85.9,
+                    "path": "video7_4_3_hw_drp.mp4",
+                    "in_column": 1,
+                    "order": 1
+                },
+                {
+                    "label": "figure",
+                    "box_info_original": [127, 518, 303, 99],
+                    "path": "video7_4_3_shot45_DE20076_figure.png",
+
+                    "in_column": 1,
+                    "order": 2,
+                    "avail_size": 1.05
+                }
+            ]
+        }
+    ]
+}

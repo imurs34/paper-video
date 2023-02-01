@@ -1,0 +1,44 @@
+{
+  "name": "with-styled-components",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": " next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@react-pdf-viewer/core": "3.10.0",
+    "@react-pdf-viewer/default-layout": "^3.10.0",
+    "@react-pdf-viewer/highlight": "^3.10.0",
+    "@react-pdf-viewer/page-navigation": "^3.10.0",
+    "@react-pdf-viewer/toolbar": "^3.10.0",
+    "css-to-style": "^1.4.0",
+    "jotai": "^1.0.0",
+    "lodash": "^4.17.21",
+    "next": "latest",
+    "pdfjs-dist": "3.1.81",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-is": "latest",
+    "react-pdf": "^6.2.0",
+    "react-rnd": "^10.3.3",
+    "react-split": "^2.0.14",
+    "react-use": "^17.2.4",
+    "shortid": "^2.2.16",
+    "styled-components": "^5.2.3",
+    "styled-icons": "^10.35.0",
+    "styled-reset": "^4.3.4",
+    "use-fit-text": "^2.4.0",
+    "use-window-orientation": "^1.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "babel-plugin-styled-components": "^1.12.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.28.0",
+    "eslint-plugin-react": "^7.31.11",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  },
+  "license": "MIT"
+}

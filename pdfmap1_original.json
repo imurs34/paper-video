@@ -1,0 +1,386 @@
+[
+  {
+    "id": 0,
+    "paragraphs": "Iterative improvement is the essence of the iterative design process. No design is perfect at inception, thus iteration through prototypes is necessary to improve it. If a prototype passes an evaluation, it should become a new, higher fdelity prototype that can be tested and potentially iterated upon again. In case studies of improved software usability by the Nielsen Norman Group [40], median improvement per stage of iteration was 38%, leading to overall usability improvements of 165%. Iteration is not just an aspect of usability engineering, it is a fundamental part of the design process that generalizes across many domains. In web design, designers start with a wireframe prototype and move to a minimum viable product. In mechanical design, designers improve upon initial proofs of concept by iterating upon features and prototype reliability. In graphic design, designers sketch prototypes and then move onto higher-fdelity mockups. In each domain, iteration looks diferent, but the objective is the same -to extend the prototype to move closer to the goal. To help novice designers in a meaningful and practical way, we need tools to support iteration.",
+    "pageIndex": 1,
+    "highlights": [{ "height": 8, "width": 43, "right": 6, "top": 83 }]
+  },
+  {
+    "id": 1,
+    "paragraphs": "Although there are many existing tools that support other phases of the design process such as brainstorming, prototyping, evaluation, and fnal design execution, there is a lack of tools focusing on iteration [17]. Only 6% of 148 creativity support tools from 1999-2018 focus on iteration. Iteration tools are similar to brainstorming and prototyping tools in that they help people explore a design space. However, they are more difcult to build because they have more constraints. Unlike general prototyping tools, iterating on prototypes must be constrained further to build on ideas that were validated in the previous prototypes. Iteration still involves searching the design space, but the tools that were previously used to explore an expansive design space are not the right tools to explore a more constrained one."
+  },
+  {
+    "id": 2,
+    "paragraphs": "Like all prototyping tools, iteration tools must be domain-specifc so they can efectively operate on the materials of that domain. We focus on the difcult design challenge of making visual blends [3]. Visual blends are an advanced graphic design technique used to convey a message visually in journalism, advertising, and public service announcements. They combine two visual symbols into one object to convey a new meaning. For example, in Figure 1 the Guggenheim Museum is blended with an acorn to convey the message \"Visit New York City this autumn\". Visual blends are a canonical example of a creative design challenge [25,43] because they are open-ended enough to encapsulate all aspects of the design process, but well-defned enough to test in a short time frame. Moreover, cognitive scientists consider blending to be an important aspect of general creativity for its ability to \"create new meaning out of old. \" [15] Currently, tools already exist to help people brainstorm and create initial prototypes [9] by fnding the right images and arrangements to use for the blend. However, visual blends generally require an expert with Photoshop skills to execute the design and it would be faster, easier, and more empowering for novices to improve blends by themselves, without relying on an expert.",
+    "pageIndex": 2,
+    "highlights": [{ "height": 27.5, "width": 43, "left": 6, "top": 47 }]
+  },
+  {
+    "id": 3,
+    "paragraphs": "We perform several formative studies to learn how experts approach the iterative improvement of visual blends. From an analysis of blends created by experts and a participatory design process with graphic designers, we learned that blends do not simply blend the surface-level style of two objects, they combine the secondary visual dimensions of both objects such as silhouette, color and internal details. Based on this observation, we present a method for structuring the iterative improvement process of blends based on secondary design dimensions. In this method, the improvement process is frst broken into stages that blend each of the dimensions separately.",
+    "pageIndex": 2,
+    "highlights": [
+      {
+        "height": 15,
+        "width": 43,
+        "left": 6,
+        "top": 74
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "paragraphs": "Then the results of each stage are combined into a single blended output."
+  },
+  {
+    "id": 5,
+    "paragraphs": "We present VisiFit -a computational design tool that allows novice graphic designers to improve a prototype of a visual blend. A prior system called VisiBlends [9] helps novices create rough initial prototypes of blends by overlaying two objects with the same shape. VisiFit helps users refne those rough prototypes into seamless and aesthetic blends. VisiFit structures the process of creating second iterations by introducing a pipeline of computational tools that allow users to quickly and easily edit secondary design dimensions. Figure 1 shows two examples of the VisiBlends output and the result of novices using VisiFit to improve them in under 4 minutes. Our evaluation shows that novices can quickly and easily iterate on prototypes to create seamless and aesthetic blends."
+  },
+  {
+    "id": 6,
+    "paragraphs": "This paper makes the following contributions:"
+  },
+  {
+    "id": 7,
+    "paragraphs": "Three preliminary investigations into the process of improving prototypes of visual blends: a demonstration of how fully automatic systems fail, an analysis of patterns used by professionals, and a co-design process with graphic artists. • Three design principles for a computational approach to improving visual blends. • A method of using secondary design dimensions to structure the improvement process. This method is grounded in the neuroscience of human visual object recognition. • VisiFit, a system that applies the method and design principles in a pipeline of computational tools. • An evaluation of VisiFit showing that in under 4 minutes, novices can substantially improve blends in 76% of cases and create blends suitable to publish on social media in 70% of cases.",
+    "pageIndex": 2,
+    "highlights": [{ "height": 21, "width": 43, "left": 50, "top": 32 }]
+  },
+  {
+    "id": 8,
+    "paragraphs": "We conclude with a discussion of how secondary design dimensions can help structure iteration in other felds and how pipelines of computational design tools can support the iterative design process."
+  },
+  {
+    "id": 9,
+    "paragraphs": "Design tools and creativity support tools (CSTs) have a rich tradition of accelerating innovation and discovery [49] by supporting the design process. A survey of 143 papers from 1999-2018 on creativity support tools (CSTs) found that there are papers supporting all phases of the design process: ideation, exploration, prototyping, implementation, evaluation, and process/pipeline, and iteration. [17]. Many of these tools support more than one phase of the design process. However, not all phases of the design process are equally represented in the literature. In fact, a majority of these tools focused on either very early or very late phases of the design process. Of the systems in the survey, 45% support ideation [30,50,59], 41% support implementation, including high-fdelity tools [57] or low-fdelity tools for prototyping or sketching [10,21,31,32], and 18% supported evaluation through feedback [36,63] or expert annotation [51]. However, only 6% of the systems surveyed supported iteration, and only 4% supported the related task of design management or pipelines. More research is needed on how to support iteration more efectively -that is, how to help designers improve on an initial prototype to get closer to their fnal design goal. Our work in this paper focuses on this problem.",
+    "page": 2,
+    "index": [1811, 2230]
+  },
+  {
+    "id": 10,
+    "paragraphs": "Existing systems that explicitly aid iteration use a number of approaches. One class of iteration applications uses crowds to iterate towards better solutions [33]. This can be by mixing features of previous designs [66], responding to community feedback [27], hiring experts [45], or identifying weak points and fxing them [28]. All of these use the strength of multiple people's viewpoints to iterate. However, crowds can introduce errors and may be difcult to steer toward your particular vision. Therefore, it is often useful to provide designers with single user tools for iteration."
+  },
+  {
+    "id": 11,
+    "paragraphs": "Another class of iteration tools has the user produce a prototype, and then computationally generate the rest of the design. If the user is unhappy with the outcome, they can regenerate, alter their input, or adjust parameters. Several applications apply this method to generate multi-tracked music from a simple input melody. This can be done using rules and constraints [14,61] or implicit patterns learned by deep learning [35]. Having the computer generate outcomes is especially usable for novices; it allows them to recognize good outcomes, even if they cannot produce them. This seems to work well in music, which has many mathematical rules, but it is unclear if it works as well in other domains."
+  },
+  {
+    "id": 12,
+    "paragraphs": "A third way to support iteration is to provide rich undo history to allow users control and freedom while exploring the design space. This is often done in the drawing domain both for single users [39] and for multiple users who want to draw collaboratively [67]. In the creative design process, exploration is clearly important [8], and supporting that is essential. In VisiFit, we use aspects of all three of these approaches. We target key properties of the prototype that need improving and focus iteration on these properties. We provide computational tools to generate outcomes that novices could not produce themselves. We allow users to explore design alternatives and to adjust parameters so they can achieve results they are satisfed with."
+  },
+  {
+    "id": 13,
+    "paragraphs": "Computational tools have long been a promising approach to aid design because they can search a design space and help meet a constraint. The power of computational or computer-aided design has been shown in many felds such as: education [34], medicine [22], games [52], urban planning [5], and accessibility [18]. The system designer must defne the space and the search parameters, as well as provide design patterns for solutions that can be adapted to diferent inputs. [2,64,65] Computational design tools have had particularly strong adoption in graphic design problems like optimizing layout [7,11,41,56], making icons [4,6], and providing inspiration through mood boards [29,60] and relevant examples [12,30]. This is also true in the 3D domain, where computational tools can be used to search a design space and create multiple mesh and texture variations of objects (i.e. trees or airplanes) that can make computer generated scenes more diverse [37,54]. Deep learning has also been applied to generate new designs that ft user specifcations [38,62]. In this paper, we address a specifc kind of graphic design problem of that requires blending two objects into one in order to convey a new meaning. To our knowledge, none of the existing computational design tools have addressed this problem.",
+    "pageIndex": 3,
+    "highlights": [
+      { "height": 28, "width": 43, "left": 6, "top": 62 },
+      { "height": 5, "width": 43, "right": 6, "top": 10 }
+    ]
+  },
+  {
+    "id": 14,
+    "paragraphs": "Although these tools can be fully automatic, some of the most useful tools are interactive and allow users to explore and guide the process. We take much inspiration from Side Views [55], an application that allows users to preview the efect of various image editing menu options, like those in Photoshop. By providing previews, users are able to recognize rather than recall the right tool to use. This also helps users adjust parameters of key properties and chain tools together to explore an even wider section of the search space. In VisiFit, we also take the interactive approach to computational design. Like Side Views, VisiFit allows users to preview and adjust tools, as well as chain them together. However, VisiFit is not just a tool for exploration -it is targeted at achieving a specifc goal; multiple tools are chained together in a pipeline that explores each of the three key visual properties needed to complete a blend. This allows the user to explore the design space and iterate in a structured fashion towards their goal."
+  },
+  {
+    "id": 15,
+    "paragraphs": "Visual blends are an advanced graphic design technique where two objects are blended into one to convey a message symbolically. They represent a canonical and very challenging design problem [3] because the two objects must be blended into one object, yet still remain individually identifable so the viewer can tell what objects were blended. When asked to defne design, Charles Eames once said, \"Design is a plan for arranging elements to accomplish a particular purpose\". [42] In a visual blend, the objects to blend are the elements, the way they overlap is their arrangement, and the particular purpose is the seamless blend of the objects to convey a message. Because they are a difcult design challenge, visual blends are studied by several diverse felds. In cognitive science, researchers study how creativity emerges from conceptual blending [43]. In visual communication, researcher study how visual blends convey meaning through through context and implicature rather than through explicit language [15,16,44,58]. Creativity and cognition researchers study how computers might achieve creativity by creating visual blends [26].",
+    "pageIndex": 3,
+    "highlights": [
+      {
+        "height": 25,
+        "width": 43,
+        "right": 1,
+        "top": 41
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "paragraphs": "An existing system called VisiBlends [9] helps novices with the frst step of the design process: creating a prototype. Figure 2 shows an illustration of the VisiBlends workfow to create a visual blend for the message \"Visit New York this autumn\". The user must frst identify two abstract concepts to visually blend, for example, New York City and autumn. Next, the users must brainstorm simple, iconic objects associated with the concepts. From their list of associated objects, they must fnd images of those objects that can serve as symbols of the concept. For each image, users annotate the main shape of the object (i.e. whether it is a sphere, cylinder, box, circle, or rectangle) and whether the shape covers \"all of the object\" or \"part of the object\". With the images and annotations, VisiBlends automatically searches over all pairs of objects to fnd two that have the same basic shape, but for one object the shape covers only \"part of the object\". It then automatically synthesizes a prototype of the blend by cropping, scaling, positioning and rotating the objects to ft together. For example, in Figure 2 the acorn is a cylinder and Figure 2: An illustration of VisiBlends workfow that helps people create prototypes for a blend representing \"Visit New York this autumn.\". The VisiBlends prototypes convey the idea, but are often very rough. The goal of VisiFit is to improve these initial prototypes into seamless and aesthetic blends."
+  },
+  {
+    "id": 17,
+    "paragraphs": "the \"part of\" the Guggenheim is also a cylinder. Thus, the acorn is positioned onto the cylindrical part of the Guggenheim to produce a blend prototype where both the acorn and the Guggenheim are visible. Lastly, the user selects the best prototype based on the shape ft and the meaning implied by the blend. Once the user selects a prototype, they must complete the fnished design either on their own or by hiring a graphic artist."
+  },
+  {
+    "id": 18,
+    "paragraphs": "The reason VisiBlends matches objects on shape is based on the neuroscience of human visual object recognition. The human visual object recognition system is hierarchical in what features it uses to recognize an object [53]. 3D shape is the primary feature used by the brain to determine what an object is; after that, it uses secondary features like color, distinct edges and surface information [46]. By combining two objects that have the same shape but diferent secondary details, the objects will appear blended into one, yet still individually identifable -which is one of the major challenges of creating a visual blend."
+  },
+  {
+    "id": 19,
+    "paragraphs": "To explore approaches to iteration we conducted three preliminary investigations that informed the three design principles we propose for improving blends. We tie it all together into a general technique for structuring the iterative improvement of blends.",
+    "pageIndex": 4,
+    "highlights": [{ "height": 6, "width": 43, "right": 6, "top": 78 }]
+  },
+  {
+    "id": 20,
+    "paragraphs": "Advances in deep learning have shown impressive results in manipulating images. An early and prominent result is deep style transfer [19] which trains a model on a visual style, such as Van Gogh's Starry Night, and applies that style on any image to make it look like Van Gogh painted it in the Starry Night style. This technique has the potential to automatically improve prototypes of visual blends by training on the style of one object and applying it to another. To explore the potential of deep style transfer, we took four blend prototypes from the VisiBlends test set, and applied deep style transfer to them. For each pair of images in the blend, we selected which object to learn the style of and which object to apply the style to. We used an implementation of style transfer from the popular Fast Style Transfer (FST) paper [19] which only requires a single image to learn style from and has impressive results on transferring artistic style. We tried multiple combinations of hyperparameters (epochs, batch size, and iterations) until we saw no noticeable improvements in the results. We also tried input images of the same object and diferent ways of cropping it, in case the algorithm was sensitive to any particular image."
+  },
+  {
+    "id": 21,
+    "paragraphs": "Although the algorithm was able to extract styles and apply them, the results fell far short of the bar for creating convincing blends. Figure 3 shows Deep Style Transfer results (top) and blends made by artists we commissioned to produce high fdelity blends. To blend orange and baseball, FST frst learned the orange style. However, when it applied that learned style to the baseball, while it preserved the baseball's characteristic red seams, it simply turned its white texture into a blotchy orange color that is not reminiscent of the fruit. In contrast, the artist who blended it used the texture and stem of the orange, in addition to the red seams of the baseball. This made both objects highly identifable. The computer used the overall look of the orange, but didn't separately consider its elements as it mixed and matched the parts."
+  },
+  {
+    "id": 22,
+    "paragraphs": "Similarly, for the apple and burger blend, the burger style applied to the apple just turned the apple brown, because the predominant color of a burger is brown. We also explored what would happen if we isolated part of the image by hand and applied the style only within that area. To mimic the artist, we isolated the burger bun and applied the apple style to it. The results are better, but still disappointing. Although the burger has the color and texture of an apple, it does not appear as blended as the artist's version. The artist chose to mix the apple color and the bun color to give a sense of both objects in that element."
+  },
+  {
+    "id": 23,
+    "paragraphs": "We conclude that these existing style transfer results do not easily apply to visual blends. Blends are not just about applying high-level \"style\", they require designers to consider the individual elements and how they might be ft together. If we trained a model on thousands of visual blends, we might be able to make progress on this problem, but we would need to create those thousands of visual blends, and even so, results would not be guaranteed. Instead we want to explore semi-automatic approaches that augment people's ability to create blends."
+  },
+  {
+    "id": 24,
+    "paragraphs": "Design Principle 1. To help users achieve better results than fully automatic systems, structure the problem into subtasks and provide interactive tools specifc to each subtask. Fully automatic tools do not always achieve desired results and give you little control in how to fx them."
+  },
+  {
+    "id": 25,
+    "paragraphs": "To investigate potential structures for improving blends we analyzed how professional artists improved prototypes. We paid three professional artists to make visual blends based on 13 prototypes made by novices using VisiBlends. Of those 13 images, the artists told us that two did not need editing because the output from Vis-iBlends was a perfectly acceptable blend. However, the other 11 blends needed signifcant iteration."
+  },
+  {
+    "id": 26,
+    "paragraphs": "In our analysis of professionally improved blends, we looked for secondary visual dimensions experts used to improve visual blends. As discussed in the Background section, VisiBlends creates prototypes by matching two objects with the same basic shape. This is because neuroscience has discovered that the human visual object recognition system is hierarchical in what features it uses to recognize an object: the primary feature it uses to recognize and object is its basic 3D shape, and the secondary features it uses to recognize an object are color, distinct edges, and surface information. If prototypes of blends are made by blending the primary feature used to recognize and object, then it is logical to improve prototypes by blending the secondary features used to recognize an object."
+  },
+  {
+    "id": 27,
+    "paragraphs": "We performed this visual dimension-based analysis on the 11 improved blends and found that three visual properties were suffcient to explain almost all of the improvements the artists made. Figure 4 shows examples of these dimensions:"
+  },
+  {
+    "id": 28,
+    "paragraphs": "• Color: The frst row shows the result of blending a red Lego brick and a diamond ring. The initial blend has good shape ft, but the artist improved the blend by adding the color of the diamond back into the Lego. This creates the illusion of diamond-like facets into the Lego."
+  },
+  {
+    "id": 29,
+    "paragraphs": "• Silhouette: The second row shows the result of blending an oblong Lego brick and a popsicle. The initial blend is decent, but the artist improved it by applying the silhouette of the popsicle back into the Lego. (Additionally, they blended the color of the popsicle back into the Lego. This lends a textured, popsicle-like red color to the Lego, rather than a smooth plastic-like red.) • Internal Details: The third row shows the result of blending an orange with the head of a snowman. The initial blend is clearly a low-fdelity prototype -the idea is clear, but the details are unrefned. In addition to applying the color and silhouette of the snowman head, they extracted the facial details of the snowman head and placed them on the orange."
+  },
+  {
+    "id": 30,
+    "paragraphs": "Throughout all the examples, we found that artists used one or more of these three secondary visual dimensions to improve the prototypes. Note that these dimensions are largely independent of one another. Thus, we believe that the three visual dimensions can be used together to guide the process of improving prototypes."
+  },
+  {
+    "id": 31,
+    "paragraphs": "Design Principle 2. Identify secondary dimensions of the design space to structure the iteration process. For visual blends, the key secondary dimension are: color, silhouette and internal details. We refer to this method as using secondary design dimensions."
+  },
+  {
+    "id": 32,
+    "paragraphs": "The three visual dimensions provide high-level structure for improving blends, but we wanted to know if there were actionable activities associated with this structure that are useful when improving blends. To investigate this, we worked with two graphic artists in multiple one-hour sessions over a period of three weeks to observe and probe their process. Both designers worked in Photoshop and had created numerous print ads although neither had made visual blends before. The goal of these sessions was to introduce them to the secondary visual dimensions and to see a) if they found them useful to structure their process, b) what actions they took to improve the blends based on these dimensions, and c) whether novices would be able to replicate their success."
+  },
+  {
+    "id": 33,
+    "paragraphs": "To familiarize the artists with the concept of visual blends, we showed them examples of professionally made blends and asked them to recreate two of them in Photoshop. They found the task challenging, but through trial and error they were ultimately satisfed with their results. Next, we introduced them to the principles of blending based on color, silhouette and details. We discussed with them how we thought those principles could have been used to create the blends. Then we gave the artists prototypes of blends and asked them to improve them, referencing the visual dimensions when applicable."
+  },
+  {
+    "id": 34,
+    "paragraphs": "The concepts of color, silhouette, and internal details were intuitive to the artists, and they readily used them to improve the blends. Blending color was a familiar idea to them, and it was very easy for them to do in Photoshop. An efective tool one artist used for blending was the \"Multiply\" feature, which preserved both the color and the texture of each object, as seen in the top row of Figure 4. Both artists were surprised at how efectively silhouettes could be used in blends. They tried using the concept of silhouette blending in blends such as the middle row of Figure 4 and were pleased with the results. The idea of extracting and reapplying details was natural to them, as they had employed analogous features in Photoshop (i.e. magic wand) to manipulate details before. However, even with industry tools, extraction was often tedious. In general, both designers thought that if they worked on the basis of these visual dimensions, they could recreate any visual blend.",
+    "pageIndex": 6,
+    "highlights": [
+      { "height": 14, "width": 43, "left": 6, "top": 77 },
+      { "height": 9, "width": 43, "right": 6, "top": 10 }
+    ]
+  },
+  {
+    "id": 35,
+    "paragraphs": "The artists both note that there were additional techniques they would use to produce and even higher fdelity blends. One artist mentioned the addition or removal of shadows. The other mentioned making a background that would complement the blend. However, when restricted to these three visual dimensions, they could produce a second iteration with substantially reduced seams and enhanced aesthetic quality. If they were producing a pixelperfect print ad, they would want to do a third iteration."
+  },
+  {
+    "id": 36,
+    "paragraphs": "As we observed the artists using Photoshop to execute their improvements, we noticed two parts of their process that novice designers would struggle to replicate. First, almost all of the tools the artists used in Photoshop are not available in the typical applications novices use to quickly edit images. The simple flters, cropping, and movement aforded by Instagram, presentation software, and Mac Preview aren't enough to improve blends. Even simple color changing operations like \"Multiply\" are not available in most enduser tools. This is probably because most end-user tools focus on operations that can be applied to one image at a time. For blending, operations have to apply to two objects. Second, these tools often require multiple steps and tedious low-level manipulation. Applying the silhouette from one object to another is a process with multiple steps including positioning, object extraction, appropriate layer composition, and edge cleanup. Extracting details like the snowman face are tedious, even with the magic wand tool, which largely operates based on pixel color similarity. Instead of making users think in pixels, we want to provide higher-level abstractions, such as the separation of foreground from background or the separation of details from a base. To create operations that novices can use, we need to provide tools at a higher-level of abstraction than pixels."
+  },
+  {
+    "id": 37,
+    "paragraphs": "Design Principle 3. Provide novices with high-level tools related to the secondary visual dimensions that can preview results without requiring expert knowledge or tedious, lowlevel manipulation. In VisiFit, these tools include (1) extracting and applying silhouettes, (2) blending colors between two objects, and (3) extracting and replacing internal details from one object to another.",
+    "pageIndex": 6,
+    "highlights": [{ "height": 10, "width": 43, "right": 6, "top": 59 }]
+  },
+  {
+    "id": 38,
+    "paragraphs": "To help novices iteratively improve visual blends, we created a system called VisiFit that leverages computational tools to help users easily extract and combine visual properties of each image into a blend. First the user improves the cropping of each image, then improves the three secondary visual dimensions one at a time. At each step, they are presented with blend options that are automatically created by the system. However, they are free to interactively edit them. VisiFit is implemented as a Flask-based web application. It uses Numpy, OpenCV, and Tensorfow [1]. It builds on the Fabric.js canvas element to implement interactive image manipulation. Figure 5 shows the fve steps of the interface in the order that users see them. Inputs. VisiFit takes in two inputs that are both outputs from VisiBlends:"
+  },
+  {
+    "id": 39,
+    "paragraphs": "An ordered pair of images that have a shape match. We refer to them as Object A and Object B. In Object A, the shape covers the entire object. In Object B, the shape covers only the main body of the object, leaving out parts of the object outside the shape. When blending the images, Object A will be mapped onto Object B. (2) The positioning parameters to align Object A to the shape in Object B: x-scale factor, y-scale factor, angle of rotation, and center position. In the prototype of the blend, Object A is cropped, scaled, and positioned to ft into the shape of Object B.",
+    "pageIndex": 7,
+    "highlights": [{ "height": 15, "width": 43, "left": 6, "top": 58 }]
+  },
+  {
+    "id": 40,
+    "paragraphs": "Step 1. Extract main shapes When the page loads, the system shows Object A and the results of automatic cropping. Object A is an image of a single object that we want removed from its background. This is a classic computer vision problem: segmenting the salient object in an image. Deep learning approaches have been reported to be a fast and accurate approach to automatic object extraction, so we use the Tensorfow implementation of a pre-trained model for deeply supervised salient object detection [24] and use the mask it provides to crop the images."
+  },
+  {
+    "id": 41,
+    "paragraphs": "The user sees the output for Object A and decides if it is acceptable. If it is, they select it and move to the next step. If not, they can decide to improve the object using Interactive Grabcut [47], a traditional computer vision algorithm for foreground extraction."
+  },
+  {
+    "id": 42,
+    "paragraphs": "For Object B, users must use Interactive Grabcut to extract the main shape from the image. Our provided interface for Interactive Grabcut has users frst draw a rectangle that encloses the entire object to extract. Then it produces a foreground extraction shown to users, who can mark extraneous pieces for removal by drawing on the image and running Grabcut again."
+  },
+  {
+    "id": 43,
+    "paragraphs": "We used a classic interactive approach rather than a fully automatic approach because identifying parts or shapes within an image is very difcult. Traditional automatic approaches like Hough Transforms [13] do not work well on most images. Deep learning approaches are fairly good at segmenting objects within images [20] but are not yet capable enough at identifying the internal parts of objects."
+  },
+  {
+    "id": 44,
+    "paragraphs": "Step 2. Automatically align objects and adjust position. After both objects have had their main shape cropped, the system automatically produces a new prototype using simple afne transformations that move, scale, position, and rotate the objects. Users are free to adjust the alignment with direct manipulation on the Fabric.js HTML5 canvas, just as they would in any image editing application."
+  },
+  {
+    "id": 45,
+    "paragraphs": "Step 3 Select a silhouette option. When blending two objects, the blend can use the silhouette of either Object A or B, because they are very close in shape and size. The system automatically Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.) creates two versions of the blend -one with the silhouette of Object A and one with the silhouette of Object B. The user must select which silhouette looks better."
+  },
+  {
+    "id": 46,
+    "paragraphs": "To create the two silhouetted prototypes, the system uses the inverses of the cropped images from Step 1, layers one inverse on top of the other original image, and positions them according to the coordinates in Step 2. This efectively creates a mask to produce the silhouette of the object."
+  },
+  {
+    "id": 47,
+    "paragraphs": "Step 4. Select and adjust color blending options. Color is the next dimension to include in the blend. There are 5 options for color blending. The user can keep the original colors, or use one of four adjustable tools to blend on the colors of objects:",
+    "pageIndex": 8,
+    "highlights": [{ "height": 6, "width": 43, "right": 6, "top": 15 }]
+  },
+  {
+    "id": 48,
+    "paragraphs": "Transparency. We layer Object A onto Object B with 50% transparency to allow the colors of both objects to come through, although somewhat weakly. The user can adjust the transparency level with a slider. • Color Blend. We use K-means clustering to determine the most common color in the main shape of Object B. We then do an additive color blend with the color of Object A. This only works well when one object is very light -otherwise the color turns very dark. • Multiply colors. Multiplying two images is a way to combine colors in a way that preserves characteristics from both. Whereas transparency will always balance between the two, multiplication blends both of the colors (and their shadings) simultaneously. All three examples in Figure 4 use multiply to blend colors. For example, in the Lego and ring example, multiplying colors allowed the Lego to take on the red color and keep the shading of both objects so that the facets of the diamond and the bumps on the Lego can both be seen. • Replace color. We use K-means clustering to determine the most common colors in the main shapes of Object A and B. We replace Object A's most common color with Object B's most common color and provide users with an adjustable threshold controlling the degree of color replacement. They can also choose to blend the image with colors they select from an eye dropper tool (not shown in Figure 5).",
+    "pageIndex": 8,
+    "highlights": [{ "height": 36, "width": 43, "right": 0, "top": 20 }]
+  },
+  {
+    "id": 49,
+    "paragraphs": "Step 5. Select and re-apply internal details to blend. The last visual dimension to include is internal details -these are smaller objects or salient features that help identify the object. In the snowman and orange blend, the snowman is not as iconic without his facial details. Thus, we want to extract them from the original Object B and place them back on Object A. Again, we use Interactive Grabcut to allow the user to select and refne what details to extract. While we could have used other tools such as context-aware select, Grabcut worked well on our test set and was a method users had already become familiar with in earlier stages of the pipeline.",
+    "pageIndex": 8,
+    "highlights": [{ "height": 14, "width": 43, "right": 6, "top": 56 }]
+  },
+  {
+    "id": 50,
+    "paragraphs": "VisiFit encourages users to follow a linear workfow through each of the tools. They can see efects previewed on their iteration and choose whether or not to include them. But users are not constrained to one path through the pipeline; they can take multiple paths and add an unrestricted number of edits to the secondary visual dimensions if they so choose. The linear workfow is the default because it allows users to start on a simple path through their structured iteration. At the end, the user selects the blend they are most satisfed with and the system fnishes by showing them the initial blend and the improved blend side by side."
+  },
+  {
+    "id": 51,
+    "paragraphs": "To evaluate whether VisiFit helps novice designers substantially improve prototypes of visual blends, we conducted a user study where participants used VisiFit to improve 11 VisiBlends prototypes. Two experts then rated those blends to judge whether they were substantially improved over the initial prototype."
+  },
+  {
+    "id": 52,
+    "paragraphs": "To choose the prototypes to improve, we frst listed all the blends mentioned in VisiBlends and found 15 candidates. Of these, 2 were already good blends and did not need improvement. Two others had signifcant similarities to blends used in the analysis and formative studies, having blended upon the same or similar objects. Hence, they would not have been fair to use in the evaluation and were thus excluded. This left an evaluation set of 11 diverse blends for diferent objects."
+  },
+  {
+    "id": 53,
+    "paragraphs": "We recruited 11 novice designers (7 female, average age = 21.5) for a 1-hour long study who were paid $20 for their time. First, they were introduced to the concept of visual blends and shown examples of initial prototypes with their improved versions. Then, they had two blends to practice using the tools on. During this practice session, the experimenter answered questions, demonstrated features, and gave suggestions on how to use the tool."
+  },
+  {
+    "id": 54,
+    "paragraphs": "In the next 44 minutes, participants used the segmentation tools to extract the main objects from all 22 images (System Steps 1 and 2) and blend the pairs into 11 improved blends (System Steps 3, 4, and 5). They had two minutes for Steps 1 and 2 and another two minutes for Steps 3, 4 and 5, for a total of 4 minutes to create each blend. All results were saved by the system."
+  },
+  {
+    "id": 55,
+    "paragraphs": "After the data was collected, we paid two expert graphic designers $60 per hour to look at every iterated blend and answer two questions for each of them:"
+  },
+  {
+    "id": 56,
+    "paragraphs": "• Does the iterated blend present substantial improvement over the prototype? • Is the iterated blend of sufcient quality to post on social media?"
+  },
+  {
+    "id": 57,
+    "paragraphs": "The most important question to answer was the frst one: does the tool help with substantial improvements? Small faws in the execution were allowed, but the objects had to be seamlessly and aesthetically blended to count as an improvement. Our second question was how often these iterated blends were good enough for social media publication (i.e. a student club announcement post). Publication would mean that both objects were clearly identifable and blended with no pronounced faws."
+  },
+  {
+    "id": 58,
+    "paragraphs": "Social media is much more forgiving than print publication. Print publications must be pixel-perfect, well-lit, and high defnition. To meet this bar, a graphic designer should still use a professional tool like Photoshop. However, on social media, the images are often smaller, lower resolution, published more frequently, and for a smaller audience (such as student clubs, classes or majors) -so perfection is not as important. Additionally, the prevalence of lowfdelity user-generated content like memes and self-shot videos lowers the expectation of precision on social media, placing the emphasis on the message."
+  },
+  {
+    "id": 59,
+    "paragraphs": "During the study, the 11 participants attempted to improve a total of 121 blends. Six data points were lost due to errors in the saving process, leaving 115 blends as data points. The judges were introduced to their task with examples of prototypes and their VisiFit-improved counterparts, like the pairs seen in Figure 4 (which were done by the authors with graphic design background). For calibration, judges were shown blends of varying quality, to demonstrate what was considered \"substantial improvement\" and what was considered \"suitable for publication on social media\"."
+  },
+  {
+    "id": 60,
+    "paragraphs": "After studying the blends resulting from each participant, the judges answered our two questions for all VisiFit-improved blends. Both questions on \"improvement\" and \"suitability for publication\" were highly subjective; however, the raters had \"fair agreement\" on both questions. They agreed on \"substantial improvement\" 71.3% of the time (κ = .23) and agreed on \"suitability for publication\" 73.9% of the time (κ = .37). In particular, there was one blend which they disagreed on every time. Both raters had well-reasoned answers for their diferences and rather than forcing them to agree or introducing another rater, we split the diference and looked at the overall average rates of \"substantial improvement\" and \"suitability for publication\" to report the success of the tool."
+  },
+  {
+    "id": 61,
+    "paragraphs": "Overall, people using the tool made substantial improvements to the blend 76.1% of the time. Additionally, those blends were of publishable quality 70.4% of the time. These metrics demonstrate how VisiFit enables novices to quickly and easily complete a difcult iteration task."
+  },
+  {
+    "id": 62,
+    "paragraphs": "Judges reported that blends were substantially improved when the parts of the objects looked correctly layered. This efect was achieved in a number of ways through VisiFit: when the silhouette tool was used to mask one object and produce clean borders, when the internal detail extraction tool foregrounded important parts of the bottom image, (i.e. the acorn hat detail in the Guggenheim-acorn blend of Figure 1), or when the colors were blended compositely (i.e. the corn and McDonald's blend in Figure 6.) For 10 of the 11 images, it was possible for at least one of the 11 participants to create an improved and publishable blend. There are several possible reasons why there was variability in user performance. One was subjectivity; some novice users were able to create high quality blends but chose versions that the judges did not rate as improvements. Judging one's own work is hard, because creators grow attached to their work and struggle to see it objectively."
+  },
+  {
+    "id": 63,
+    "paragraphs": "A second and more important reason is the limitation of some of the tools. Cropping entire objects, applying a silhouette, and all four methods of blending colors worked as expected every time. However, the Interactive Grabcut tools for extracting parts of objects was sometimes problematic, since some details were too small to extract properly. While Grabcut is fast and easy, it does not have pixel-level precision. It often helped to improve the blend, but it sometimes weakened their suitability for publication. The VisiFit-improved blend could still be used as a guide when creating a pixel-perfect version in a professional image editing tool. For example, for the blend of the orange slice and the barbeque grill featured in Figure 1, the idea of the blend is clear and improved, but the execution had enough faws for it to be not suitable for publication."
+  },
+  {
+    "id": 64,
+    "paragraphs": "There was one prototype that no user was able to improve. The burger and light bulb blend (Figure 6) left a seam between the burger and the light bulb every time. This example points out a limitation of VisiFit that we could fx this by implementing a fll tool to reduce the appearance of seams."
+  },
+  {
+    "id": 65,
+    "paragraphs": "Overall, given the speed of the tool, participants thought that the results were well worth the efort they put into it [8]. During the study, several participants mentioned that the tool was fast and produced results they would not otherwise know how to achieve."
+  },
+  {
+    "id": 66,
+    "paragraphs": "The two main contributions of this paper are 1) the method of using secondary design dimensions to structure the iterative improvement process and 2) the VisiFit system that helps novices improve blends with a pipeline of computational tools. In this discussion we want to explore how the computational tools could generalize to the needs of expert designers and how secondary design dimensions can be applied to domains beyond visual blends. Additionally, we discuss the intellectual and engineering challenges that come with applying these ideas to new domains.",
+    "pageIndex": 10,
+    "highlights": [{ "height": 14, "width": 43, "left": 6, "top": 18 }]
+  },
+  {
+    "id": 67,
+    "paragraphs": "Although VisiFit is meant to help novices, we co-designed it with 2 graphic artists who were eager to use it as a rapid prototyping tool despite their prior domain knowledge. Thus, we wanted to see what impressions experts would have on the system and showed the tool to two professional designers (D1 and D2). D1 is a media communications director at a medium-sized organization with over twenty years of experience. D2 is a freelance graphic designer with over 10 years of experience. Both expressed a need to efciently create novel and eye-catching visuals for social media that are beyond the quality produced by tools such as Canva. Both designers had used visual blends in their professional work before, but did not know the name for the concept and did not have a strategy for producing them. We presented them with the same blend examples from the user study and asked them to perform the same task: use the tool to iterate on the blend prototypes and create seamless and aesthetic blends. Both were impressed by how quickly and easily the blending tools helped them explore the design space. All of the basic operations were familiar to them from their experience with Photoshop, but they expressed surprise and relief to see results generated so quickly. D2 said \"Sometimes I spend hours pixel pushing just to test an idea. I love being able to test an idea quickly.\". D1 likened it to flter previews on Instagram which she loves to use to make photos more interesting on social media. Even for professional designers who are adept at using pixel-perfect tools, there is a need to provide high-level tools that can preview results without low-level manipulation (Design Principle 3)."
+  },
+  {
+    "id": 68,
+    "paragraphs": "When using VisiFit, both made blend improvements in a manner diferent from novice designers. D1 especially liked to push the boundaries, to try extracting and blending the less obvious options within the secondary design dimensions. D1 almost always started by looking at the inputs and formulating a plan. However, as D1 proceeded through the workfow, she found better and more surprising ideas from the fare and focus nature of VisiFit. The system helped D1 explore the design space while keeping multiple threads open at a time. From this interaction, we believe that structuring blend improvement around secondary dimensions has value even for professional designers (Design Principle 2). D2 was impressed by the way the computational tools worked and particularly so for object extraction. He found Interactive Grabcut impressive in how efective it was on shape extraction but unimpressive in how unsuccessful it could be when selecting internal details. After multiple attempts with the tool, he noted that he would have preferred either better precision during user interaction or a better automatic approach. This raised an important limitation -VisiFit only provided one tool to extract internal details. Having a back-up tool (such as shaped-based cropping) could have relieved user frustration. This reinforces Design Principle 1 -that automatic tools don't always achieve desired results -and stresses that the system must provide multiple interactive tools specifc for each subtask so that users have control over the creative process."
+  },
+  {
+    "id": 69,
+    "paragraphs": "Overall, we believe that computational design tools for structured iteration can be as useful to professional designers as they are to novices. Both groups need to explore design spaces quickly and easily. Although experts have the ability to do this with existing tools, a pipeline of computational design tools could make this more efcient and attainable for designers of all experience levels."
+  },
+  {
+    "id": 70,
+    "paragraphs": "While the VisiFit system is tailored to the domain of visual blends, we believe the method of editing secondary design dimensions can be used to help novices structure the improvement process for other blending domains. We discuss three domains that it could be generalized to: animated visual blends, fashion design, and furniture design."
+  },
+  {
+    "id": 71,
+    "paragraphs": "7.2.1 Animated Visual Blends. One way to further enhance visual blends is to add motion to them. Although it would be easy to add arbitrary motion, it would be ideal if the motion complemented the message. The top panel of Figure 7 shows a visual blend for condom and action that implies the message \"condoms are for action. \" (The clapperboard is a symbol of action.) This blend is already efective at conveying the message, but to enhance it we could add motion from the clapperboard onto the condom wrapper. We call this type of motion graphic an animated blend."
+  },
+  {
+    "id": 72,
+    "paragraphs": "We propose that animated blends can be created by using secondary dimensions of motion to iterate on static blends. To start, we need a video that shows typical motion made by one of the objects in the blend. To structure the iteration, we can extract and transfer dimensions of motion from this reference video. The important secondary design dimensions of motion include: the pattern of motion (circular motion, path segments, appearance/disappearance, expansion/contraction, or gradient changes), the speed of motion, acceleration, and timing of the motion. All or some of these dimensions of motion can be applied to create a seamless and aesthetic animated blend."
+  },
+  {
+    "id": 73,
+    "paragraphs": "Figure 7 shows three animated blends. For each one, it shows the static visual blend, the reference video of one or both objects in motion, and how these secondary dimensions of motion can be added to the visual blend. For the condom and action animation, the pattern of motion of the clapperboard (up-and-down path segments) can be added to the blend to reinforce the message of \"action\". For the astronaut and food animation, the speed and arc of motion that the real astronaut travels with can be applied to the static eggastronaut blend. For the tea and sunrise animation, two reference Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that were deemed \"improved and publishable\". The second column shows three blends that were deemed \"improved but not publishable\". The third column shows two blends that were deemed \"not improved and not publishable\". videos can be applied to the blend. First, the pattern of motion of the tea bag (up-and-down path segments) can be applied to the sun. Second, the pattern of motion of the sunrise (gradient change) can be applied to the sky. Although transferring one type of motion would be sufcient, adding two types of motion further enhances the visual appeal and meaning of the blend."
+  },
+  {
+    "id": 74,
+    "paragraphs": "Computational tools would be needed to extract and reapply the aforementioned dimensions of motion. Parameters for each dimension would become points of interactions for users. These tools could then be chained together into a pipeline similar to VisiFit to structure the iterative improvement of animated blends. 7.2.2 Fashion and Furniture Design. In furniture and fashion design, one type of problem is to combine diferent styles to achieve a new purpose. One way to do this is arguably a type of blendingto borrow from the functional and stylistic elements of both styles to create a new hybrid style. Two examples of hybrid styles include athleisure clothing and \"updated classics\" in furniture design.",
+    "pageIndex": 11,
+    "highlights": [{ "height": 17, "width": 43, "left": 6, "top": 59 }]
+  },
+  {
+    "id": 75,
+    "paragraphs": "• Athleisure is a clothing style that takes the fabrics and styles of athletic clothing and adapts them to non-athletic environments such as work, school, or other social environments [23,48]. • Updated classics is a style of furniture design that takes the rich feel of classic furniture and adapts it to modern and utility-driven needs of the 21st century."
+  },
+  {
+    "id": 76,
+    "paragraphs": "identifed which two objects to blend, a tool would help users determine what secondary dimensions to extract and apply from each object. For example, a fashion designer could operate on the dimensions of material, silhouette (neckline, hemline, leg width, etc.), color/pattern, fabrication (seam placement, grain direction, etc.), and details (closures, stitching, etc.) When combining these dimensions to create a hybrid style such as athleisure, designers often use the stretchy material of athletic clothing, the details and colors of street clothing, and a mix of silhouettes found in the gym, street, or workplace. This combination of traits helps designers achieve both comfort and socially appropriate styles. A similar set of dimensions could be used for furniture design to achieve a blend of classic sophistication with modern convenience. For example, an updated classic chair could use the classic shape of a Louis XIV chair, but fabricate it out of plastic (as is common in modern chairs) to make it easier to move and clean. It could also reduce some of the ornamentation on the silhouette to take on aspects of a minimal modern look."
+  },
+  {
+    "id": 77,
+    "paragraphs": "We believe this blending process can also be structured by chaining together computational tools for each of the secondary design dimensions. This process should be interactive, using human judgment not only to guide the search, but also to constantly consider aspects outside the dimensions such as the social acceptability of the design, the appeal to the target market, and whether its construction is feasible within desired price points.",
+    "pageIndex": 11,
+    "highlights": [{ "height": 10, "width": 43, "right": 6, "top": 76 }]
+  },
+  {
+    "id": 78,
+    "paragraphs": "We propose that creating items within these hybrid styles could be structured using secondary design dimensions. Once the user",
+    "pageIndex": 11,
+    "highlights": [{ "height": 3, "width": 43, "left": 6, "top": 87 }]
+  },
+  {
+    "id": 79,
+    "paragraphs": "The major intellectual challenge of applying these techniques to any new domain is discovering what its secondary design dimensions are. For VisiFit, we were able to observe the dimensions from examples and from co-design sessions. Additionally, we were guided by what is known about the neuroscience of human visual object recognition. If one or more of those approaches is not available in a new domain, signifcant trial and error may be required to identify those dimensions. An exciting challenge would be to use computational tools to automatically (or semi-automatically) discover the secondary design dimensions of a new domain."
+  },
+  {
+    "id": 80,
+    "paragraphs": "The major engineering challenge of applying these design principles to a new domain is to build computational tools that can help explore each dimension with high-level tools rather than low-level manipulation. Deep learning has provided new hope for such tools, but there are still limitations to what deep learning systems can do, especially with limited data. This is an open challenge: to quickly create new computational tools for the dimensions of new domains."
+  },
+  {
+    "id": 81,
+    "paragraphs": "For any new blending domain, there is also the possibility that some blends are too complex to be structured around secondary dimensions due to complex interactions between dimensions. For example, when the DNA of two parents are combined to make a ofspring, the ofspring certainly has a blend of the parents features, but there are so many features that the combinations become too complex to choose from. There may be too many dependencies between dimensions that make designing at a high level impossible. When considering the dimensions of a new domain, one should look out for such dependencies."
+  }
+]

@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background: #1f1d2b;
+    font-family: 'Open Sans' !important;
+}
+
+.pdfview input,
+.pdfview button {
+  font: inherit;
+}
+
+.pdfview header {
+  background-color: #323639;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+}
+
+.pdfview header h1 {
+  font-size: inherit;
+  margin: 0;
+}
+
+.pdfview__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+
+.pdfview__container__load {
+  margin-top: 1em;
+  color: white;
+}
+
+.pdfview__container__document {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+
+}
+
+.pdfview__container__document .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdfview__container__document .react-pdf__Page {
+  max-width: calc(100% - 2em);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.pdfview__container__document .react-pdf__Page canvas {
+  height: auto !important;
+}
+
+.pdfview__container__document .react-pdf__message {
+  padding: 20px;
+  color: white;
+}
+
+.video-container {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.pdf-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.pdf-wrapper:before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width:10px;
+    height: 100%;
+    z-index: 10000;
+    background: #aeadba;
+}
+.pdf-wrapper > .resize-btn {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    background: #4c4b52;
+    border: 7px solid #aeadba;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 24px;
+    color: #aeadba;
+}
+.pdf-wrapper span{
+display: absolute;
+color: white;
+left: 100px;
+}
+
+.gutter {
+  background-color: #71707d;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  z-index: 30 !important;
+}
+
+.gutter.gutter-horizontal {
+  cursor: col-resize;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  z-index: 30;
+}
+
+
+

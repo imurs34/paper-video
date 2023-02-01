@@ -1,0 +1,461 @@
+[
+    {
+      "": 0,
+      "slide_id": 0,
+      "start": 2,
+      "textual_group": "Making Waves, Combining Strengths\n\n | Visit structuring iterative Improvement for novice designers.",
+      "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'DISCUSSION', 'DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+      "paragraph": [
+        19,
+        77,
+        74,
+        66,
+        78
+      ], "scores": [
+        0.5255077481269836,
+        0.5173649787902832,
+        0.5120598673820496,
+        0.5082781314849854,
+        0.5010738372802734
+      ]
+    },
+    {
+      "": 1,
+      "slide_id": 1,
+      "start": 8,
+      "textual_group": "Structuring Iterative Improvement for\nNovice Designers\n\n | Aeration is about improving a prototype, but it aration is never a straight shot from A to B.how can we structure iteration to guide users to retire Fidelity prototypes, We focus this question on visual Blends which are when two objects are combined seamlessly and aesthetically into one visual to convey a new meaning, some examples are shown on the left.",
+      "sections": "['INTRODUCTION', 'INTRODUCTION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'INTRODUCTION', 'INTRODUCTION']",
+      "paragraph":[
+        3,
+        0,
+        19,
+        7,
+        2
+      ],    "scores": [
+        0.7199791073799133,
+        0.7057110071182251,
+        0.6560177206993103,
+        0.6317445039749146,
+        0.6218287348747253
+      ]
+    },
+    {
+      "": 2,
+      "slide_id": 3,
+      "start": 26,
+      "textual_group": "But iteration is never a straight shot from A to B.\n\n | We propose the following design principles to structure, iteration one structure, the problem into subtasks and provide interactive tools specific to each subtask.",
+      "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'RELATED WORK 2.1 Design Tools', 'RELATED WORK 2.1 Design Tools', 'INTRODUCTION']",
+      "paragraph":[
+        24,
+        19,
+        10,
+        9,
+        1
+      ],
+      "scores": [
+        0.6990737318992615,
+        0.6321898698806763,
+        0.6017433404922485,
+        0.5694246292114258,
+        0.5451493263244629
+      ]
+    },
+    {
+      "": 3,
+      "slide_id": 3,
+      "start": 42,
+      "textual_group": "(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeaning\n\n |",
+      "sections": "['BACKGROUND: VISUAL BLENDS', 'INTRODUCTION', 'VISIFIT SYSTEM', 'VISIFIT SYSTEM', 'RELATED WORK 2.1 Design Tools']",
+      "paragraph":[
+        15,
+        2,
+        49,
+        39,
+        13
+      ],
+      "scores": [
+        0.6026179790496826,
+        0.5621130466461182,
+        0.51326984167099,
+        0.5110034942626953,
+        0.5091265439987183
+      ]
+    },
+    {
+      "": 4,
+      "slide_id": 4,
+      "start": 43,
+      "textual_group": "“-|.|.-”=\".=-\n(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeanlnn\n\n | To identify secondary dyemensions to structure.The iteration process for visual Blends.Those dimensions are silhouette colors, and internal details.Three provide high-level tools related to the secondary visuals.I mentioned I can preview results without requiring expert knowledge or tedious low-level manipulation.",
+      "sections": "['VISIFIT SYSTEM', 'INTRODUCTION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'VISIFIT SYSTEM']",
+      "paragraph":[
+        48,
+        3,
+        34,
+        37,
+        47
+      ],      "scores": [
+        0.6122137308120728,
+        0.6033878326416016,
+        0.6003776788711548,
+        0.5907528400421143,
+        0.5841012001037598
+      ]
+    },
+    {
+      "": 5,
+      "slide_id": 10,
+      "start": 65,
+      "textual_group": "Structure the problem into subtasks and provide interactive toois speciﬁc to each subtask.\n\n |",
+      "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'DISCUSSION', 'DISCUSSION', 'INTRODUCTION', 'DISCUSSION']",
+      "paragraphs": [
+        24,
+        78,
+        77,
+        8,
+        74
+      ],
+      "scores": [
+        0.4989653527736664,
+        0.4279554486274719,
+        0.40855872631073,
+        0.3884361684322357,
+        0.37190717458724976
+      ]
+    },
+    {
+      "": 6,
+      "slide_id": 11,
+      "start": 62,
+      "textual_group": "identify fundamental dimensions to structure the iteration process. For visual blends, those\ndimensions are silhouette. colors, and internal details,\n\n |",
+      "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'INTRODUCTION', 'DISCUSSION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'VISIFIT SYSTEM']",
+      "paragraphs": [
+        31,
+        3,
+        77,
+        27,
+        49
+      ],
+      "scores": [
+        0.7079311609268188,
+        0.6710819005966187,
+        0.6284619569778442,
+        0.6060656905174255,
+        0.594933271408081
+      ]
+    },
+    {
+      "": 7,
+      "slide_id": 12,
+      "start": 63,
+      "textual_group": "2 Identify fundamental dimensions to structure the iteration process, For visuai blends. those\ndimensions are silhouette. colors, and internal details.\n\n | Let's see, visit it in action.The visited system starts off with image of a image and it is a blank face image a plus b.The user is first presented with the fundamentals.I mention of silhouette the system automatically creates two versions of the blend.",
+      "sections": "['INTRODUCTION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'VISIFIT SYSTEM', 'INTRODUCTION', 'VISIFIT SYSTEM']",
+      "paragraphs": [
+        3,
+        31,
+        45,
+        7,
+        38
+      ],
+      "scores": [
+        0.6698808670043945,
+        0.6234563589096069,
+        0.6161627769470215,
+        0.6125761866569519,
+        0.5985634326934814
+      ]
+    },
+    {
+      "": 8,
+      "slide_id": 14,
+      "start": 84,
+      "textual_group": "Image A\n\n | One with the silhouette of image egg.And one with the silhouette of a man should be the user, must select which silhouette looks better.",
+      "sections": "['VISIFIT SYSTEM', 'VISIFIT SYSTEM', 'VISIFIT SYSTEM', 'VISIFIT SYSTEM', 'FORMATIVE STUDIES OF BLENDING ITERATION']",
+      "paragraphs": [
+        46,
+        42,
+        45,
+        39,
+        29
+      ],
+      "scores": [
+        0.5484410524368286,
+        0.49534833431243896,
+        0.49209150671958923,
+        0.4824293851852417,
+        0.47441136837005615
+      ]
+    },
+    {
+      "": 9,
+      "slide_id": 16,
+      "start": 92,
+      "textual_group": "VisiBIend Base\n(Image A + B)\n\n | Color is the next Monday meant, as I mentioned to include in the blend, users can decide if they want the color of one object, the other object or a blend of both represent for automatic adjustable tool to blend on color and texture.",
+      "sections": "['VISIFIT SYSTEM', 'VISIFIT SYSTEM', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'BACKGROUND: VISUAL BLENDS']",
+      "paragraphs": [
+        45,
+        47,
+        28,
+        34,
+        16
+      ],
+      "scores": [
+        0.605221688747406,
+        0.5819710493087769,
+        0.5764760971069336,
+        0.5761528015136719,
+        0.5700356960296631
+      ]
+    },
+    {
+      "": 10,
+      "slide_id": 17,
+      "start": 101,
+      "textual_group": "Pick a silhouette\n\n | Transparency additive color, blending colors, multiplication and color replacement.The last visual Dimension to include is internal details.These are smaller objects or Salient features that help identify the object and the Snowman and orange.",
+      "sections": "['VISIFIT SYSTEM', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'VISIFIT SYSTEM', 'FORMATIVE STUDIES OF BLENDING ITERATION']",
+      "paragraphs": [
+        49,
+        29,
+        34,
+        47,
+        36
+      ],
+      "scores": [
+        0.6931382417678833,
+        0.6737529039382935,
+        0.5875889658927917,
+        0.5774401426315308,
+        0.5544775724411011
+      ]
+    },
+    {
+      "": 11,
+      "slide_id": 18,
+      "start": 126,
+      "textual_group": "Pick a color blending method\n\n |",
+      "sections": "['VISIFIT SYSTEM', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'DISCUSSION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION']",
+      "paragraphs": [
+        47,
+        28,
+        77,
+        22,
+        34
+      ],
+      "scores": [
+        0.6280733346939087,
+        0.5769156217575073,
+        0.5743454694747925,
+        0.5525283813476562,
+        0.5395587682723999
+      ]
+    },
+    {
+      "": 12,
+      "slide_id": 23,
+      "start": 124,
+      "textual_group": "Before VisiFit After VisiFit\n\n |",
+      "sections": "['INTRODUCTION', 'VISIFIT SYSTEM', 'VISIFIT SYSTEM', 'RELATED WORK 2.1 Design Tools', 'DISCUSSION']",
+      "paragraphs": [
+        5,
+        45,
+        50,
+        12,
+        68
+      ],
+      "scores": [
+        0.5358315706253052,
+        0.51955246925354,
+        0.5037744641304016,
+        0.4973286986351013,
+        0.49666649103164673
+      ]
+    },
+    {
+      "": 13,
+      "slide_id": 27,
+      "start": 126,
+      "textual_group": "u» sﬂhwenl m A\n\n |",
+      "sections": "['INTRODUCTION', 'EVALUATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'EVALUATION']",
+      "paragraphs": [
+        6,
+        57,
+        29,
+        28,
+        56
+      ],
+      "scores": [
+        0.3808020353317261,
+        0.2989741563796997,
+        0.2984539568424225,
+        0.29563987255096436,
+        0.27840662002563477
+      ]
+    },
+    {
+      "": 14,
+      "slide_id": 28,
+      "start": 127,
+      "textual_group": "Na man-11m\n\n | Blend the Snowman tis, not as iconic without his facial details us.We want to extract them using interactive, grab cut and transpose them onto the visual blend.We complete the workflow efficiently completing a structured iterative improvement process here.We demonstrate visit that again on another initial visual blend.This accounts for user choice and control over.What affects users would actually like to apply based on the effects previews.They interact with note that users are always abstracted from doing low-level manipulation to achieve any of these effects.Here, we see the visible and base and visit it improves Blind Side by Side.The following is a sequence of our systems results.Statistical results.One, we show that in a study of 10 novice designers novices iterated upon Blends in under 4 minutes, to improve the visual blends 76.1%of the time to additionally, 70.1%",
+      "sections": "['VISIFIT SYSTEM', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'INTRODUCTION']",
+      "paragraphs": [
+        49,
+        36,
+        25,
+        27,
+        7
+      ],
+      "scores": [
+        0.6932947635650635,
+        0.5738798975944519,
+        0.5650091171264648,
+        0.548163890838623,
+        0.544340968132019
+      ]
+    },
+    {
+      "": 15,
+      "slide_id": 30,
+      "start": 214,
+      "textual_group": "After VisiFit\n\n |",
+      "sections": "['INTRODUCTION', 'DISCUSSION', 'RELATED WORK 2.1 Design Tools', 'RELATED WORK 2.1 Design Tools', 'VISIFIT SYSTEM']",
+      "paragraphs": [
+        5,
+        67,
+        12,
+        14,
+        50
+      ],
+      "scores": [
+        0.5957307815551758,
+        0.5609554648399353,
+        0.5571361780166626,
+        0.5467625856399536,
+        0.5438739061355591
+      ]
+    },
+    {
+      "": 16,
+      "slide_id": 33,
+      "start": 195,
+      "textual_group": "[xi/ﬁfgﬂfﬁ'iéﬁfﬁ. Eggganﬂiéd\n\n |",
+      "sections": "['INTRODUCTION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'EVALUATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'EVALUATION']",
+      "paragraphs": [
+        6,
+        19,
+        56,
+        29,
+        55
+      ],
+      "scores": [
+        0.39094677567481995,
+        0.3308666944503784,
+        0.32191213965415955,
+        0.3136054277420044,
+        0.31113260984420776
+      ]
+    },
+    {
+      "": 17,
+      "slide_id": 35,
+      "start": 206,
+      "textual_group": "7\n\nMpﬁiff 1,\n\n‘J ’J\n{h\n\n‘ asm‘ﬂﬁﬁ\n\n |",
+      "sections": "['INTRODUCTION', 'DISCUSSION', 'INTRODUCTION', 'VISIFIT SYSTEM', 'VISIFIT SYSTEM']",
+      "paragraphs": [
+        6,
+        78,
+        4,
+        41,
+        40
+      ],
+      "scores": [
+        0.3938778340816498,
+        0.28924617171287537,
+        0.2737590968608856,
+        0.26560139656066895,
+        0.26256951689720154
+      ]
+    },
+    {
+      "": 18,
+      "slide_id": 36,
+      "start": 214,
+      "textual_group": "We show that in a study of 10 novice\ndesigners, novices iterated upon blends in\nunder 4 minutes to improve the visual\nblends 76.136 of the time\n\n | of these plans were deemed fit for publication on social media demonstrating how are tool-house.Novices efficiently.Improve visual Blends.We can apply these principles to other domains such as animated Blends, Furniture design and fashion.Just to name a few Animated blend add motion from reference videos to complement.",
+      "sections": "['INTRODUCTION', 'INTRODUCTION', 'EVALUATION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION']",
+      "paragraphs": [
+        7,
+        3,
+        53,
+        25,
+        32
+      ],
+      "scores": [
+        0.6801586151123047,
+        0.6562271118164062,
+        0.6439497470855713,
+        0.6400314569473267,
+        0.6299806237220764
+      ]
+    },
+    {
+      "": 19,
+      "slide_id": 37,
+      "start": 235,
+      "textual_group": "Additionally, 70.196 of these blends were\ndeemed ﬁt for publication on social media,\ndemonstrating how our tool helps novices\nefﬁciently improve visual blends.\n\n | The message visual plans wants to get across to structure.The iteration process of animated Blends motion can also be decomposed into fundamentals.",
+      "sections": "['INTRODUCTION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'INTRODUCTION', 'DISCUSSION', 'INTRODUCTION']",
+      "paragraphs": [
+        3,
+        25,
+        2,
+        72,
+        7
+      ],
+      "scores": [
+        0.6627904772758484,
+        0.660161018371582,
+        0.6414133310317993,
+        0.6280165910720825,
+        0.6203618049621582
+      ]
+    },
+    {
+      "": 20,
+      "slide_id": 39,
+      "start": 256,
+      "textual_group": "We can apply these principles to other domains such as\n\n |",
+      "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'INTRODUCTION']",
+      "paragraphs": [
+        80,
+        79,
+        78,
+        24,
+        6
+      ],
+      "scores": [
+        0.6148334741592407,
+        0.5159145593643188,
+        0.4954756498336792,
+        0.47820132970809937,
+        0.4754185080528259
+      ]
+    },
+    {
+      "": 21,
+      "slide_id": 55,
+      "start": 273,
+      "textual_group": "Structuring Iterative Improvement\nfor Novices\n\n | I mention one example is to use the pattern of motion, which can be adjusted and Blended upon as it is shown in the example here, where the Rising Sun shares up and down tip of a t-back, visit demonstrates how computational tools can support novices by enabling them to explore a structure design space quickly and efficiently.",
+      "sections": "['DISCUSSION', 'RELATED WORK 2.1 Design Tools', 'FORMATIVE STUDIES OF BLENDING ITERATION', 'INTRODUCTION', 'DISCUSSION']",
+      "paragraphs": [
+        66,
+        10,
+        19,
+        3,
+        69
+      ],
+      "scores": [
+        0.6140891313552856,
+        0.5954806804656982,
+        0.588149905204773,
+        0.5880528688430786,
+        0.5834066271781921
+      ]
+    }
+]

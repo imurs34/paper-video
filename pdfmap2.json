@@ -1,0 +1,641 @@
+[
+  {
+    "": 1,
+    "slide_id": 10000,
+    "start": 4.2,
+    "textual_group": "Structuring Iterative Improvement for\nNovice Designers\n\n | Aeration is about improving a prototype, but it aration is never a straight shot from A to B.how can we structure iteration to guide users to retire Fidelity prototypes, We focus this question on visual Blends which are when two objects are combined seamlessly and aesthetically into one visual to convey a new meaning, some examples are shown on the left.",
+    "sections": "",
+    "paragraph":[
+
+    ],    "scores": [
+
+    ]
+  },
+  {
+    "": 2,
+    "slide_id": 20000,
+    "start": 9.6,
+    "textual_group": "But iteration is never a straight shot from A to B.\n\n | We propose the following design principles to structure, iteration one structure, the problem into subtasks and provide interactive tools specific to each subtask.",
+    "sections": "['INTRODUCTION']",
+    "paragraph":[
+      4
+    ],
+    "scores": [
+      0.6990737318992615
+    ]
+  },
+  {
+    "": 3,
+    "slide_id": 30000,
+    "start": 42,
+    "textual_group": "(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeaning\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph":[
+      4
+    ],
+    "scores": [
+      0.6026179790496826
+    ]
+  },
+  {
+    "": 4,
+    "slide_id": 40000,
+    "start": 43,
+    "textual_group": "“-|.|.-”=\".=-\n(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeanlnn\n\n | To identify secondary dyemensions to structure.The iteration process for visual Blends.Those dimensions are silhouette colors, and internal details.Three provide high-level tools related to the secondary visuals.I mentioned I can preview results without requiring expert knowledge or tedious low-level manipulation.",
+    "sections": "['INTRODUCTION']",
+    "paragraph":[
+      4
+    ],      
+    "scores": [
+      0.6122137308120728
+    ]
+  },
+  {
+    "": 5,
+    "slide_id": 50000,
+    "start": 65,
+    "textual_group": "Structure the problem into subtasks and provide interactive toois speciﬁc to each subtask.\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph":[
+      4
+    ],      
+    "scores": [
+      0.6122137308120728
+    ]
+  },
+  {
+    "": 6,
+    "slide_id": 60000,
+    "start": 62,
+    "textual_group": "identify fundamental dimensions to structure the iteration process. For visual blends, those\ndimensions are silhouette. colors, and internal details,\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      4
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 7,
+    "slide_id": 70000,
+    "start": 63,
+    "textual_group": "2 Identify fundamental dimensions to structure the iteration process, For visuai blends. those\ndimensions are silhouette. colors, and internal details.\n\n | Let's see, visit it in action.The visited system starts off with image of a image and it is a blank face image a plus b.The user is first presented with the fundamentals.I mention of silhouette the system automatically creates two versions of the blend.",
+    "sections": "['INTRODUCTION', 'BACKGROUND: VISUAL BLENDS']",
+    "paragraph": [
+      4,
+      21
+    ],
+    "scores": [
+      0.6698808670043945,
+      0.6710819005966187
+    ]
+  },
+  {
+    "": 8,
+    "slide_id": 80000,
+    "start": 84,
+    "textual_group": "Image A\n\n | One with the silhouette of image egg.And one with the silhouette of a man should be the user, must select which silhouette looks better.",
+    "sections": "['INTRODUCTION', 'BACKGROUND: VISUAL BLENDS']",
+    "paragraph": [
+      4,
+      21
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 9,
+    "slide_id": 90000,
+    "start": 92,
+    "textual_group": "VisiBIend Base\n(Image A + B)\n\n | Color is the next Monday meant, as I mentioned to include in the blend, users can decide if they want the color of one object, the other object or a blend of both represent for automatic adjustable tool to blend on color and texture.",
+    "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION']",
+    "paragraph": [
+      35,
+      41
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 10,
+    "slide_id": 100000,
+    "start": 101,
+    "textual_group": "Pick a silhouette\n\n | Transparency additive color, blending colors, multiplication and color replacement.The last visual Dimension to include is internal details.These are smaller objects or Salient features that help identify the object and the Snowman and orange.",
+    "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION', 'FORMATIVE STUDIES OF BLENDING ITERATION']",
+    "paragraph": [
+      35,
+      41
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 11,
+    "slide_id": 110000,
+    "start": 126,
+    "textual_group": "Pick a color blending method\n\n |",
+    "sections": "['FORMATIVE STUDIES OF BLENDING ITERATION']",
+    "paragraph": [
+      47
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 12,
+    "slide_id": 120000,
+    "start": 124,
+    "textual_group": "Before VisiFit After VisiFit\n\n |",
+    "sections": "",
+    "paragraph": [
+      
+    ],
+    "scores": [
+      
+    ]
+  },
+  {
+    "": 13,
+    "slide_id": 130000,
+    "start": 126,
+    "textual_group": "u» sﬂhwenl m A\n\n |",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      53
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 14,
+    "slide_id": 140000,
+    "start": 127,
+    "textual_group": "Na man-11m\n\n | Blend the Snowman tis, not as iconic without his facial details us.We want to extract them using interactive, grab cut and transpose them onto the visual blend.We complete the workflow efficiently completing a structured iterative improvement process here.We demonstrate visit that again on another initial visual blend.This accounts for user choice and control over.What affects users would actually like to apply based on the effects previews.They interact with note that users are always abstracted from doing low-level manipulation to achieve any of these effects.Here, we see the visible and base and visit it improves Blind Side by Side.The following is a sequence of our systems results.Statistical results.One, we show that in a study of 10 novice designers novices iterated upon Blends in under 4 minutes, to improve the visual blends 76.1%of the time to additionally, 70.1%",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      53
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 15,
+    "slide_id": 150000,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      57
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 16,
+    "slide_id": 160000,
+    "start": 195,
+    "textual_group": "[xi/ﬁfgﬂfﬁ'iéﬁfﬁ. Eggganﬂiéd\n\n |",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      57
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 17,
+    "slide_id": 170000,
+    "start": 206,
+    "textual_group": "7\n\nMpﬁiff 1,\n\n‘J ’J\n{h\n\n‘ asm‘ﬂﬁﬁ\n\n |",
+    "sections": "['VISIFIT SYSTEM', 'VISIFIT SYSTEM']",
+    "paragraph": [
+      59,
+      60
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 18,
+    "slide_id": 180000,
+    "start": 214,
+    "textual_group": "We show that in a study of 10 novice\ndesigners, novices iterated upon blends in\nunder 4 minutes to improve the visual\nblends 76.136 of the time\n\n | of these plans were deemed fit for publication on social media demonstrating how are tool-house.Novices efficiently.Improve visual Blends.We can apply these principles to other domains such as animated Blends, Furniture design and fashion.Just to name a few Animated blend add motion from reference videos to complement.",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      64
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 19,
+    "slide_id": 190000,
+    "start": 235,
+    "textual_group": "Additionally, 70.196 of these blends were\ndeemed ﬁt for publication on social media,\ndemonstrating how our tool helps novices\nefﬁciently improve visual blends.\n\n | The message visual plans wants to get across to structure.The iteration process of animated Blends motion can also be decomposed into fundamentals.",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      64
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 20,
+    "slide_id": 200000,
+    "start": 256,
+    "textual_group": "We can apply these principles to other domains such as\n\n |",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      64
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 21,
+    "slide_id": 210000,
+    "start": 273,
+    "textual_group": "Structuring Iterative Improvement\nfor Novices\n\n | I mention one example is to use the pattern of motion, which can be adjusted and Blended upon as it is shown in the example here, where the Rising Sun shares up and down tip of a t-back, visit demonstrates how computational tools can support novices by enabling them to explore a structure design space quickly and efficiently.",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      64
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 22,
+    "slide_id": 220000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      65
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 23,
+    "slide_id": 230000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      65
+
+    ],
+    "scores": [
+      0
+
+    ]
+  },
+  {
+    "": 24,
+    "slide_id": 240000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['EVALUATION']",
+    "paragraph": [
+      66
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 25,
+    "slide_id": 250000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['EVALUATION']",
+    "paragraph": [
+      66
+
+    ],
+    "scores": [
+      0
+
+    ]
+  },
+  {
+    "": 26,
+    "slide_id": 260000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      65
+
+    ],
+    "scores": [
+      0
+
+    ]
+  },
+  {
+    "": 27,
+    "slide_id": 270000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      65
+
+    ],
+    "scores": [
+      0
+
+    ]
+  },
+  {
+    "": 28,
+    "slide_id": 280000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['VISIFIT SYSTEM']",
+    "paragraph": [
+      65
+
+    ],
+    "scores": [
+      0
+
+    ]
+  },
+  {
+    "": 29,
+    "slide_id": 290000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "",
+    "paragraph": [
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 30,
+    "slide_id": 300000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "",
+    "paragraph": [
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 31,
+    "slide_id": 310000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "",
+    "paragraph": [
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 32,
+    "slide_id": 320000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "",
+    "paragraph": [
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 33,
+    "slide_id": 330000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "",
+    "paragraph": [
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 34,
+    "slide_id": 340000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "",
+    "paragraph": [
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 35,
+    "slide_id": 350000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "",
+    "paragraph": [
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 36,
+    "slide_id": 360000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['EVALUATION', 'EVALUATION']",
+    "paragraph": [
+      78,
+      73
+
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 37,
+    "slide_id": 370000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['EVALUATION', 'EVALUATION']",
+    "paragraph": [
+      78,
+      73
+
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 38,
+    "slide_id": 380000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION']",
+    "paragraph": [
+      91
+
+    ],
+    "scores": [
+
+    ]
+  },
+  {
+    "": 39,
+    "slide_id": 390000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      91,
+      92,
+      93
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 40,
+    "slide_id": 400000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      91,
+      92,
+      93
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 41,
+    "slide_id": 410000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      91,
+      92,
+      93
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 42,
+    "slide_id": 420000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      91,
+      92,
+      93
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 43,
+    "slide_id": 430000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      91,
+      92,
+      93
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 44,
+    "slide_id": 440000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      91,
+      92,
+      93
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 45,
+    "slide_id": 450000,
+    "start": 273,
+    "textual_group": "",
+    "sections": "['DISCUSSION', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      91,
+      92,
+      93
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  }
+]
